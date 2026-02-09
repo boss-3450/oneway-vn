@@ -1,0 +1,661 @@
+{
+  "start": {
+    "bgImage": "assets/bg/hallway_night.jpg",
+    "next": "intro_01"
+  },
+  "intro_01": {
+    "speaker": "",
+    "text": "（夜の職員室。時計の針の音が響く）",
+    "next": "intro_02"
+  },
+  "intro_02": {
+    "speaker": "俺",
+    "text": "……やっと終わった。指痛いな……ペン持ちすぎたか……",
+    "next": "intro_03"
+  },
+  "intro_03": {
+    "speaker": "",
+    "text": "（指を揉みながら立ち上がる）",
+    "next": "intro_04"
+  },
+  "intro_04": {
+    "speaker": "俺",
+    "text": "テーピングくらいなら、保健室にあったっけ……",
+    "next": "intro_05"
+  },
+  "intro_05": {
+    "speaker": "",
+    "text": "（保健室へ向かう廊下。外はもう薄暗い）\n（SE：廊下を歩く足音）",
+    "next": "intro_06"
+  },
+  "intro_06": {
+    "speaker": "俺",
+    "text": "さすがに、もう誰もいないだろうけど……",
+    "next": "intro_07"
+  },
+  "intro_07": {
+    "bgImage": "assets/bg/infirmary.jpg",
+    "speaker": "",
+    "text": "（保健室のドアをそっと開ける）\n（SE：ドアを静かに開く音）",
+    "next": "intro_08"
+  },
+  "intro_08": {
+    "speaker": "俺",
+    "text": "あ……",
+    "chara": "assets/chara/homare/normal.png",
+    "next": "intro_09"
+  },
+  "intro_09": {
+    "speaker": "ほまれ",
+    "text": "あっ、先生……？こんばんは。まだいらっしゃったんですね",
+    "expression": "smile",
+    "next": "intro_10"
+  },
+  "intro_10": {
+    "speaker": "",
+    "text": "（驚きつつも柔らかな笑顔を向けるほまれ）",
+    "next": "intro_11"
+  },
+  "intro_11": {
+    "speaker": "俺",
+    "text": "ほまれ先生こそ、こんな時間に？",
+    "next": "intro_12"
+  },
+  "intro_12": {
+    "speaker": "ほまれ",
+    "text": "少しだけ仕事が残っていて……先生こそ、どうしたんですか？",
+    "expression": "normal",
+    "next": "intro_13"
+  },
+  "intro_13": {
+    "speaker": "俺",
+    "text": "実は指が痛くて……テーピングか何かありますか？",
+    "next": "intro_14"
+  },
+  "intro_14": {
+    "speaker": "ほまれ",
+    "text": "ありますよ。……ちょっと見せてください",
+    "next": "intro_15"
+  },
+  "intro_15": {
+    "speaker": "",
+    "text": "（ほまれ、丁寧に指を診察しテーピングを巻く）",
+    "next": "intro_16"
+  },
+  "intro_16": {
+    "speaker": "俺",
+    "text": "あ……ありがとう。さすが先生ですね",
+    "next": "intro_17"
+  },
+  "intro_17": {
+    "speaker": "ほまれ",
+    "text": "ふふ……褒めても何も出ませんよ？",
+    "expression": "smile",
+    "next": "intro_18"
+  },
+  "intro_18": {
+    "speaker": "",
+    "text": "（ふたり、顔を見合わせて微笑み合う）",
+    "next": "q1_start"
+  },
+  "q1_start": {
+    "choices": [
+      {
+        "text": "……じゃあ、少しだけ一緒にいてもいいですか？",
+        "next": "bad_q1_a_start",
+        "qIndex": 1,
+        "cIndex": 1
+      },
+      {
+        "text": "俺も、なんだか帰る気がしなくて……",
+        "next": "bad_q1_b_start",
+        "qIndex": 1,
+        "cIndex": 2
+      },
+      {
+        "text": "先生いい匂いしますね",
+        "next": "true_q1_01",
+        "isCorrect": true
+      },
+      {
+        "text": "じゃあ今夜は、お互いちょっとだけサボりましょうか",
+        "next": "bad_q1_c_start",
+        "qIndex": 1,
+        "cIndex": 4
+      }
+    ]
+  },
+  "true_q1_01": {
+    "speaker": "ほまれ",
+    "text": "い、いい匂い！？あ、あの、それは……",
+    "expression": "shy",
+    "next": "true_q1_02"
+  },
+  "true_q1_02": {
+    "speaker": "",
+    "text": "（焦りつつ袖をくんくんするほまれ）",
+    "next": "true_q1_03"
+  },
+  "true_q1_03": {
+    "speaker": "俺",
+    "text": "牛丼の匂い、バレバレですよ？",
+    "next": "true_q1_04"
+  },
+  "true_q1_04": {
+    "speaker": "ほまれ",
+    "text": "あうぅ……だってお腹空いてて……こっそり食べたつもりだったのに……",
+    "expression": "shy",
+    "next": "true_q1_05"
+  },
+  "true_q1_05": {
+    "speaker": "",
+    "text": "（顔を赤らめてうつむくほまれ）",
+    "next": "true_q1_06"
+  },
+  "true_q1_06": {
+    "speaker": "俺",
+    "text": "あはは……気にしなくてもいいのに。でも、このままだと俺もお腹空いてきちゃいますよ",
+    "next": "true_q1_07"
+  },
+  "true_q1_07": {
+    "speaker": "ほまれ",
+    "text": "もう、先生も意地悪ですね……",
+    "expression": "troubled",
+    "next": "true_q1_08"
+  },
+  "true_q1_08": {
+    "speaker": "ほまれ",
+    "text": "まだお菓子とインスタントの味噌汁があるので、先生も同罪になってください",
+    "expression": "smile",
+    "next": "true_q1_09"
+  },
+  "true_q1_09": {
+    "speaker": "俺",
+    "text": "おぉ、それは是非とも",
+    "next": "true_q1_10"
+  },
+  "true_q1_10": {
+    "speaker": "俺",
+    "text": "そうだ。職員室にお土産のお茶があったはず。取ってきますね",
+    "next": "true_q1_11"
+  },
+  "true_q1_11": {
+    "speaker": "ほまれ",
+    "text": "あ、待ってください！私も行きます！",
+    "expression": "normal",
+    "next": "true_q1_12"
+  },
+  "true_q1_12": {
+    "speaker": "俺",
+    "text": "え？別に一人で行けますよ？",
+    "next": "true_q1_13"
+  },
+  "true_q1_13": {
+    "speaker": "ほまれ",
+    "text": "そ、その……えっと",
+    "expression": "shy",
+    "next": "true_q1_14"
+  },
+  "true_q1_14": {
+    "speaker": "",
+    "text": "ほまれ先生は少しそわそわしている",
+    "next": "true_q1_15"
+  },
+  "true_q1_15": {
+    "speaker": "俺",
+    "text": "わかりました！一緒に行きましょう",
+    "next": "true_q1_16"
+  },
+  "true_q1_16": {
+    "speaker": "ほまれ",
+    "text": "ありがとうございます",
+    "expression": "smile",
+    "next": "true_q1_17"
+  },
+  "true_q1_17": {
+    "bgImage": "assets/bg/hallway_night.jpg",
+    "speaker": "",
+    "text": "（ほまれが少し急ぎ足で立ち上がり、俺の後をついてくる）\n（SE：二人分の足音が廊下に響く）",
+    "next": "q2_start"
+  },
+  "q2_start": {
+    "choices": [
+      {
+        "text": "あ、お手洗いにいっていいですか？",
+        "next": "true_q2_01",
+        "isCorrect": true
+      },
+      {
+        "text": "並んで歩いているとお化け屋敷にきた父と子みたいですね",
+        "next": "bad_q2_a_start",
+        "qIndex": 2,
+        "cIndex": 2
+      },
+      {
+        "text": "怖いんです？手、つなぎます？",
+        "next": "bad_q2_b_start",
+        "qIndex": 2,
+        "cIndex": 3
+      },
+      {
+        "text": "先生ッ！あそこに頭のない人影が！",
+        "next": "bad_q2_c_start",
+        "qIndex": 2,
+        "cIndex": 4
+      }
+    ]
+  },
+  "true_q2_01": {
+    "speaker": "ほまれ",
+    "text": "え！？ ……あ、もしかして気を遣ってくれてますか？",
+    "expression": "normal",
+    "next": "true_q2_02"
+  },
+  "true_q2_02": {
+    "speaker": "俺",
+    "text": "はい（笑）なんとなくそわそわしてたので。そうかなと",
+    "next": "true_q2_03"
+  },
+  "true_q2_03": {
+    "speaker": "ほまれ",
+    "text": "ばれてましたか……夜の校舎、実は少し苦手で……",
+    "expression": "shy",
+    "next": "true_q2_04"
+  },
+  "true_q2_04": {
+    "speaker": "俺",
+    "text": "無理もないですよ。静かすぎて、不気味ですもんね",
+    "next": "true_q2_05"
+  },
+  "true_q2_05": {
+    "speaker": "ほまれ",
+    "text": "中学生の頃、肝試しで夜の校舎に入って、怖い思いをして以来……",
+    "expression": "troubled",
+    "next": "true_q2_06"
+  },
+  "true_q2_06": {
+    "speaker": "俺",
+    "text": "まった！それ、今言います？",
+    "next": "true_q2_07"
+  },
+  "true_q2_07": {
+    "speaker": "",
+    "text": "（二人で軽く笑い合いながら職員室へ向かう）\n（SE：職員室のドアが開く音）",
+    "next": "true_q2_08"
+  },
+  "true_q2_08": {
+    "bgImage": "assets/bg/staffroom_light.jpg",
+    "speaker": "",
+    "text": "（お茶を飲みながら味噌汁やお菓子を広げる）",
+    "next": "true_q2_09"
+  },
+  "true_q2_09": {
+    "speaker": "ほまれ",
+    "text": "なんかこういうの、楽しいですね",
+    "expression": "smile",
+    "next": "true_q2_10"
+  },
+  "true_q2_10": {
+    "speaker": "俺",
+    "text": "学祭の準備の夜みたいで、懐かしいですね",
+    "next": "true_q2_11"
+  },
+  "true_q2_11": {
+    "speaker": "",
+    "text": "（ふたりの距離が自然と近づいて、穏やかな時間が流れる）",
+    "next": "q3_start"
+  },
+  "q3_start": {
+    "choices": [
+      {
+        "text": "俺、先生のこと……気になってます",
+        "next": "bad_q3_a_start",
+        "qIndex": 3,
+        "cIndex": 1
+      },
+      {
+        "text": "……こういう時間があるから、頑張れるのかもしれません",
+        "next": "bad_q3_b_start",
+        "qIndex": 3,
+        "cIndex": 2
+      },
+      {
+        "text": "…先生の隣にいると、安心します",
+        "next": "true_end_01",
+        "isCorrect": true
+      },
+      {
+        "text": "ほまちゃ！ほまちゃ！（高めの声）",
+        "next": "bad_q3_c_start",
+        "qIndex": 3,
+        "cIndex": 4
+      }
+    ]
+  },
+  "true_end_01": {
+    "speaker": "俺",
+    "text": "…先生の隣にいると、安心します",
+    "next": "true_end_02"
+  },
+  "true_end_02": {
+    "speaker": "ほまれ",
+    "text": "えっ……",
+    "expression": "shy",
+    "next": "true_end_03"
+  },
+  "true_end_03": {
+    "speaker": "",
+    "text": "（ほまれ、顔を赤く染めながら立ち上がる）",
+    "next": "true_end_04"
+  },
+  "true_end_04": {
+    "bgImage": "assets/bg/staffroom_dark.jpg",
+    "speaker": "ほまれ",
+    "text": "....そ、それじゃあ……帰りましょうか",
+    "expression": "shy",
+    "next": "true_end_05"
+  },
+  "true_end_05": {
+    "speaker": "",
+    "text": "（二人で保健室を出ようとした瞬間、ほまれが白衣の裾を踏み、つまずく）",
+    "next": "true_end_06"
+  },
+  "true_end_06": {
+    "speaker": "ほまれ",
+    "text": "あっ！",
+    "expression": "troubled",
+    "next": "true_end_07"
+  },
+  "true_end_07": {
+    "speaker": "俺",
+    "text": "だ、大丈夫ですか！？",
+    "next": "true_end_08"
+  },
+  "true_end_08": {
+    "speaker": "",
+    "text": "（とっさにほまれを受け止める。すぐに離れようと思ったが、ほまれは俺の服をぎゅっと掴んで、まっすぐ見つめてくる）",
+    "next": "true_end_09"
+  },
+  "true_end_09": {
+    "speaker": "ほまれ",
+    "text": "ありがとうございます……",
+    "expression": "smile",
+    "next": "true_end_10"
+  },
+  "true_end_10": {
+    "speaker": "ほまれ",
+    "text": "私は……先生のこと、とても素敵だと思います。だから……",
+    "expression": "shy",
+    "next": "true_end_11"
+  },
+  "true_end_11": {
+    "speaker": "俺",
+    "text": "だ、だから？",
+    "next": "true_end_12"
+  },
+  "true_end_12": {
+    "speaker": "",
+    "text": "（ほまれ、人差し指を俺のおでこに優しくツンと当てて）",
+    "next": "true_end_13"
+  },
+  "true_end_13": {
+    "speaker": "ほまれ",
+    "text": "疲れたときにまたおいで？",
+    "expression": "smile",
+    "next": "true_end_14"
+  },
+  "true_end_14": {
+    "speaker": "",
+    "text": "（微笑むほまれの優しい表情が、月明かりに照らされる。その顔がとても幻想的で美しかった）\n（明日からも仕事が頑張れそうだ）\n（画面フェードアウト）",
+    "isEnd": true,
+    "isGameOver": false
+  },
+  "bad_q1_a_start": {
+    "speaker": "ほまれ",
+    "text": "……えっ？",
+    "expression": "troubled",
+    "next": "bad_q1_a_02"
+  },
+  "bad_q1_a_02": {
+    "speaker": "俺",
+    "text": "あ、ごめん……変な意味じゃなくて",
+    "next": "bad_q1_a_03"
+  },
+  "bad_q1_a_03": {
+    "speaker": "ほまれ",
+    "text": "いえ、そういうつもりじゃなくて……えっと……",
+    "expression": "troubled",
+    "next": "bad_q1_a_04"
+  },
+  "bad_q1_a_04": {
+    "speaker": "",
+    "text": "（少し困ったような笑顔）",
+    "next": "bad_q1_a_05"
+  },
+  "bad_q1_a_05": {
+    "speaker": "ほまれ",
+    "text": "保健室は、生徒が使うところなので……あまり長居は……",
+    "expression": "troubled",
+    "next": "bad_q1_a_06"
+  },
+  "bad_q1_a_06": {
+    "speaker": "俺",
+    "text": "あ、そうですよね。すみません……",
+    "next": "bad_q1_a_07"
+  },
+  "bad_q1_a_07": {
+    "speaker": "",
+    "text": "（その後、軽く会釈だけして部屋を出る。少しバツの悪さを感じた）",
+    "isEnd": true,
+    "isGameOver": true
+  },
+  "bad_q1_b_start": {
+    "speaker": "ほまれ",
+    "text": "そう、ですか……",
+    "expression": "sad",
+    "next": "bad_q1_b_02"
+  },
+  "bad_q1_b_02": {
+    "speaker": "",
+    "text": "（目を逸らすほまれ）",
+    "next": "bad_q1_b_03"
+  },
+  "bad_q1_b_03": {
+    "speaker": "ほまれ",
+    "text": "……でも、先生。きっと帰ったら温かいご飯が待ってますよ？",
+    "expression": "normal",
+    "next": "bad_q1_b_04"
+  },
+  "bad_q1_b_04": {
+    "speaker": "俺",
+    "text": "あ、はい……そうですね……",
+    "next": "bad_q1_b_05"
+  },
+  "bad_q1_b_05": {
+    "speaker": "",
+    "text": "（会話が噛み合わず、気まずい空気が流れる。そのまま保健室を後にした）",
+    "isEnd": true,
+    "isGameOver": true
+  },
+  "bad_q1_c_start": {
+    "speaker": "ほまれ",
+    "text": "……あの、先生",
+    "expression": "serious",
+    "next": "bad_q1_c_02"
+  },
+  "bad_q1_c_02": {
+    "speaker": "",
+    "text": "（ピシッと真面目な声になる）",
+    "next": "bad_q1_c_03"
+  },
+  "bad_q1_c_03": {
+    "speaker": "ほまれ",
+    "text": "サボる、って言葉。あまり好きじゃないです",
+    "expression": "serious",
+    "next": "bad_q1_c_04"
+  },
+  "bad_q1_c_04": {
+    "speaker": "俺",
+    "text": "……ごめんなさい",
+    "next": "bad_q1_c_05"
+  },
+  "bad_q1_c_05": {
+    "speaker": "",
+    "text": "（空気が冷えたまま、テーピングを終えたあと保健室を後にした）",
+    "isEnd": true,
+    "isGameOver": true
+  },
+  "bad_q2_a_start": {
+    "speaker": "ほまれ",
+    "text": "……父と子、ですか？",
+    "expression": "troubled",
+    "next": "bad_q2_a_02"
+  },
+  "bad_q2_a_02": {
+    "speaker": "俺",
+    "text": "あ、いや、例えです！",
+    "next": "bad_q2_a_03"
+  },
+  "bad_q2_a_03": {
+    "speaker": "ほまれ",
+    "text": "例えでも……ちょっとそれは……",
+    "expression": "sad",
+    "next": "bad_q2_a_04"
+  },
+  "bad_q2_a_04": {
+    "speaker": "",
+    "text": "（苦笑しながら距離を取られる）\n俺（しまった……余計なこと言った）",
+    "isEnd": true,
+    "isGameOver": true
+  },
+  "bad_q2_b_start": {
+    "speaker": "ほまれ",
+    "text": "えっ！？……い、いえ、大丈夫です！",
+    "expression": "shy",
+    "next": "bad_q2_b_02"
+  },
+  "bad_q2_b_02": {
+    "speaker": "",
+    "text": "（明らかに戸惑っている様子）",
+    "next": "bad_q2_b_03"
+  },
+  "bad_q2_b_03": {
+    "speaker": "ほまれ",
+    "text": "先生、からかってるんですか……？",
+    "expression": "troubled",
+    "next": "bad_q2_b_04"
+  },
+  "bad_q2_b_04": {
+    "speaker": "俺",
+    "text": "ち、違います！すみません！",
+    "next": "bad_q2_b_05"
+  },
+  "bad_q2_b_05": {
+    "speaker": "",
+    "text": "（しばらく沈黙が続き、その後も空気が戻らなかった）",
+    "isEnd": true,
+    "isGameOver": true
+  },
+  "bad_q2_c_start": {
+    "speaker": "ほまれ",
+    "text": "えっ！？どこ！？きゃっ！",
+    "expression": "troubled",
+    "next": "bad_q2_c_02"
+  },
+  "bad_q2_c_02": {
+    "speaker": "",
+    "text": "（本気で驚いて俺の背中に隠れる）",
+    "next": "bad_q2_c_03"
+  },
+  "bad_q2_c_03": {
+    "speaker": "俺",
+    "text": "……冗談です",
+    "next": "bad_q2_c_04"
+  },
+  "bad_q2_c_04": {
+    "speaker": "ほまれ",
+    "text": "……そういうの、ほんとにダメです……",
+    "expression": "sad",
+    "next": "bad_q2_c_05"
+  },
+  "bad_q2_c_05": {
+    "speaker": "",
+    "text": "（本気で落ち込んだ様子に、罪悪感しか残らなかった）",
+    "isEnd": true,
+    "isGameOver": true
+  },
+  "bad_q3_a_start": {
+    "speaker": "ほまれ",
+    "text": "……え？",
+    "expression": "troubled",
+    "next": "bad_q3_a_02"
+  },
+  "bad_q3_a_02": {
+    "speaker": "俺",
+    "text": "いや、あの……変な意味じゃなくて……！",
+    "next": "bad_q3_a_03"
+  },
+  "bad_q3_a_03": {
+    "speaker": "ほまれ",
+    "text": "そういうのって……急に言われても困ります",
+    "expression": "troubled",
+    "next": "bad_q3_a_04"
+  },
+  "bad_q3_a_04": {
+    "speaker": "俺",
+    "text": "……すみません",
+    "next": "bad_q3_a_05"
+  },
+  "bad_q3_a_05": {
+    "speaker": "",
+    "text": "（沈黙の中、二人はぎこちなく帰路についた）",
+    "isEnd": true,
+    "isGameOver": true
+  },
+  "bad_q3_b_start": {
+    "speaker": "ほまれ",
+    "text": "……それは、嬉しいですけど……",
+    "expression": "troubled",
+    "next": "bad_q3_b_02"
+  },
+  "bad_q3_b_02": {
+    "speaker": "",
+    "text": "（少し微妙な表情）",
+    "next": "bad_q3_b_03"
+  },
+  "bad_q3_b_03": {
+    "speaker": "ほまれ",
+    "text": "でも、ちょっと重いですね……",
+    "expression": "troubled",
+    "next": "bad_q3_b_04"
+  },
+  "bad_q3_b_04": {
+    "speaker": "",
+    "text": "（お茶を飲む手が止まる）\n俺（あちゃー……やりすぎたかも）",
+    "isEnd": true,
+    "isGameOver": true
+  },
+  "bad_q3_c_start": {
+    "speaker": "ほまれ",
+    "text": "…………？",
+    "expression": "serious",
+    "next": "bad_q3_c_02"
+  },
+  "bad_q3_c_02": {
+    "speaker": "",
+    "text": "（完全に引いた顔）",
+    "next": "bad_q3_c_03"
+  },
+  "bad_q3_c_03": {
+    "speaker": "ほまれ",
+    "text": "……先生、お疲れなんですね",
+    "expression": "serious",
+    "next": "bad_q3_c_04"
+  },
+  "bad_q3_c_04": {
+    "speaker": "",
+    "text": "（苦笑いで流されるが、その後も会話は弾まず）",
+    "isEnd": true,
+    "isGameOver": true
+  }
+}

@@ -1,0 +1,1344 @@
+{
+    "start": {
+        "bgImage": "assets/bg/convenience.jpg",
+        "sceneId": "scene1",
+        "next": "s1_prologue_01"
+    },
+    "s1_prologue_01": {
+        "speaker": "",
+        "text": "（午後三時）",
+        "next": "s1_prologue_02"
+    },
+    "s1_prologue_02": {
+        "speaker": "",
+        "text": "（集中力が切れ始める、微妙な時間帯）",
+        "next": "s1_prologue_03"
+    },
+    "s1_prologue_03": {
+        "speaker": "",
+        "text": "（仕事の区切りには少し早く、次の作業に入るには気力が足りない）",
+        "next": "s1_prologue_04"
+    },
+    "s1_prologue_04": {
+        "speaker": "俺",
+        "text": "「時刻は午後3時。少し遅めのおやつ休憩だ」",
+        "next": "s1_prologue_05"
+    },
+    "s1_prologue_05": {
+        "speaker": "",
+        "text": "（頭が回らないわけじゃない）",
+        "next": "s1_prologue_06"
+    },
+    "s1_prologue_06": {
+        "speaker": "",
+        "text": "（ただ、甘いものが欲しい）",
+        "next": "s1_prologue_07"
+    },
+    "s1_prologue_07": {
+        "speaker": "",
+        "text": "（理由はそれだけで十分だった）",
+        "next": "s1_prologue_08"
+    },
+    "s1_prologue_08": {
+        "speaker": "",
+        "text": "（社内のコンビニは、こういう時間にちょうどいい）",
+        "next": "s1_prologue_09"
+    },
+    "s1_prologue_09": {
+        "speaker": "",
+        "text": "（人も少なく、目的も単純で、余計なことを考えなくて済む）",
+        "next": "s1_prologue_10"
+    },
+    "s1_prologue_10": {
+        "speaker": "俺",
+        "text": "「……ヨーグルト、残ってるといいんだけど」",
+        "next": "s1_prologue_11"
+    },
+    "s1_prologue_11": {
+        "speaker": "",
+        "text": "（冷蔵ケースの方へ視線を向ける）",
+        "next": "s1_prologue_12"
+    },
+    "s1_prologue_12": {
+        "speaker": "",
+        "text": "（その瞬間だった）",
+        "next": "s1_prologue_13"
+    },
+    "s1_prologue_13": {
+        "speaker": "",
+        "text": "（棚の前に、小さな影があることに気づいたのは）",
+        "next": "s1_prologue_14"
+    },
+    "s1_prologue_14": {
+        "speaker": "",
+        "text": "（じっと、上を見上げている）",
+        "next": "s1_prologue_15"
+    },
+    "s1_prologue_15": {
+        "speaker": "",
+        "text": "（動かないのに、やけに存在感がある）",
+        "next": "s1_prologue_16"
+    },
+    "s1_prologue_16": {
+        "speaker": "",
+        "text": "（……ああ）",
+        "next": "s1_prologue_17"
+    },
+    "s1_prologue_17": {
+        "speaker": "",
+        "text": "（これは、ただの買い物じゃ終わらなさそうだ）",
+        "next": "s1_02"
+    },
+    "s1_02": {
+        "speaker": "俺",
+        "text": "「社内のコンビニに寄ると、冷蔵コーナーの前で……見慣れた小さな背中が動いていた」",
+        "next": "s1_03"
+    },
+    "s1_03": {
+        "speaker": "つむぎ",
+        "text": "「……よし。周囲に敵影なし」",
+        "chara": "assets/chara/12.png",
+        "voice": "assets/voice/true/voice_001.wav",
+        "next": "s1_04"
+    },
+    "s1_04": {
+        "speaker": "俺",
+        "text": "(つむぎ先輩だ。身長140cm。ヒールを履いても、小学生と間違われそうなサイズ感)",
+        "next": "s1_05"
+    },
+    "s1_05": {
+        "speaker": "俺",
+        "text": "(彼女は冷蔵棚の最上段を、怨めしそうに見上げている)",
+        "next": "s1_06"
+    },
+    "s1_06": {
+        "speaker": "つむぎ",
+        "text": "「……なんで、一番上の段なんだ」",
+        "chara": "assets/chara/7.png",
+        "voice": "assets/voice/true/voice_002.wav",
+        "next": "s1_07"
+    },
+    "s1_07": {
+        "speaker": "つむぎ",
+        "text": "「『完熟・あまとう苺のプレミアムヨーグルト』……」",
+        "chara": "assets/chara/13.png",
+        "voice": "assets/voice/true/voice_003.wav",
+        "next": "s1_08"
+    },
+    "s1_08": {
+        "speaker": "つむぎ",
+        "text": "「人気商品だからって、ボクの手の届かない聖域（サンクチュアリ）に配置するなんて……店員め、性格が悪いね」",
+        "chara": "assets/chara/8.png",
+        "voice": "assets/voice/true/voice_004.wav",
+        "next": "s1_se01"
+    },
+    "s1_se01": {
+        "speaker": "",
+        "text": "トン、トン",
+        "next": "s1_09"
+    },
+    "s1_09": {
+        "speaker": "つむぎ",
+        "text": "「……だが、諦めるわけにはいかない」",
+        "chara": "assets/chara/12.png",
+        "voice": "assets/voice/true/voice_005.wav",
+        "next": "s1_10"
+    },
+    "s1_10": {
+        "speaker": "つむぎ",
+        "text": "「ボクの糖分補給のため……そして、この理不尽な高さに打ち勝つため……！」",
+        "chara": "assets/chara/10.png",
+        "voice": "assets/voice/true/voice_006.wav",
+        "next": "s1_11"
+    },
+    "s1_11": {
+        "speaker": "つむぎ",
+        "text": "「……ふっ！」",
+        "voice": "assets/voice/true/voice_007.wav",
+        "next": "s1_se02"
+    },
+    "s1_se02": {
+        "speaker": "",
+        "text": "タッ！",
+        "next": "s1_12"
+    },
+    "s1_12": {
+        "speaker": "つむぎ",
+        "text": "「……っ、く！ あと少し……！」",
+        "chara": "assets/chara/6.png",
+        "voice": "assets/voice/true/voice_008.wav",
+        "next": "s1_se03"
+    },
+    "s1_se03": {
+        "speaker": "",
+        "text": "タッ！ タッ！",
+        "next": "s1_14"
+    },
+    "s1_14": {
+        "speaker": "",
+        "text": "（ぴょんぴょん飛び跳ねている。髪がふわふわ揺れて、必死に手を伸ばしているが……指先すら届いていない）",
+        "next": "s1_15"
+    },
+    "s1_15": {
+        "speaker": "つむぎ",
+        "text": "「ぬぐぐ……！ 重力め……ボクを地上に縛り付ける鎖か……！」",
+        "chara": "assets/chara/7.png",
+        "voice": "assets/voice/true/voice_009.wav",
+        "next": "s1_16"
+    },
+    "s1_16": {
+        "speaker": "つむぎ",
+        "text": "「……もう一回！ せーのっ……！」",
+        "chara": "assets/chara/12.png",
+        "voice": "assets/voice/true/voice_010.wav",
+        "next": "q1"
+    },
+    "q1": {
+        "choices": [
+            {
+                "text": "「つむぎ姫、この下僕にご命令ください」",
+                "next": "t1_01",
+                "isCorrect": true
+            },
+            {
+                "text": "「先輩、トランポリン持ってきましょうか？」",
+                "next": "b1a_01"
+            },
+            {
+                "text": "(後ろから抱き上げて、高い高いをしてあげる)",
+                "next": "b1b_01"
+            },
+            {
+                "text": "「仕方ないですねー」と言って取ってあげてレジへ",
+                "next": "b1c_01"
+            }
+        ]
+    },
+    "b1a_01": {
+        "speaker": "俺",
+        "text": "「先輩、トランポリン持ってきましょうか？」",
+        "next": "b1a_02"
+    },
+    "b1a_02": {
+        "speaker": "つむぎ",
+        "text": "「……は？」",
+        "chara": "assets/chara/13.png",
+        "voice": "assets/voice/bad/bad_01_01_01.wav",
+        "next": "b1a_03"
+    },
+    "b1a_03": {
+        "speaker": "",
+        "text": "（着地した先輩が、氷のような視線でこちらを見る）",
+        "next": "b1a_04"
+    },
+    "b1a_04": {
+        "speaker": "つむぎ",
+        "text": "「キミには、ボクがサーカスの団員に見えるのかな？」",
+        "chara": "assets/chara/8.png",
+        "voice": "assets/voice/bad/bad_01_01_02.wav",
+        "next": "b1a_05"
+    },
+    "b1a_05": {
+        "speaker": "つむぎ",
+        "text": "「……失敬な。もういい、イチゴ味なんて子供っぽいものは卒業するよ」",
+        "chara": "assets/chara/14.png",
+        "voice": "assets/voice/bad/bad_01_01_03.wav",
+        "next": "b1a_06"
+    },
+    "b1a_06": {
+        "speaker": "",
+        "text": "（怒って歩いて行ってしまった）",
+        "isEnd": true,
+        "isGameOver": true
+    },
+    "b1b_01": {
+        "speaker": "つむぎ",
+        "text": "「ひゃああっ！？」",
+        "chara": "assets/chara/6.png",
+        "voice": "assets/voice/bad/bad_01_02_01.wav",
+        "next": "b1b_02"
+    },
+    "b1b_02": {
+        "speaker": "つむぎ",
+        "text": "「な、ななな、何をするんだキミはーッ！ 下ろせ！」",
+        "chara": "assets/chara/17.png",
+        "voice": "assets/voice/bad/bad_01_02_02.wav",
+        "next": "b1b_se01"
+    },
+    "b1b_se01": {
+        "speaker": "",
+        "text": "ストン",
+        "next": "b1b_03"
+    },
+    "b1b_03": {
+        "speaker": "つむぎ",
+        "text": "「……いい度胸じゃないか」",
+        "chara": "assets/chara/10.png",
+        "voice": "assets/voice/bad/bad_01_02_03.wav",
+        "next": "b1b_04"
+    },
+    "b1b_04": {
+        "speaker": "つむぎ",
+        "text": "「いつものおふざけかい？ ……フン！」",
+        "voice": "assets/voice/bad/bad_01_02_04.wav",
+        "next": "b1b_se02"
+    },
+    "b1b_se02": {
+        "speaker": "",
+        "text": "ドガッ！！（急所を蹴り上げる音）",
+        "next": "b1b_05"
+    },
+    "b1b_05": {
+        "speaker": "俺",
+        "text": "「ぐっ……！！(俺の相棒が）」",
+        "next": "b1b_06"
+    },
+    "b1b_06": {
+        "speaker": "",
+        "text": "(あまりの痛みに、俺はその場にうずくまった)",
+        "next": "b1b_se03"
+    },
+    "b1b_se03": {
+        "speaker": "",
+        "text": "ギュッ",
+        "next": "b1b_07"
+    },
+    "b1b_07": {
+        "speaker": "つむぎ",
+        "text": "「ちょうどいい高さだ。足場にさせてもらうよ」",
+        "chara": "assets/chara/11.png",
+        "voice": "assets/voice/bad/bad_01_02_05.wav",
+        "next": "b1b_08"
+    },
+    "b1b_08": {
+        "speaker": "",
+        "text": "（先輩は俺を踏み台にしてヨーグルトを手に取ると、そのまま冷ややかに去っていった）",
+        "isEnd": true,
+        "isGameOver": true
+    },
+    "b1c_01": {
+        "speaker": "俺",
+        "text": "「仕方ないですねー」",
+        "next": "b1c_02"
+    },
+    "b1c_02": {
+        "speaker": "",
+        "text": "（俺はヒョイとヨーグルトを取り、そのままスタスタとレジへ向かった）",
+        "next": "b1c_03"
+    },
+    "b1c_03": {
+        "speaker": "つむぎ",
+        "text": "「あ……」",
+        "chara": "assets/chara/6.png",
+        "voice": "assets/voice/bad/bad_01_03_01.wav",
+        "next": "b1c_04"
+    },
+    "b1c_04": {
+        "speaker": "つむぎ",
+        "text": "「……え、ちょっと……ボクの……」",
+        "chara": "assets/chara/15.png",
+        "voice": "assets/voice/bad/bad_01_03_02.wav",
+        "next": "b1c_05"
+    },
+    "b1c_05": {
+        "speaker": "",
+        "text": "（先輩は手を伸ばしたまま、呆然と取り残された）",
+        "isEnd": true,
+        "isGameOver": true
+    },
+    "t1_01": {
+        "speaker": "俺",
+        "text": "「つむぎ姫、この下僕にご命令ください」",
+        "next": "t1_02"
+    },
+    "t1_02": {
+        "speaker": "つむぎ",
+        "text": "「……えっ」",
+        "chara": "assets/chara/6.png",
+        "voice": "assets/voice/true/voice_011.wav",
+        "next": "t1_03"
+    },
+    "t1_03": {
+        "speaker": "",
+        "text": "（ジャンプをやめて、こちらを振り返る）",
+        "next": "t1_04"
+    },
+    "t1_04": {
+        "speaker": "",
+        "text": "（一瞬ぽかんとしたが、すぐにニヤリと口角を上げた）",
+        "next": "t1_05"
+    },
+    "t1_05": {
+        "speaker": "つむぎ",
+        "text": "「……ふっ、そうか」",
+        "chara": "assets/chara/10.png",
+        "voice": "assets/voice/true/voice_012.wav",
+        "next": "t1_06"
+    },
+    "t1_06": {
+        "speaker": "つむぎ",
+        "text": "「キミもようやく、自分という立ち位置を理解したようだね」",
+        "chara": "assets/chara/11.png",
+        "voice": "assets/voice/true/voice_013.wav",
+        "next": "t1_07"
+    },
+    "t1_07": {
+        "speaker": "",
+        "text": "（コホン、と咳払いをして、大袈裟に指を差す）",
+        "next": "t1_08"
+    },
+    "t1_08": {
+        "speaker": "つむぎ",
+        "text": "「よろしい。ならば、あの『聖杯（ヨーグルト）』を奪取したまえ」",
+        "chara": "assets/chara/10.png",
+        "voice": "assets/voice/true/voice_014.wav",
+        "next": "t1_09"
+    },
+    "t1_09": {
+        "speaker": "つむぎ",
+        "text": "「……早くしないと、売り切れるからね」",
+        "chara": "assets/chara/7.png",
+        "voice": "assets/voice/true/voice_015.wav",
+        "next": "t1_10"
+    },
+    "t1_10": {
+        "speaker": "俺",
+        "text": "「仰せのままに」",
+        "next": "t1_se01"
+    },
+    "t1_se01": {
+        "speaker": "",
+        "text": "カサッ",
+        "next": "t1_11"
+    },
+    "t1_11": {
+        "speaker": "俺",
+        "text": "「どうぞ、姫」",
+        "next": "t1_12"
+    },
+    "t1_12": {
+        "speaker": "つむぎ",
+        "text": "「……うむ。苦しゅうない」",
+        "chara": "assets/chara/17.png",
+        "voice": "assets/voice/true/voice_016.wav",
+        "next": "t1_13"
+    },
+    "t1_13": {
+        "speaker": "",
+        "text": "（ヨーグルトを受け取る先輩の手が、少し震えている）",
+        "next": "t1_14"
+    },
+    "t1_14": {
+        "speaker": "",
+        "text": "（ノリノリで演じていたが、受け取った瞬間、急に恥ずかしさが込み上げてきたらしい）",
+        "next": "t1_15"
+    },
+    "t1_15": {
+        "speaker": "つむぎ",
+        "text": "「……あ、ありがと」",
+        "chara": "assets/chara/17.png",
+        "voice": "assets/voice/true/voice_017.wav",
+        "next": "t1_16"
+    },
+    "t1_16": {
+        "speaker": "つむぎ",
+        "text": "「……助かったよ、騎士（ナイト）くん」",
+        "chara": "assets/chara/5.png",
+        "voice": "assets/voice/true/voice_018.wav",
+        "next": "s2_se01"
+    },
+    "s2_se01": {
+        "bgImage": "assets/bg/breakroom.jpg",
+        "sceneId": "scene2",
+        "speaker": "",
+        "text": "ペリッ",
+        "next": "s2_01"
+    },
+    "s2_01": {
+        "speaker": "つむぎ",
+        "text": "「……んー、いい香り」",
+        "chara": "assets/chara/9.png",
+        "voice": "assets/voice/true/voice_019.wav",
+        "next": "s2_02"
+    },
+    "s2_02": {
+        "speaker": "つむぎ",
+        "text": "「やっぱり、疲れた脳にはこの甘酸っぱさが不可欠だよ」",
+        "chara": "assets/chara/18.png",
+        "voice": "assets/voice/true/voice_020.wav",
+        "next": "s2_03"
+    },
+    "s2_03": {
+        "speaker": "",
+        "text": "（ソファに座るつむぎ先輩。足が地面に届かず、少し浮いている）",
+        "next": "s2_04"
+    },
+    "s2_04": {
+        "speaker": "",
+        "text": "（スプーンを咥えて、幸せそうに目を細めている）",
+        "next": "s2_05"
+    },
+    "s2_05": {
+        "speaker": "つむぎ",
+        "text": "「……なんだい？ さっきからボクの顔ばかり見て」",
+        "chara": "assets/chara/19.png",
+        "voice": "assets/voice/true/voice_021.wav",
+        "next": "s2_06"
+    },
+    "s2_06": {
+        "speaker": "つむぎ",
+        "text": "「もしかして、ボクのあまりの威厳（オーラ）に見惚れてるのかな？」",
+        "chara": "assets/chara/11.png",
+        "voice": "assets/voice/true/voice_022.wav",
+        "next": "s2_07"
+    },
+    "s2_07": {
+        "speaker": "俺",
+        "text": "「美味しそうに食べますね。見てて飽きないです」",
+        "next": "s2_08"
+    },
+    "s2_08": {
+        "speaker": "つむぎ",
+        "text": "「……っ」",
+        "chara": "assets/chara/17.png",
+        "voice": "assets/voice/true/voice_023.wav",
+        "next": "s2_09"
+    },
+    "s2_09": {
+        "speaker": "",
+        "text": "（スプーンを咥えたまま、動きが止まる）",
+        "next": "s2_10"
+    },
+    "s2_10": {
+        "speaker": "つむぎ",
+        "text": "「……な、何を言ってるんだい」",
+        "chara": "assets/chara/7.png",
+        "voice": "assets/voice/true/voice_024.wav",
+        "next": "s2_11"
+    },
+    "s2_11": {
+        "speaker": "つむぎ",
+        "text": "「美味しそうに食べるのは当たり前だよ。これはプレミアムなんだから」",
+        "voice": "assets/voice/true/voice_025.wav",
+        "next": "s2_12"
+    },
+    "s2_12": {
+        "speaker": "つむぎ",
+        "text": "「……飽きないとか、そういう……歯の浮くようなセリフは禁止」",
+        "chara": "assets/chara/13.png",
+        "voice": "assets/voice/true/voice_026.wav",
+        "next": "s2_13"
+    },
+    "s2_13": {
+        "speaker": "",
+        "text": "（プイッと顔を背けるが、頬が少し緩んでいる）",
+        "next": "s2_14"
+    },
+    "s2_14": {
+        "speaker": "つむぎ",
+        "text": "「……キミ、意外とタラシの才能があるね」",
+        "chara": "assets/chara/18.png",
+        "voice": "assets/voice/true/voice_027.wav",
+        "next": "s2_15"
+    },
+    "s2_15": {
+        "speaker": "つむぎ",
+        "text": "「……悪い気はしないけど」",
+        "chara": "assets/chara/5.png",
+        "voice": "assets/voice/true/voice_028.wav",
+        "next": "s2_16"
+    },
+    "s2_16": {
+        "speaker": "つむぎ",
+        "text": "「……はぁ。仕方ないなぁ」",
+        "chara": "assets/chara/14.png",
+        "voice": "assets/voice/true/voice_029.wav",
+        "next": "s2_17"
+    },
+    "s2_17": {
+        "speaker": "つむぎ",
+        "text": "「取ってもらった借りもあるし……特別だよ？」",
+        "chara": "assets/chara/11.png",
+        "voice": "assets/voice/true/voice_030.wav",
+        "next": "s2_18"
+    },
+    "s2_18": {
+        "speaker": "",
+        "text": "（先輩はスプーンにたっぷりとヨーグルトをすくい、こちらに向けてきた）",
+        "next": "s2_19"
+    },
+    "s2_19": {
+        "speaker": "つむぎ",
+        "text": "「……ほら」",
+        "voice": "assets/voice/true/voice_031.wav",
+        "next": "s2_20"
+    },
+    "s2_20": {
+        "speaker": "つむぎ",
+        "text": "「口、開けなよ」",
+        "chara": "assets/chara/4.png",
+        "voice": "assets/voice/true/voice_032.wav",
+        "next": "s2_21"
+    },
+    "s2_21": {
+        "speaker": "俺",
+        "text": "「えっ」",
+        "next": "s2_22"
+    },
+    "s2_22": {
+        "speaker": "つむぎ",
+        "text": "「……ボクの手が震える前に、早くしてくれないかな」",
+        "chara": "assets/chara/17.png",
+        "voice": "assets/voice/true/voice_033.wav",
+        "next": "s2_23"
+    },
+    "s2_23": {
+        "speaker": "つむぎ",
+        "text": "「これは……先輩から後輩への、労いの儀式なんだから」",
+        "chara": "assets/chara/5.png",
+        "voice": "assets/voice/true/voice_034.wav",
+        "next": "s2_24"
+    },
+    "s2_24": {
+        "speaker": "",
+        "text": "（顔を赤くしながら、スプーンを俺の口元に差し出してくる）",
+        "next": "s2_25"
+    },
+    "s2_25": {
+        "speaker": "",
+        "text": "（「あーん」だ。社内で、先輩と、あーん……）",
+        "next": "q2"
+    },
+    "q2": {
+        "choices": [
+            {
+                "text": "「いただきます！」と素直に食べる",
+                "next": "b2a_01"
+            },
+            {
+                "text": "「は、恥ずかしいので無理です！」と逃げる",
+                "next": "b2b_01"
+            },
+            {
+                "text": "「間接キスですか！間接キスですよ！？」",
+                "next": "b2c_01"
+            },
+            {
+                "text": "「あ、部長！お疲れ様です！」と挨拶をする",
+                "next": "t2_01",
+                "isCorrect": true
+            }
+        ]
+    },
+    "b2a_01": {
+        "speaker": "俺",
+        "text": "「いただきます！」",
+        "next": "b2a_02"
+    },
+    "b2a_02": {
+        "speaker": "つむぎ",
+        "text": "「……ふっ、甘いな！」",
+        "chara": "assets/chara/10.png",
+        "voice": "assets/voice/bad/bad_02_01_01.wav",
+        "next": "b2a_se01"
+    },
+    "b2a_se01": {
+        "speaker": "",
+        "text": "ヒュン！",
+        "next": "b2a_03"
+    },
+    "b2a_03": {
+        "speaker": "つむぎ",
+        "text": "「素直にやると思ったか！ このおバカめ！」",
+        "chara": "assets/chara/16.png",
+        "voice": "assets/voice/bad/bad_02_01_02.wav",
+        "next": "b2a_04"
+    },
+    "b2a_04": {
+        "speaker": "つむぎ",
+        "text": "「……お、おあずけだ！」",
+        "voice": "assets/voice/bad/bad_02_01_03.wav",
+        "next": "b2a_se02"
+    },
+    "b2a_se02": {
+        "speaker": "",
+        "text": "パクリ",
+        "next": "b2a_05"
+    },
+    "b2a_05": {
+        "speaker": "つむぎ",
+        "text": "「……んぐっ」",
+        "chara": "assets/chara/17.png",
+        "voice": "assets/voice/bad/bad_02_01_04.wav",
+        "next": "b2a_06"
+    },
+    "b2a_06": {
+        "speaker": "",
+        "text": "（勢いよく食べたが、耳まで真っ赤だ）",
+        "next": "b2a_07"
+    },
+    "b2a_07": {
+        "speaker": "",
+        "text": "（どうやら直前で耐えきれなくなり、恥ずかしさで誤魔化したらしい）",
+        "next": "b2a_08"
+    },
+    "b2a_08": {
+        "speaker": "つむぎ",
+        "text": "「……仕事に戻るよ！」",
+        "chara": "assets/chara/7.png",
+        "voice": "assets/voice/bad/bad_02_01_05.wav",
+        "next": "b2a_09"
+    },
+    "b2a_09": {
+        "speaker": "",
+        "text": "（逃げるように部屋を出ていく音）",
+        "isEnd": true,
+        "isGameOver": true
+    },
+    "b2b_01": {
+        "speaker": "俺",
+        "text": "「は、恥ずかしいので無理です！」",
+        "next": "b2b_02"
+    },
+    "b2b_02": {
+        "speaker": "つむぎ",
+        "text": "「……あ、そう」",
+        "chara": "assets/chara/13.png",
+        "voice": "assets/voice/bad/bad_02_02_01.wav",
+        "next": "b2b_03"
+    },
+    "b2b_03": {
+        "speaker": "",
+        "text": "（スプーンを下ろす）",
+        "next": "b2b_04"
+    },
+    "b2b_04": {
+        "speaker": "つむぎ",
+        "text": "「……キミって、意外と意気地なしなんだね」",
+        "voice": "assets/voice/bad/bad_02_02_02.wav",
+        "next": "b2b_05"
+    },
+    "b2b_05": {
+        "speaker": "つむぎ",
+        "text": "「こっちが勇気出したのに……バカみたいだ」",
+        "chara": "assets/chara/15.png",
+        "voice": "assets/voice/bad/bad_02_02_03.wav",
+        "next": "b2b_06"
+    },
+    "b2b_06": {
+        "speaker": "",
+        "text": "（冷ややかな目で見られ、気まずい沈黙が流れた……）",
+        "isEnd": true,
+        "isGameOver": true
+    },
+    "b2c_01": {
+        "speaker": "俺",
+        "text": "「間接キスですか！ 間接キスですよ！？」",
+        "next": "b2c_02"
+    },
+    "b2c_02": {
+        "speaker": "つむぎ",
+        "text": "「……あ」",
+        "chara": "assets/chara/19.png",
+        "voice": "assets/voice/bad/bad_02_03_01.wav",
+        "next": "b2c_03"
+    },
+    "b2c_03": {
+        "speaker": "",
+        "text": "（スッ、と表情から熱が引いていく）",
+        "next": "b2c_04"
+    },
+    "b2c_04": {
+        "speaker": "つむぎ",
+        "text": "「……そういうの、気にするタイプだったか」",
+        "chara": "assets/chara/13.png",
+        "voice": "assets/voice/bad/bad_02_03_02.wav",
+        "next": "b2c_05"
+    },
+    "b2c_05": {
+        "speaker": "つむぎ",
+        "text": "「すまない。セクハラじみた真似をして……」",
+        "chara": "assets/chara/14.png",
+        "voice": "assets/voice/bad/bad_02_03_03.wav",
+        "next": "b2c_06"
+    },
+    "b2c_06": {
+        "speaker": "",
+        "text": "（先輩は深く反省し、二度とプライベートな距離感を見せてくれなくなった……）",
+        "isEnd": true,
+        "isGameOver": true
+    },
+    "t2_01": {
+        "speaker": "俺",
+        "text": "「あ、部長！ お疲れ様です！」",
+        "next": "t2_se01"
+    },
+    "t2_se01": {
+        "speaker": "",
+        "text": "バッ！",
+        "next": "t2_02"
+    },
+    "t2_02": {
+        "speaker": "つむぎ",
+        "text": "「げっ！？」",
+        "chara": "assets/chara/6.png",
+        "voice": "assets/voice/true/voice_035.wav",
+        "next": "t2_03"
+    },
+    "t2_03": {
+        "speaker": "つむぎ",
+        "text": "「ひゃ、ひゃい！ お疲れ様でふ……！」",
+        "chara": "assets/chara/7.png",
+        "voice": "assets/voice/true/voice_036.wav",
+        "next": "t2_04"
+    },
+    "t2_04": {
+        "speaker": "",
+        "text": "（つむぎ先輩が焦って後ろを向き、ヨーグルトを隠そうとする）",
+        "next": "t2_05"
+    },
+    "t2_05": {
+        "speaker": "",
+        "text": "（その隙だ）",
+        "next": "t2_se02"
+    },
+    "t2_se02": {
+        "speaker": "",
+        "text": "パクリ",
+        "next": "t2_06"
+    },
+    "t2_06": {
+        "speaker": "つむぎ",
+        "text": "「……あれ？」",
+        "chara": "assets/chara/19.png",
+        "voice": "assets/voice/true/voice_037.wav",
+        "next": "t2_07"
+    },
+    "t2_07": {
+        "speaker": "",
+        "text": "（誰もいない入り口を見て、キョトンとする）",
+        "next": "t2_08"
+    },
+    "t2_08": {
+        "speaker": "",
+        "text": "（そして、手元のスプーンが空になっていることに気づく）",
+        "next": "t2_09"
+    },
+    "t2_09": {
+        "speaker": "つむぎ",
+        "text": "「……ッ！？」",
+        "chara": "assets/chara/6.png",
+        "voice": "assets/voice/true/voice_038.wav",
+        "next": "t2_10"
+    },
+    "t2_10": {
+        "speaker": "つむぎ",
+        "text": "「き、キミ……！」",
+        "chara": "assets/chara/17.png",
+        "voice": "assets/voice/true/voice_039.wav",
+        "next": "t2_11"
+    },
+    "t2_11": {
+        "speaker": "俺",
+        "text": "「ご馳走様でした。美味しかったです」",
+        "next": "t2_12"
+    },
+    "t2_12": {
+        "speaker": "俺",
+        "text": "「……なんだか恥ずかしかったので、すみません」",
+        "next": "t2_13"
+    },
+    "t2_13": {
+        "speaker": "つむぎ",
+        "text": "「……っ」",
+        "voice": "assets/voice/true/voice_040.wav",
+        "next": "t2_14"
+    },
+    "t2_14": {
+        "speaker": "",
+        "text": "（俺の言葉の意味を理解し、ポカンとする）",
+        "next": "t2_15"
+    },
+    "t2_15": {
+        "speaker": "",
+        "text": "（俺が、先輩に恥をかかせないために「自分が恥ずかしかったから誤魔化した」ことにしたのだと気づいたようだ）",
+        "next": "t2_16"
+    },
+    "t2_16": {
+        "speaker": "つむぎ",
+        "text": "「……はぁ。一本取られたよ」",
+        "chara": "assets/chara/14.png",
+        "voice": "assets/voice/true/voice_041.wav",
+        "next": "t2_17"
+    },
+    "t2_17": {
+        "speaker": "つむぎ",
+        "text": "「……キミには敵わないな」",
+        "chara": "assets/chara/18.png",
+        "voice": "assets/voice/true/voice_042.wav",
+        "next": "t2_18"
+    },
+    "t2_18": {
+        "speaker": "",
+        "text": "（悔しそうだが、その表情はどこか嬉しそうだ）",
+        "next": "t2_19"
+    },
+    "t2_19": {
+        "speaker": "",
+        "text": "（先輩は空になったカップをゴミ箱に捨て、少しだけ背伸びをした）",
+        "next": "t2_20"
+    },
+    "t2_20": {
+        "speaker": "つむぎ",
+        "text": "「……さて。糖分も補給したし、残業（ラウンド2）といこうか」",
+        "chara": "assets/chara/10.png",
+        "voice": "assets/voice/true/voice_043.wav",
+        "next": "t2_21"
+    },
+    "t2_21": {
+        "speaker": "つむぎ",
+        "text": "「……付き合ってくれるだろ？ 共犯者くん」",
+        "chara": "assets/chara/11.png",
+        "voice": "assets/voice/true/voice_044.wav",
+        "next": "t2_22"
+    },
+    "t2_22": {
+        "speaker": "俺",
+        "text": "「はい、喜んで」",
+        "next": "s3_01"
+    },
+    "s3_01": {
+        "bgImage": "assets/bg/office_night.jpg",
+        "sceneId": "scene3",
+        "speaker": "",
+        "text": "カタカタカタ……ッターン！",
+        "next": "s3_02"
+    },
+    "s3_02": {
+        "speaker": "俺",
+        "text": "「ヨーグルト休憩から数時間。時計の針は22時を回り、広いフロアには俺とつむぎ先輩だけが残っていた」",
+        "next": "s3_03"
+    },
+    "s3_03": {
+        "speaker": "つむぎ",
+        "text": "「……くっ、寒い……」",
+        "chara": "assets/chara/15.png",
+        "voice": "assets/voice/true/voice_045.wav",
+        "next": "s3_04"
+    },
+    "s3_04": {
+        "speaker": "",
+        "text": "（デスクの向かい側で、つむぎ先輩が自分の二の腕をさすっている）",
+        "next": "s3_05"
+    },
+    "s3_05": {
+        "speaker": "",
+        "text": "（先輩は薄着の服一枚だ。140cmの小さな体は、寒さに弱そうだ）",
+        "next": "s3_06"
+    },
+    "s3_06": {
+        "speaker": "つむぎ",
+        "text": "「……全集中……熱生産の呼吸……」",
+        "voice": "assets/voice/true/voice_046.wav",
+        "next": "s3_07"
+    },
+    "s3_07": {
+        "speaker": "つむぎ",
+        "text": "「……だめだ、イメージだけで体温を上げるのは限界があるね……」",
+        "voice": "assets/voice/true/voice_047.wav",
+        "next": "s3_08"
+    },
+    "s3_08": {
+        "speaker": "俺",
+        "text": "「見ていられない。俺は椅子の背もたれにかけてあったジャケットを手に取った」",
+        "next": "s3_se01"
+    },
+    "s3_se01": {
+        "speaker": "",
+        "text": "ギシッ",
+        "next": "s3_09"
+    },
+    "s3_09": {
+        "speaker": "俺",
+        "text": "「先輩、これ使ってください」",
+        "next": "s3_10"
+    },
+    "s3_10": {
+        "speaker": "つむぎ",
+        "text": "「……え？」",
+        "chara": "assets/chara/6.png",
+        "voice": "assets/voice/true/voice_048.wav",
+        "next": "s3_11"
+    },
+    "s3_11": {
+        "speaker": "",
+        "text": "（ふわりと、俺のジャケットが先輩を包み込む）",
+        "next": "s3_12"
+    },
+    "s3_12": {
+        "speaker": "つむぎ",
+        "text": "「……あ、あったかい……」",
+        "chara": "assets/chara/18.png",
+        "voice": "assets/voice/true/voice_049.wav",
+        "next": "s3_13"
+    },
+    "s3_13": {
+        "speaker": "",
+        "text": "（先輩が袖を通すと、案の定、サイズが全く合っていない）",
+        "next": "s3_14"
+    },
+    "s3_14": {
+        "speaker": "",
+        "text": "（袖から手が出ず、裾は膝まで隠れて、まるで子供がお父さんのスーツを着ているみたいだ）",
+        "next": "s3_15"
+    },
+    "s3_15": {
+        "speaker": "つむぎ",
+        "text": "「……大きいね、キミの服」",
+        "chara": "assets/chara/9.png",
+        "voice": "assets/voice/true/voice_050.wav",
+        "next": "s3_16"
+    },
+    "s3_16": {
+        "speaker": "つむぎ",
+        "text": "「ボクが着ると……ミノムシみたいだ」",
+        "chara": "assets/chara/18.png",
+        "voice": "assets/voice/true/voice_051.wav",
+        "next": "s3_17"
+    },
+    "s3_17": {
+        "speaker": "",
+        "text": "（ダボダボの袖をパタパタさせて、自嘲気味に笑う）",
+        "next": "s3_18"
+    },
+    "s3_18": {
+        "speaker": "",
+        "text": "（そして、少しだけ襟元に顔を埋めて、小さく鼻を鳴らした）",
+        "next": "s3_19"
+    },
+    "s3_19": {
+        "speaker": "つむぎ",
+        "text": "「……ん。……なんか、落ち着く匂いがする」",
+        "chara": "assets/chara/5.png",
+        "voice": "assets/voice/true/voice_052.wav",
+        "next": "s3_20"
+    },
+    "s3_20": {
+        "speaker": "つむぎ",
+        "text": "「コーヒーと……キミの匂いだ」",
+        "chara": "assets/chara/17.png",
+        "voice": "assets/voice/true/voice_053.wav",
+        "next": "q3"
+    },
+    "q3": {
+        "choices": [
+            {
+                "text": "「可愛いです」と素直に褒める",
+                "next": "b3a_01"
+            },
+            {
+                "text": "「てるてる坊主みたいですね」とからかう",
+                "next": "b3b_01"
+            },
+            {
+                "text": "「すみません、クリーニング出してなくて……」と謝る",
+                "next": "b3c_01"
+            },
+            {
+                "text": "「俺も中に入っていいですか？ 二人で温まりましょう」",
+                "next": "t3_01",
+                "isCorrect": true
+            }
+        ]
+    },
+    "b3a_01": {
+        "speaker": "つむぎ",
+        "text": "「……可愛いって……」",
+        "chara": "assets/chara/5.png",
+        "voice": "assets/voice/bad/bad_03_01_01.wav",
+        "next": "b3a_02"
+    },
+    "b3a_02": {
+        "speaker": "",
+        "text": "（一瞬嬉しそうな顔をしたが、すぐに真面目な仕事モードの顔に戻る）",
+        "next": "b3a_03"
+    },
+    "b3a_03": {
+        "speaker": "つむぎ",
+        "text": "「……ごめんね、ありがとう」",
+        "chara": "assets/chara/12.png",
+        "voice": "assets/voice/bad/bad_03_01_02.wav",
+        "next": "b3a_04"
+    },
+    "b3a_04": {
+        "speaker": "つむぎ",
+        "text": "「キミに気を使わせるなんて、先輩失格だね」",
+        "chara": "assets/chara/15.png",
+        "voice": "assets/voice/bad/bad_03_01_03.wav",
+        "next": "b3a_05"
+    },
+    "b3a_05": {
+        "speaker": "つむぎ",
+        "text": "「あと30分くらいで終わると思うから」",
+        "voice": "assets/voice/bad/bad_03_01_04.wav",
+        "next": "b3a_06"
+    },
+    "b3a_06": {
+        "speaker": "つむぎ",
+        "text": "「……終わったら、すぐ返すよ」",
+        "voice": "assets/voice/bad/bad_03_01_05.wav",
+        "isEnd": true,
+        "isGameOver": true
+    },
+    "b3b_01": {
+        "speaker": "つむぎ",
+        "text": "「……は？」",
+        "chara": "assets/chara/13.png",
+        "voice": "assets/voice/bad/bad_03_02_01.wav",
+        "next": "b3b_02"
+    },
+    "b3b_02": {
+        "speaker": "",
+        "text": "（袖を振るのを止める音）",
+        "next": "b3b_03"
+    },
+    "b3b_03": {
+        "speaker": "つむぎ",
+        "text": "「……てるてる坊主……？」",
+        "chara": "assets/chara/8.png",
+        "voice": "assets/voice/bad/bad_03_02_02.wav",
+        "next": "b3b_04"
+    },
+    "b3b_04": {
+        "speaker": "つむぎ",
+        "text": "「つまり、ボクは吊るされる運命ってことかい？」",
+        "voice": "assets/voice/bad/bad_03_02_03.wav",
+        "next": "b3b_05"
+    },
+    "b3b_05": {
+        "speaker": "つむぎ",
+        "text": "「……デリカシーのない後輩には、天罰が必要だね」",
+        "chara": "assets/chara/10.png",
+        "voice": "assets/voice/bad/bad_03_02_04.wav",
+        "isEnd": true,
+        "isGameOver": true
+    },
+    "b3c_01": {
+        "speaker": "つむぎ",
+        "text": "「……む」",
+        "chara": "assets/chara/19.png",
+        "voice": "assets/voice/bad/bad_03_03_01.wav",
+        "next": "b3c_02"
+    },
+    "b3c_02": {
+        "speaker": "",
+        "text": "（自分の袖をクンクンと嗅ぐ）",
+        "next": "b3c_03"
+    },
+    "b3c_03": {
+        "speaker": "つむぎ",
+        "text": "「……別に、変な匂いはしないけど」",
+        "chara": "assets/chara/12.png",
+        "voice": "assets/voice/bad/bad_03_03_02.wav",
+        "next": "b3c_04"
+    },
+    "b3c_04": {
+        "speaker": "つむぎ",
+        "text": "「むしろ……落ち着く匂いなんだけど……」",
+        "chara": "assets/chara/5.png",
+        "voice": "assets/voice/bad/bad_03_03_03.wav",
+        "next": "b3c_05"
+    },
+    "b3c_05": {
+        "speaker": "",
+        "text": "（少し寂しそうな顔をして、ジャケットを脱ぎ始める）",
+        "next": "b3c_06"
+    },
+    "b3c_06": {
+        "speaker": "つむぎ",
+        "text": "「ま、キミが気にするなら返しておくよ」",
+        "chara": "assets/chara/15.png",
+        "voice": "assets/voice/bad/bad_03_03_04.wav",
+        "next": "b3c_07"
+    },
+    "b3c_07": {
+        "speaker": "つむぎ",
+        "text": "「……ボクが汚いみたいだしね」",
+        "chara": "assets/chara/13.png",
+        "voice": "assets/voice/bad/bad_03_03_05.wav",
+        "isEnd": true,
+        "isGameOver": true
+    },
+    "t3_01": {
+        "speaker": "俺",
+        "text": "「俺も中に入っていいですか？ 二人で温まりましょう」",
+        "next": "t3_02"
+    },
+    "t3_02": {
+        "speaker": "つむぎ",
+        "text": "「……っ」",
+        "chara": "assets/chara/6.png",
+        "voice": "assets/voice/true/voice_054.wav",
+        "next": "t3_03"
+    },
+    "t3_03": {
+        "speaker": "",
+        "text": "（キーボードを叩く手が止まる）",
+        "next": "t3_04"
+    },
+    "t3_04": {
+        "speaker": "",
+        "text": "（先輩は呆れたように、でもどこか優しげにフッと笑った）",
+        "next": "t3_05"
+    },
+    "t3_05": {
+        "speaker": "つむぎ",
+        "text": "「……キミってやつは」",
+        "chara": "assets/chara/14.png",
+        "voice": "assets/voice/true/voice_055.wav",
+        "next": "t3_06"
+    },
+    "t3_06": {
+        "speaker": "つむぎ",
+        "text": "「セクハラまがいの発言だけど……不思議と嫌な気はしないね」",
+        "chara": "assets/chara/18.png",
+        "voice": "assets/voice/true/voice_056.wav",
+        "next": "t3_07"
+    },
+    "t3_07": {
+        "speaker": "つむぎ",
+        "text": "「……キミのそういう軽口も、こういう時間には少しいいリラックス効果になるよ」",
+        "chara": "assets/chara/11.png",
+        "voice": "assets/voice/true/voice_057.wav",
+        "next": "t3_08"
+    },
+    "t3_08": {
+        "speaker": "つむぎ",
+        "text": "「……一緒に入るのは、また今度ね」",
+        "chara": "assets/chara/18.png",
+        "voice": "assets/voice/true/voice_058.wav",
+        "next": "t3_09"
+    },
+    "t3_09": {
+        "speaker": "つむぎ",
+        "text": "「今は……仕事、終わらせちゃおうか」",
+        "chara": "assets/chara/10.png",
+        "voice": "assets/voice/true/voice_059.wav",
+        "next": "t3_10"
+    },
+    "t3_10": {
+        "speaker": "",
+        "text": "（拒絶されなかった。むしろ、少し期待を持たせるような口ぶりで、先輩はモニターに向き直った）",
+        "next": "s4_01"
+    },
+    "s4_01": {
+        "bgImage": "assets/bg/street_night.jpg",
+        "sceneId": "scene4",
+        "speaker": "俺",
+        "text": "(それから30分後。無事に仕事を終えた俺たちは、帰路についていた)",
+        "next": "s4_02"
+    },
+    "s4_02": {
+        "speaker": "つむぎ",
+        "text": "「……うぅ、やっぱり外は寒いね」",
+        "chara": "assets/chara/15.png",
+        "voice": "assets/voice/true/voice_060.wav",
+        "next": "s4_03"
+    },
+    "s4_03": {
+        "speaker": "つむぎ",
+        "text": "「さっきまでジャケットがあったから、余計に堪えるよ」",
+        "voice": "assets/voice/true/voice_061.wav",
+        "next": "s4_04"
+    },
+    "s4_04": {
+        "speaker": "",
+        "text": "（マフラーに顔を埋めて、身を縮こまらせるつむぎ先輩）",
+        "next": "s4_05"
+    },
+    "s4_05": {
+        "speaker": "",
+        "text": "（ふと、先輩が立ち止まる）",
+        "next": "s4_06"
+    },
+    "s4_06": {
+        "speaker": "つむぎ",
+        "text": "「……ほら」",
+        "chara": "assets/chara/5.png",
+        "voice": "assets/voice/true/voice_062.wav",
+        "next": "s4_se01"
+    },
+    "s4_se01": {
+        "speaker": "",
+        "text": "スッ",
+        "next": "s4_07"
+    },
+    "s4_07": {
+        "speaker": "俺",
+        "text": "「え？」",
+        "next": "s4_08"
+    },
+    "s4_08": {
+        "speaker": "つむぎ",
+        "text": "「……寒いんだろ、キミも」",
+        "chara": "assets/chara/13.png",
+        "voice": "assets/voice/true/voice_063.wav",
+        "next": "s4_09"
+    },
+    "s4_09": {
+        "speaker": "",
+        "text": "（先輩は自分の首に巻いていた長いマフラーを半分ほど解き、俺の首に巻き付けてきた）",
+        "next": "s4_10"
+    },
+    "s4_10": {
+        "speaker": "つむぎ",
+        "text": "「……マフラー、半分貸してあげる」",
+        "chara": "assets/chara/17.png",
+        "voice": "assets/voice/true/voice_064.wav",
+        "next": "s4_11"
+    },
+    "s4_11": {
+        "speaker": "つむぎ",
+        "text": "「……さっきの、貸しね」",
+        "voice": "assets/voice/true/voice_065.wav",
+        "next": "s4_se02"
+    },
+    "s4_se02": {
+        "speaker": "",
+        "text": "ギュッ",
+        "next": "s4_12"
+    },
+    "s4_12": {
+        "speaker": "",
+        "text": "（身長差があるから、俺が少し屈まないとマフラーが届かない）",
+        "next": "s4_13"
+    },
+    "s4_13": {
+        "speaker": "",
+        "text": "（必然的に、俺たちの顔は至近距離になる）",
+        "next": "s4_14"
+    },
+    "s4_14": {
+        "speaker": "つむぎ",
+        "text": "「……これで、おあいこ」",
+        "chara": "assets/chara/1.png",
+        "voice": "assets/voice/true/voice_066.wav",
+        "next": "s4_15"
+    },
+    "s4_15": {
+        "speaker": "",
+        "text": "（マフラー越しに見える先輩の顔は、夜の寒さのせいか、それとも別の理由か……ほんのりと赤く染まっていた）",
+        "next": "s4_16"
+    },
+    "s4_16": {
+        "speaker": "俺",
+        "text": "「(一つのマフラーで繋がった、俺と先輩)」",
+        "next": "s4_17"
+    },
+    "s4_17": {
+        "speaker": "俺",
+        "text": "「(この温もりがあれば、凍えるような夜道も、どこまでも歩いて行けそうだった)」",
+        "isEnd": true,
+        "isGameOver": false
+    }
+}

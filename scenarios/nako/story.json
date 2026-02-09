@@ -1,0 +1,2151 @@
+{
+    "start": {
+        "bgImage": "assets/bg/nako/summer_road.png",
+        "sceneId": "scene1",
+        "next": "s1_prologue_01"
+    },
+    "s1_prologue_01": {
+        "speaker": "",
+        "text": "（真夏の田舎町）",
+        "next": "s1_prologue_02"
+    },
+    "s1_prologue_02": {
+        "speaker": "",
+        "text": "（空気が熱で膨らむような環境音）",
+        "next": "s1_prologue_03"
+    },
+    "s1_prologue_03": {
+        "speaker": "俺",
+        "text": "「『夏休み』って言葉には、もう少し風鈴とか、麦茶とか、そういう優しさが付属してると思ってた」",
+        "next": "s1_prologue_04"
+    },
+    "s1_prologue_04": {
+        "speaker": "俺",
+        "text": "「現実は、熱と光の暴力だ」",
+        "next": "s1_prologue_06"
+    },
+    "s1_prologue_06": {
+        "speaker": "",
+        "text": "（歩くだけで体力が削れていく）",
+        "next": "s1_prologue_07"
+    },
+    "s1_prologue_07": {
+        "speaker": "",
+        "text": "（思考も、感情も、溶けていく）",
+        "next": "s1_prologue_09"
+    },
+    "s1_prologue_09": {
+        "speaker": "",
+        "text": "（その『帰るだけの道』ですら、今日はやけに長い）",
+        "next": "s1_prologue_10"
+    },
+    "s1_prologue_10": {
+        "speaker": "",
+        "text": "（世界が静かすぎて、逆に不穏だ）",
+        "next": "s1_prologue_11"
+    },
+    "s1_prologue_11": {
+        "speaker": "",
+        "text": "（……そして）",
+        "next": "s1_prologue_12"
+    },
+    "s1_prologue_12": {
+        "speaker": "",
+        "text": "（俺はまだ知らなかった）",
+        "next": "s1_prologue_13"
+    },
+    "s1_prologue_13": {
+        "speaker": "",
+        "text": "（この夏が『ただ暑いだけ』で終わるはずがないってことを）",
+        "next": "s1_01"
+    },
+    "s1_01": {
+        "speaker": "",
+        "text": "（真夏の田舎。脳が揺れるほどけたたましいセミの声）",
+        "next": "s1_02"
+    },
+    "s1_02": {
+        "speaker": "",
+        "text": "「ミーンミンミン……」",
+        "next": "s1_03"
+    },
+    "s1_03": {
+        "speaker": "",
+        "text": "（ジリジリと陽炎が揺れるような、熱気の音）",
+        "next": "s1_06"
+    },
+    "s1_06": {
+        "speaker": "俺",
+        "text": "「……帰ったら、エアコンの設定温度を18度にして冬眠しよう。そうしよう」",
+        "next": "s1_07"
+    },
+    "s1_07": {
+        "speaker": "",
+        "text": "ペタペタ……",
+        "next": "s1_08"
+    },
+    "s1_08": {
+        "speaker": "???",
+        "text": "「あ、あのー！」",
+        "faceId": 21,
+        "next": "s1_09"
+    },
+    "s1_09": {
+        "speaker": "俺",
+        "text": "「……？」",
+        "faceId": 21,
+        "next": "s1_10"
+    },
+    "s1_10": {
+        "speaker": "",
+        "text": "（誰もいない。熱中症か？ ついに脳がセミの鳴き声を人間の言葉に変換し始めたか）",
+        "next": "s1_11"
+    },
+    "s1_11": {
+        "speaker": "謎の声",
+        "text": "「ここ！ こ・こ・で・す！ 足元！」",
+        "next": "s1_12",
+        "faceId": 22
+    },
+    "s1_12": {
+        "speaker": "俺",
+        "text": "「……足元？」",
+        "next": "s1_13",
+        "faceId": 22
+    },
+    "s1_13": {
+        "speaker": "",
+        "text": "（視線を下に向ける）",
+        "next": "s1_14",
+        "faceId": 22
+    },
+    "s1_14": {
+        "speaker": "",
+        "text": "（そこには、アスファルトの裂け目から無理やり顔を出している、一輪のひまわりがあった）",
+        "next": "s1_15",
+        "faceId": 22
+    },
+    "s1_15": {
+        "speaker": "ひまわり（なこ）",
+        "text": "「ふぅ、やっと気づいてくれましたね！ 人間さん！」",
+        "next": "s1_16",
+        "faceId": 24
+    },
+    "s1_16": {
+        "speaker": "俺",
+        "text": "「……なるほど。新手のドッキリか、俺の気が触れたか。どちらにせよ厄介だな」",
+        "next": "s1_17",
+        "faceId": 24
+    },
+    "s1_17": {
+        "speaker": "ひまわり（なこ）",
+        "text": "「違いますよぉ！ 私はひまわり！ 正真正銘、花の妖精……的なやつです！」",
+        "next": "s1_18",
+        "faceId": 22
+    },
+    "s1_18": {
+        "speaker": "ひまわり（なこ）",
+        "text": "「見ての通り、発芽する場所を間違えちゃいまして……」",
+        "next": "s1_19",
+        "faceId": 23
+    },
+    "s1_19": {
+        "speaker": "ひまわり（なこ）",
+        "text": "「コンクリート、固いんです！ 熱いんです！ 根っこが広げられなくて、このままだと枯れちゃうんです！」",
+        "next": "s1_20",
+        "faceId": 23
+    },
+    "s1_20": {
+        "speaker": "",
+        "text": "（茎をくねらせて必死に訴えてくる。葉っぱが暑さで少ししなびているのが哀れだ）",
+        "next": "s1_21",
+        "faceId": 23
+    },
+    "s1_21": {
+        "speaker": "俺",
+        "text": "「自業自得だろ。なんでこんな硬い場所選んだんだよ。土の上に行けよ」",
+        "next": "s1_22",
+        "faceId": 23
+    },
+    "s1_22": {
+        "speaker": "ひまわり（なこ）",
+        "text": "「種だった頃の私に言ってくださいよぉ！」",
+        "next": "s1_23",
+        "faceId": 21
+    },
+    "s1_23": {
+        "speaker": "ひまわり（なこ）",
+        "text": "「とにかく！ お水！ あと、もっとふかふかの土！ お願いします！」",
+        "next": "s1_24",
+        "faceId": 24
+    },
+    "s1_24": {
+        "speaker": "ひまわり（なこ）",
+        "text": "「このままだと私、ドライフラワーになっちゃいますぅぅ！」",
+        "next": "s1_25",
+        "faceId": 23
+    },
+    "s1_25": {
+        "speaker": "俺",
+        "text": "（喋る花に命乞いをされる夏休みなんて、絵日記に書いたら精神鑑定行きだ）",
+        "next": "s1_26",
+        "faceId": 23
+    },
+    "s1_26": {
+        "speaker": "",
+        "text": "（……だがまあ、このまま見過ごして、夢枕に立たれても寝覚めが悪い）",
+        "next": "s1_27",
+        "faceId": 23
+    },
+    "s1_27": {
+        "speaker": "俺",
+        "text": "「……ったく。ジュース代で善行ができたとおもえばいいか」",
+        "next": "s1_28",
+        "faceId": 23
+    },
+    "s1_28": {
+        "speaker": "",
+        "text": "（カバンからペットボトルの水を取り出す）",
+        "next": "s1_29",
+        "faceId": 23
+    },
+    "s1_29": {
+        "speaker": "",
+        "text": "チョロチョロ……",
+        "next": "s1_30",
+        "faceId": 23
+    },
+    "s1_30": {
+        "speaker": "",
+        "text": "バシャバシャ",
+        "next": "s1_31",
+        "faceId": 23
+    },
+    "s1_31": {
+        "speaker": "ひまわり（なこ）",
+        "text": "「んんっ！ はわぁ……！ 生き返るぅ……！」",
+        "next": "s1_32",
+        "faceId": 22
+    },
+    "s1_32": {
+        "speaker": "ひまわり（なこ）",
+        "text": "「お水……冷たくて美味しい……！」",
+        "next": "s1_33",
+        "faceId": 22
+    },
+    "s1_33": {
+        "speaker": "俺",
+        "text": "「おい、あんまり変な声出すな。通報されたらどうする」",
+        "next": "s1_34",
+        "faceId": 22
+    },
+    "s1_34": {
+        "speaker": "俺",
+        "text": "「……で？ ここから出して欲しいんだったか？」",
+        "next": "s1_35",
+        "faceId": 22
+    },
+    "s1_35": {
+        "speaker": "ひまわり（なこ）",
+        "text": "「はい！ 優しく引っこ抜いて、あそこの花壇に移してください！」",
+        "next": "s1_36",
+        "faceId": 24
+    },
+    "s1_36": {
+        "speaker": "俺",
+        "text": "「注文の多い雑草だな……。根っこ千切れても文句言うなよ」",
+        "next": "s1_37",
+        "faceId": 24
+    },
+    "s1_37": {
+        "speaker": "",
+        "text": "（コンクリートの隙間に指を入れる）",
+        "next": "s1_38",
+        "faceId": 24
+    },
+    "s1_38": {
+        "speaker": "",
+        "text": "グッ",
+        "next": "s1_39",
+        "faceId": 24
+    },
+    "s1_39": {
+        "speaker": "",
+        "text": "ズボッ",
+        "next": "s1_40",
+        "faceId": 24
+    },
+    "s1_40": {
+        "speaker": "俺",
+        "text": "「……よい、しょっと」",
+        "next": "s1_41",
+        "faceId": 24
+    },
+    "s1_41": {
+        "speaker": "",
+        "text": "パァァァッ！",
+        "next": "s1_42",
+        "reaction": {
+            "type": "flash"
+        }
+    },
+    "s1_42": {
+        "speaker": "俺",
+        "text": "「うおっ！？ 眩しっ……！？」",
+        "next": "s2_start"
+    },
+    "s2_start": {
+        "bgImage": "assets/bg/nako/summer_road.png",
+        "sceneId": "scene2",
+        "next": "s2_01"
+    },
+    "s2_01": {
+        "speaker": "",
+        "text": "（光が収まると、そこには鮮やかな黄色の衣装を身にまとった少女が立っていた）",
+        "next": "s2_02",
+        "faceId": 4
+    },
+    "s2_02": {
+        "speaker": "",
+        "text": "（太陽のような明るさと、少し幼い容姿。ひまわりの化身そのものだ）",
+        "next": "s2_03",
+        "faceId": 4
+    },
+    "s2_03": {
+        "speaker": "なこ",
+        "text": "「…………」",
+        "next": "s2_04",
+        "faceId": 4
+    },
+    "s2_04": {
+        "speaker": "俺",
+        "text": "「…………」",
+        "next": "s2_05",
+        "faceId": 4
+    },
+    "s2_05": {
+        "speaker": "なこ",
+        "text": "「……パァッ！！」",
+        "next": "s2_06",
+        "faceId": 1
+    },
+    "s2_06": {
+        "speaker": "",
+        "text": "（満面の笑み。背景に効果音が見えそうなほど眩しい）",
+        "next": "s2_07",
+        "faceId": 1
+    },
+    "s2_07": {
+        "speaker": "なこ",
+        "text": "「あーりーがーとーごーざーいーまーすー！！」",
+        "next": "s2_08",
+        "faceId": 1
+    },
+    "s2_08": {
+        "speaker": "なこ",
+        "text": "「人間さん！ いえ、ご主人様！！」",
+        "next": "s2_08b",
+        "faceId": 3
+    },
+    "s2_08b": {
+        "speaker": "",
+        "text": "（勢いよく抱きついてくる）",
+        "next": "s2_09",
+        "faceId": 3
+    },
+    "s2_09": {
+        "speaker": "",
+        "text": "ガバッ！",
+        "next": "s2_10",
+        "faceId": 3
+    },
+    "s2_10": {
+        "speaker": "俺",
+        "text": "「ぐえっ！？ ……ちょ、離れろ！ 暑苦しい！」",
+        "next": "s2_11",
+        "faceId": 3
+    },
+    "s2_11": {
+        "speaker": "なこ",
+        "text": "「ひまわりですから！ 太陽の申し子ですから、基本体温は高めです！」",
+        "next": "s2_12",
+        "faceId": 17
+    },
+    "s2_12": {
+        "speaker": "なこ",
+        "text": "「いやぁ、助かりました！ まさか本当に助けてくれるなんて！」",
+        "next": "s2_13",
+        "faceId": 11
+    },
+    "s2_13": {
+        "speaker": "なこ",
+        "text": "「私、日向なこっていいます！ なこって呼んでください！」",
+        "next": "s2_14",
+        "faceId": 3
+    },
+    "s2_14": {
+        "speaker": "俺",
+        "text": "「状況が飲み込めないんだが……。お前、さっきの花か？」",
+        "next": "s2_15",
+        "faceId": 3
+    },
+    "s2_15": {
+        "speaker": "なこ",
+        "text": "「はい！ ご主人様の愛（お水）を受けて、人の姿になれました！」",
+        "next": "s2_16",
+        "faceId": 17
+    },
+    "s2_16": {
+        "speaker": "なこ",
+        "text": "「これはもう運命です！ ディスティニーです！」",
+        "next": "s2_17",
+        "faceId": 3
+    },
+    "s2_17": {
+        "speaker": "なこ",
+        "text": "「私、今日からご主人様のために生きますね！ 家事でも戦闘でも光合成でもなんでもやります！」",
+        "next": "s2_18",
+        "faceId": 10
+    },
+    "s2_18": {
+        "speaker": "俺",
+        "text": "「戦闘と光合成はいらないかな。あと家事も期待できそうにない」",
+        "next": "s2_19",
+        "faceId": 13
+    },
+    "s2_19": {
+        "speaker": "俺",
+        "text": "「……はぁ。それで？ これからどうするつもりだ」",
+        "next": "s2_20",
+        "faceId": 13
+    },
+    "s2_20": {
+        "speaker": "なこ",
+        "text": "「決まってるじゃないですか！ ご主人様の家に植えてください！」",
+        "next": "s2_21",
+        "faceId": 3
+    },
+    "s2_21": {
+        "speaker": "なこ",
+        "text": "「私、一途なんです。一度受けた恩は、枯れるまで……いいえ、種になるまで忘れません！」",
+        "next": "s2_22",
+        "faceId": 11
+    },
+    "s2_22": {
+        "speaker": "",
+        "text": "（キラキラした目で迫ってくるなこ。その姿は、まるで尻尾を振る大型犬のようだ）",
+        "next": "s2_23",
+        "faceId": 3
+    },
+    "s2_23": {
+        "speaker": "俺",
+        "text": "（拾ったのは花じゃなくて、とんでもない台風の目だったらしい）",
+        "next": "s2_24",
+        "faceId": 3
+    },
+    "s2_24": {
+        "speaker": "",
+        "text": "（……さて、どう切り返すべきか）",
+        "next": "choice1",
+        "faceId": 3
+    },
+    "choice1": {
+        "speaker": "",
+        "text": "",
+        "choices": [
+            {
+                "text": "「うちは日当たりが悪いから、あっちの公園に植えてやるよ」",
+                "next": "bad1a_01"
+            },
+            {
+                "text": "「……仕方ない。枯れるまで面倒見てやるよ」",
+                "next": "bad1b_01"
+            },
+            {
+                "text": "「除草剤持ってくるから待ってろ」",
+                "next": "t1_01"
+            },
+            {
+                "text": "「とりあえず、そのフリフリの服はどうなってるんだ？」",
+                "next": "bad1c_01"
+            }
+        ],
+        "faceId": 3
+    },
+    "bad1a_01": {
+        "speaker": "俺",
+        "text": "「うちは日当たりが悪いから、あっちの公園に植えてやるよ」",
+        "next": "bad1a_02",
+        "faceId": 3
+    },
+    "bad1a_02": {
+        "speaker": "なこ",
+        "text": "「えっ、公園？ ……わ、わぁ！ あっちの土、ふかふかそうです！」",
+        "next": "bad1a_02b",
+        "faceId": 3,
+        "voice": "scenarios/nako/assets/voice/bad/bad_01_01_01.wav"
+    },
+    "bad1a_02b": {
+        "speaker": "",
+        "text": "ひょいっ",
+        "next": "bad1a_03",
+        "faceId": 3
+    },
+    "bad1a_03": {
+        "speaker": "",
+        "text": "（抱き上げて運ぶ）",
+        "next": "bad1a_04",
+        "faceId": 3
+    },
+    "bad1a_04": {
+        "speaker": "",
+        "text": "ズボッ！",
+        "next": "bad1a_04b",
+        "faceId": 3
+    },
+    "bad1a_04b": {
+        "speaker": "",
+        "text": "（足から柔らかい地面に埋めて差し上げた）",
+        "next": "bad1a_05",
+        "faceId": 3
+    },
+    "bad1a_05": {
+        "speaker": "俺",
+        "text": "「よし。じゃあな、達者で」",
+        "next": "bad1a_06",
+        "faceId": 3
+    },
+    "bad1a_06": {
+        "speaker": "",
+        "text": "パンパン",
+        "next": "bad1a_07",
+        "faceId": 3
+    },
+    "bad1a_07": {
+        "speaker": "なこ",
+        "text": "「…………」",
+        "next": "bad1a_08",
+        "faceId": 20
+    },
+    "bad1a_08": {
+        "speaker": "なこ",
+        "text": "「……っておーい！！」",
+        "next": "bad1a_09",
+        "faceId": 8,
+        "voice": "scenarios/nako/assets/voice/bad/bad_01_01_02.wav"
+    },
+    "bad1a_09": {
+        "speaker": "なこ",
+        "text": "「ほんとにこのままにして帰るんですか！？」",
+        "next": "bad1a_10",
+        "faceId": 5,
+        "voice": "scenarios/nako/assets/voice/bad/bad_01_01_03.wav"
+    },
+    "bad1a_10": {
+        "speaker": "なこ",
+        "text": "「待って！ 虫！ 虫が寄ってきますぅぅ！ ご主人様ぁーッ！？」",
+        "next": "bad1a_11",
+        "faceId": 7,
+        "voice": "scenarios/nako/assets/voice/bad/bad_01_01_04.wav"
+    },
+    "bad1a_11": {
+        "speaker": "",
+        "text": "（俺は振り返らなかった。自然は厳しいのだ）",
+        "next": "bad1a_end",
+        "faceId": 7
+    },
+    "bad1a_end": {
+        "speaker": "",
+        "text": "",
+        "isEnd": true,
+        "isGameOver": true
+    },
+    "bad1b_01": {
+        "speaker": "俺",
+        "text": "「……仕方ない。枯れるまで面倒見てやるよ」",
+        "next": "bad1b_02",
+        "faceId": 3
+    },
+    "bad1b_02": {
+        "speaker": "なこ",
+        "text": "「えっ！」",
+        "next": "bad1b_03",
+        "faceId": 14,
+        "voice": "scenarios/nako/assets/voice/bad/bad_01_02_01.wav"
+    },
+    "bad1b_03": {
+        "speaker": "",
+        "text": "（なこの目が潤み、感動でわなわなと震えだす）",
+        "next": "bad1b_04",
+        "faceId": 3
+    },
+    "bad1b_04": {
+        "speaker": "なこ",
+        "text": "「ほんとですか！ ありがとうございます！」",
+        "next": "bad1b_05",
+        "faceId": 1,
+        "voice": "scenarios/nako/assets/voice/bad/bad_01_02_02.wav"
+    },
+    "bad1b_05": {
+        "speaker": "なこ",
+        "text": "「一生ついていきます！ ご主人様！」",
+        "next": "bad1b_06",
+        "faceId": 11,
+        "voice": "scenarios/nako/assets/voice/bad/bad_01_02_03.wav"
+    },
+    "bad1b_06": {
+        "speaker": "俺",
+        "text": "「……まあ、花の一生なんて短いもんだろ」",
+        "next": "bad1b_07",
+        "faceId": 11
+    },
+    "bad1b_07": {
+        "speaker": "俺",
+        "text": "「ちなみに、あとどれくらいで枯れるんだ？」",
+        "next": "bad1b_08",
+        "faceId": 11
+    },
+    "bad1b_08": {
+        "speaker": "なこ",
+        "text": "「えっとですね……妖精化したので……」",
+        "next": "bad1b_09",
+        "faceId": 13,
+        "voice": "scenarios/nako/assets/voice/bad/bad_01_02_04.wav"
+    },
+    "bad1b_09": {
+        "speaker": "なこ",
+        "text": "「だいたい50年くらいかと！」",
+        "next": "bad1b_10",
+        "faceId": 17,
+        "voice": "scenarios/nako/assets/voice/bad/bad_01_02_05.wav"
+    },
+    "bad1b_10": {
+        "speaker": "俺",
+        "text": "「…………」",
+        "next": "bad1b_11",
+        "faceId": 17
+    },
+    "bad1b_11": {
+        "speaker": "",
+        "text": "（50年……。金婚式までいける長さだ）",
+        "next": "bad1b_12",
+        "faceId": 17
+    },
+    "bad1b_12": {
+        "speaker": "俺",
+        "text": "「……よし、逃げよう。このままだと俺の青春が終わる」",
+        "next": "bad1b_13",
+        "faceId": 17
+    },
+    "bad1b_13": {
+        "speaker": "",
+        "text": "タッ！",
+        "next": "bad1b_14",
+        "faceId": 17
+    },
+    "bad1b_14": {
+        "speaker": "なこ",
+        "text": "「あ！ 待ってくださいご主人様！ 誓いのキスがまだですぅ～！」",
+        "next": "bad1b_15",
+        "faceId": 10,
+        "voice": "scenarios/nako/assets/voice/bad/bad_01_02_06.wav"
+    },
+    "bad1b_15": {
+        "speaker": "",
+        "text": "（追いかけてくる足音が、地響きのように聞こえた）",
+        "next": "bad1b_end",
+        "faceId": 10
+    },
+    "bad1b_end": {
+        "speaker": "",
+        "text": "",
+        "isEnd": true,
+        "isGameOver": true
+    },
+    "bad1c_01": {
+        "speaker": "俺",
+        "text": "「とりあえず、そのフリフリの服はどうなってるんだ？」",
+        "next": "bad1c_02",
+        "faceId": 3
+    },
+    "bad1c_02": {
+        "speaker": "",
+        "text": "（服をつまもうとする）",
+        "next": "bad1c_03",
+        "faceId": 3
+    },
+    "bad1c_03": {
+        "speaker": "なこ",
+        "text": "「ひゃうっ！？」",
+        "next": "bad1c_04",
+        "faceId": 16,
+        "voice": "scenarios/nako/assets/voice/bad/bad_01_04_01.wav"
+    },
+    "bad1c_04": {
+        "speaker": "なこ",
+        "text": "「ど、どこ触ってるんですか！？」",
+        "next": "bad1c_05",
+        "faceId": 8,
+        "voice": "scenarios/nako/assets/voice/bad/bad_01_04_02.wav"
+    },
+    "bad1c_05": {
+        "speaker": "俺",
+        "text": "「いや、構造が気になって。これ、花びらか？」",
+        "next": "bad1c_06",
+        "faceId": 8
+    },
+    "bad1c_06": {
+        "speaker": "俺",
+        "text": "「めくったらどうなるんだ？」",
+        "next": "bad1c_07",
+        "faceId": 8
+    },
+    "bad1c_07": {
+        "speaker": "なこ",
+        "text": "「め、めくったら……蜜が出ちゃいます！」",
+        "next": "bad1c_08",
+        "faceId": 13,
+        "voice": "scenarios/nako/assets/voice/bad/bad_01_04_03.wav"
+    },
+    "bad1c_08": {
+        "speaker": "なこ",
+        "text": "「……って、セクハラです！ 変態！ 受粉マニア！」",
+        "next": "bad1c_09",
+        "faceId": 8,
+        "voice": "scenarios/nako/assets/voice/bad/bad_01_04_04.wav"
+    },
+    "bad1c_09": {
+        "speaker": "",
+        "text": "パァン！",
+        "next": "bad1c_10",
+        "faceId": 15
+    },
+    "bad1c_10": {
+        "speaker": "俺",
+        "text": "「ぐはっ……！」",
+        "next": "bad1c_11",
+        "faceId": 15
+    },
+    "bad1c_11": {
+        "speaker": "",
+        "text": "（星が見えた。ひまわりの平手打ちは太陽の如く熱かった……）",
+        "next": "bad1c_end",
+        "faceId": 15
+    },
+    "bad1c_end": {
+        "speaker": "",
+        "text": "",
+        "isEnd": true,
+        "isGameOver": true
+    },
+    "t1_01": {
+        "speaker": "俺",
+        "text": "「……除草剤持ってくるから待ってろ」",
+        "next": "t1_02",
+        "faceId": 3
+    },
+    "t1_02": {
+        "speaker": "",
+        "text": "（クルッと背を向ける）",
+        "next": "t1_03",
+        "faceId": 3
+    },
+    "t1_03": {
+        "speaker": "なこ",
+        "text": "「除草剤……？」",
+        "next": "t1_04",
+        "faceId": 13
+    },
+    "t1_04": {
+        "speaker": "",
+        "text": "（なこは首を傾げ、パァッと顔を輝かせた）",
+        "next": "t1_05",
+        "faceId": 3
+    },
+    "t1_05": {
+        "speaker": "なこ",
+        "text": "「それってなんですか！ 美味しいお水ですか！？」",
+        "next": "t1_06",
+        "faceId": 3
+    },
+    "t1_06": {
+        "speaker": "なこ",
+        "text": "「栄養剤的なやつですね！？ さすがご主人様、太っ腹です！」",
+        "next": "t1_07",
+        "faceId": 17
+    },
+    "t1_07": {
+        "speaker": "なこ",
+        "text": "「一緒に行きます！ 早く飲ませてください！」",
+        "next": "t1_08",
+        "faceId": 3
+    },
+    "t1_08": {
+        "speaker": "",
+        "text": "トテトテ……",
+        "next": "t1_09",
+        "faceId": 3
+    },
+    "t1_09": {
+        "speaker": "俺",
+        "text": "「……おい、ついてくるなよ」",
+        "next": "t1_10",
+        "faceId": 3
+    },
+    "t1_10": {
+        "speaker": "なこ",
+        "text": "「嫌です！ 私の根っこはもう、ご主人様にロックオンしましたから！」",
+        "next": "t1_11",
+        "faceId": 10
+    },
+    "t1_11": {
+        "speaker": "俺",
+        "text": "（……純粋すぎて、脅し文句が通じない）",
+        "next": "t1_12",
+        "faceId": 10
+    },
+    "t1_12": {
+        "speaker": "",
+        "text": "（それに、よく考えたら……うちに除草剤なんて置いてなかったな）",
+        "next": "t1_13",
+        "faceId": 10
+    },
+    "t1_13": {
+        "speaker": "",
+        "text": "（田舎道を二人で歩く）",
+        "next": "t1_14",
+        "faceId": 10
+    },
+    "t1_14": {
+        "speaker": "",
+        "text": "タッタッタッ",
+        "next": "t1_15",
+        "faceId": 10
+    },
+    "t1_15": {
+        "speaker": "俺",
+        "text": "「……はぁ。面倒くさい」",
+        "next": "t1_16",
+        "faceId": 10
+    },
+    "t1_16": {
+        "speaker": "俺",
+        "text": "「もういい。そのままついて来れば」",
+        "next": "t1_17",
+        "faceId": 10
+    },
+    "t1_17": {
+        "speaker": "なこ",
+        "text": "「はいっ！ お供します！」",
+        "next": "s3_start",
+        "faceId": 1
+    },
+    "s3_start": {
+        "bgImage": "assets/bg/nako/room_morning.png",
+        "sceneId": "scene3",
+        "next": "s3_01"
+    },
+    "s3_01": {
+        "speaker": "",
+        "text": "チュンチュン……",
+        "next": "s3_02",
+        "faceId": 1
+    },
+    "s3_02": {
+        "speaker": "",
+        "text": "（小鳥の心地いいさえずりが聞こえる）",
+        "next": "s3_03",
+        "faceId": 1
+    },
+    "s3_03": {
+        "speaker": "",
+        "text": "シャーーッ！！",
+        "next": "s3_04",
+        "faceId": 1
+    },
+    "s3_04": {
+        "speaker": "",
+        "text": "（勢いよくカーテンが開き視界が明るくなる）",
+        "next": "s3_05",
+        "faceId": 1
+    },
+    "s3_05": {
+        "speaker": "俺",
+        "text": "「うっ……」",
+        "next": "s3_06",
+        "faceId": 1
+    },
+    "s3_06": {
+        "speaker": "なこ",
+        "text": "「あーさーでーすーよー！！」",
+        "next": "s3_07",
+        "faceId": 1
+    },
+    "s3_07": {
+        "speaker": "なこ",
+        "text": "「ご主人様！ 起きてください！ 太陽さんが！ 太陽さんが来ましたよー！！」",
+        "next": "s3_08",
+        "faceId": 3
+    },
+    "s3_08": {
+        "speaker": "",
+        "text": "バシンバシン！",
+        "next": "s3_09",
+        "faceId": 3
+    },
+    "s3_09": {
+        "speaker": "俺",
+        "text": "「……ぐ、おぉ……！」",
+        "next": "s3_10",
+        "faceId": 3
+    },
+    "s3_10": {
+        "speaker": "俺",
+        "text": "「……目が、目がぁ……！」",
+        "next": "s3_11",
+        "faceId": 3
+    },
+    "s3_11": {
+        "speaker": "俺",
+        "text": "「やめろ……カーテンを閉めろ……。俺は吸血鬼の末裔なんだ……」",
+        "next": "s3_12",
+        "faceId": 3
+    },
+    "s3_12": {
+        "speaker": "なこ",
+        "text": "「またまたぁ！ そんな設定、昨日はなかったじゃないですか！」",
+        "next": "s3_13",
+        "faceId": 5
+    },
+    "s3_13": {
+        "speaker": "なこ",
+        "text": "「ほら見てください！ 雲ひとつない快晴！ 絶好の光合成日和です！」",
+        "next": "s3_14",
+        "faceId": 17
+    },
+    "s3_14": {
+        "speaker": "",
+        "text": "ガラガラガラ",
+        "next": "s3_15",
+        "faceId": 17
+    },
+    "s3_15": {
+        "speaker": "なこ",
+        "text": "「ん～～～っ！！」",
+        "next": "s3_16",
+        "faceId": 11
+    },
+    "s3_16": {
+        "speaker": "なこ",
+        "text": "「……充填（チャージ）……中……！」",
+        "next": "s3_17",
+        "faceId": 4
+    },
+    "s3_17": {
+        "speaker": "",
+        "text": "（なこは窓際で両手を広げ、謎のポーズで固まっている）",
+        "next": "s3_18",
+        "faceId": 4
+    },
+    "s3_18": {
+        "speaker": "",
+        "text": "（その姿は、ラジオ体操の深呼吸と言うにはあまりにも神々しく、そしてシュールだった）",
+        "next": "s3_19",
+        "faceId": 4
+    },
+    "s3_19": {
+        "speaker": "なこ",
+        "text": "「はふぅ……！ 満タンです！」",
+        "next": "s3_20",
+        "faceId": 11
+    },
+    "s3_20": {
+        "speaker": "なこ",
+        "text": "「さあご主人様も！ 太陽に向かってポーズを！」",
+        "next": "s3_21",
+        "faceId": 3
+    },
+    "s3_21": {
+        "speaker": "俺",
+        "text": "「断る。二度寝という至高の快楽を邪魔するな」",
+        "next": "s3_22",
+        "faceId": 3
+    },
+    "s3_22": {
+        "speaker": "",
+        "text": "（布団を頭から被る）",
+        "next": "s3_23",
+        "faceId": 8
+    },
+    "s3_23": {
+        "speaker": "なこ",
+        "text": "「むぅ……仕方ありませんね」",
+        "next": "s3_24",
+        "faceId": 8
+    },
+    "s3_24": {
+        "speaker": "なこ",
+        "text": "「それなら！ 先にとっておきの『朝ごはん』で目を覚ましてもらいましょう！」",
+        "next": "s3_25",
+        "faceId": 10
+    },
+    "s3_25": {
+        "speaker": "俺",
+        "text": "「……朝ごはん？」",
+        "next": "s3_26",
+        "faceId": 10
+    },
+    "s3_26": {
+        "speaker": "",
+        "text": "（布団から少しだけ顔を出す。こいつ、家事もできたのか？）",
+        "next": "s3_27",
+        "faceId": 17
+    },
+    "s3_27": {
+        "speaker": "なこ",
+        "text": "「はい！ エプロンも借りちゃいました！」",
+        "next": "s3_28",
+        "faceId": 17
+    },
+    "s3_28": {
+        "speaker": "なこ",
+        "text": "「さあさあ、ＧＯです！」",
+        "next": "s3_29",
+        "faceId": 3
+    },
+    "s3_29": {
+        "speaker": "",
+        "text": "バッ",
+        "next": "s3_30",
+        "faceId": 3
+    },
+    "s3_30": {
+        "speaker": "",
+        "text": "（布団を剥がされる）",
+        "next": "s3_31",
+        "faceId": 3
+    },
+    "s3_31": {
+        "speaker": "俺",
+        "text": "「……」",
+        "next": "s4_start",
+        "faceId": 3
+    },
+    "s4_start": {
+        "bgImage": "assets/bg/nako/room_living.png",
+        "sceneId": "scene4",
+        "next": "s4_01"
+    },
+    "s4_01": {
+        "speaker": "",
+        "text": "（ふとみると机に何か並べられている）",
+        "next": "s4_02",
+        "faceId": 11
+    },
+    "s4_02": {
+        "speaker": "",
+        "text": "コトッ",
+        "next": "s4_03",
+        "faceId": 11
+    },
+    "s4_03": {
+        "speaker": "なこ",
+        "text": "「お待たせしました！ なこ特製、エナジー・ブレックファーストです！」",
+        "next": "s4_04",
+        "faceId": 17
+    },
+    "s4_04": {
+        "speaker": "",
+        "text": "（テーブルの上には、コップ一杯の「水道水」と……「空っぽの皿」が置かれていた）",
+        "next": "s4_05",
+        "faceId": 17
+    },
+    "s4_05": {
+        "speaker": "俺",
+        "text": "「…………」",
+        "next": "s4_06",
+        "faceId": 17
+    },
+    "s4_06": {
+        "speaker": "俺",
+        "text": "「なこさんや。俺には水しか見えないんだが」",
+        "next": "s4_07",
+        "faceId": 17
+    },
+    "s4_07": {
+        "speaker": "なこ",
+        "text": "「ノンノン！ 心の目で見てください！」",
+        "next": "s4_08",
+        "faceId": 10
+    },
+    "s4_08": {
+        "speaker": "なこ",
+        "text": "「このお皿の上には、私がさっき窓際で精製した『作りたてのエネルギー（ブドウ糖）』が乗ってるんです！」",
+        "next": "s4_09",
+        "faceId": 17
+    },
+    "s4_09": {
+        "speaker": "俺",
+        "text": "「……は？」",
+        "next": "s4_10",
+        "faceId": 5
+    },
+    "s4_10": {
+        "speaker": "なこ",
+        "text": "「愛と太陽光を１００％使用！ 添加物ゼロ！」",
+        "next": "s4_11",
+        "faceId": 17
+    },
+    "s4_11": {
+        "speaker": "なこ",
+        "text": "「これを食べれば、体が内側からポカポカして、やる気がみなぎってきますよ！」",
+        "next": "s4_12",
+        "faceId": 3
+    },
+    "s4_12": {
+        "speaker": "なこ",
+        "text": "「さあ、召し上がれ！ あーん！」",
+        "next": "s4_13",
+        "faceId": 11
+    },
+    "s4_13": {
+        "speaker": "",
+        "text": "（なこは空っぽのスプーンを、満面の笑みで差し出してくる）",
+        "next": "s4_14",
+        "faceId": 11
+    },
+    "s4_14": {
+        "speaker": "",
+        "text": "（……こいつ、本気だ。本気でこれを「ご馳走」だと思っていやがる）",
+        "next": "s4_15",
+        "faceId": 11
+    },
+    "s4_15": {
+        "speaker": "俺",
+        "text": "（朝っぱらから『裸の王様』ごっこをする気力は俺にはない）",
+        "next": "s4_16",
+        "faceId": 11
+    },
+    "s4_16": {
+        "speaker": "",
+        "text": "（だが、この純粋すぎる笑顔（圧力）をどうにかしなければ、俺は餓死する）",
+        "next": "choice2",
+        "faceId": 11
+    },
+    "choice2": {
+        "speaker": "",
+        "text": "",
+        "choices": [
+            {
+                "text": "「……なるほど、美味そうだな。だが、これにはパンが必要だ」",
+                "next": "t2_01"
+            },
+            {
+                "text": "「モグモグ……うん、空気の味がするな」",
+                "next": "bad2a_01"
+            },
+            {
+                "text": "「俺は霞（かすみ）を食って生きる仙人じゃねぇ！ 固形物を出せ！」",
+                "next": "bad2b_01"
+            },
+            {
+                "text": "「いただくよ。……お前のその、あふれる笑顔をな（イケボ）」",
+                "next": "bad2c_01"
+            }
+        ],
+        "faceId": 11
+    },
+    "bad2a_01": {
+        "speaker": "俺",
+        "text": "「モグモグ……うん、空気の味がするな」",
+        "next": "bad2a_02",
+        "faceId": 11
+    },
+    "bad2a_02": {
+        "speaker": "なこ",
+        "text": "「えっ！？ 味しませんか！？」",
+        "next": "bad2a_03",
+        "faceId": 14,
+        "voice": "scenarios/nako/assets/voice/bad/bad_02_02_01.wav"
+    },
+    "bad2a_03": {
+        "speaker": "なこ",
+        "text": "「おかしいなぁ……もっと濃縮したほうがいいのかな……」",
+        "next": "bad2a_04",
+        "faceId": 13,
+        "voice": "scenarios/nako/assets/voice/bad/bad_02_02_02.wav"
+    },
+    "bad2a_04": {
+        "speaker": "なこ",
+        "text": "「わかりました！ 直（チョク）でいきます！」",
+        "next": "bad2a_05",
+        "faceId": 10,
+        "voice": "scenarios/nako/assets/voice/bad/bad_02_02_03.wav"
+    },
+    "bad2a_05": {
+        "speaker": "なこ",
+        "text": "「私の手から直接エネルギーを吸い取ってください！」",
+        "next": "bad2a_06",
+        "faceId": 3,
+        "voice": "scenarios/nako/assets/voice/bad/bad_02_02_04.wav"
+    },
+    "bad2a_06": {
+        "speaker": "",
+        "text": "（ぐいっと顔を掴まれる）",
+        "next": "bad2a_07",
+        "faceId": 3
+    },
+    "bad2a_07": {
+        "speaker": "俺",
+        "text": "「むぐっ！？ ……ちょ、くるし……！」",
+        "next": "bad2a_08",
+        "faceId": 3
+    },
+    "bad2a_08": {
+        "speaker": "",
+        "text": "（窒息する...!物理的なエネルギーは強すぎる）",
+        "next": "bad2a_09",
+        "faceId": 3
+    },
+    "bad2a_09": {
+        "speaker": "",
+        "text": "（俺の意識は急速に遠のいていった……）",
+        "next": "bad2a_end",
+        "faceId": 3
+    },
+    "bad2a_end": {
+        "speaker": "",
+        "text": "",
+        "isEnd": true,
+        "isGameOver": true
+    },
+    "bad2b_01": {
+        "speaker": "俺",
+        "text": "「俺は霞（かすみ）を食って生きる仙人じゃねぇ！ 固形物を出せ！」",
+        "next": "bad2b_02",
+        "faceId": 8
+    },
+    "bad2b_02": {
+        "speaker": "なこ",
+        "text": "「ひどいです！ せっかく作ったのに！」",
+        "next": "bad2b_03",
+        "faceId": 8,
+        "voice": "scenarios/nako/assets/voice/bad/bad_02_03_01.wav"
+    },
+    "bad2b_03": {
+        "speaker": "なこ",
+        "text": "「人間なんて……人間なんて、もっと効率よく生きるべきです！」",
+        "next": "bad2b_04",
+        "faceId": 19,
+        "voice": "scenarios/nako/assets/voice/bad/bad_02_03_02.wav"
+    },
+    "bad2b_04": {
+        "speaker": "",
+        "text": "バン！",
+        "next": "bad2b_05",
+        "faceId": 15
+    },
+    "bad2b_05": {
+        "speaker": "なこ",
+        "text": "「こうなったら、ご主人様の体を『光合成仕様』に改造するしかありませんね……」",
+        "next": "bad2b_06",
+        "faceId": 12,
+        "voice": "scenarios/nako/assets/voice/bad/bad_02_03_03.wav"
+    },
+    "bad2b_06": {
+        "speaker": "",
+        "text": "（なこの目が怪しく光った。マッドサイエンティストな一面があるらしい）",
+        "next": "bad2b_07",
+        "faceId": 12
+    },
+    "bad2b_07": {
+        "speaker": "",
+        "text": "（気が付くとおれの身体は雑草になっていた）",
+        "next": "bad2b_end",
+        "faceId": 12
+    },
+    "bad2b_end": {
+        "speaker": "",
+        "text": "",
+        "isEnd": true,
+        "isGameOver": true
+    },
+    "bad2c_01": {
+        "speaker": "俺",
+        "text": "「いただくよ。……お前のその、あふれる笑顔をな」",
+        "next": "bad2c_02",
+        "faceId": 16
+    },
+    "bad2c_02": {
+        "speaker": "",
+        "text": "キラーン！",
+        "next": "bad2c_03",
+        "faceId": 16
+    },
+    "bad2c_03": {
+        "speaker": "なこ",
+        "text": "「……！」",
+        "next": "bad2c_04",
+        "faceId": 16,
+        "voice": "scenarios/nako/assets/voice/bad/bad_02_04_01.wav"
+    },
+    "bad2c_04": {
+        "speaker": "なこ",
+        "text": "「ご、ご主人様……！」",
+        "next": "bad2c_05",
+        "faceId": 13,
+        "voice": "scenarios/nako/assets/voice/bad/bad_02_04_02.wav"
+    },
+    "bad2c_05": {
+        "speaker": "",
+        "text": "（なこは顔を真っ赤にして、モジモジし始めた）",
+        "next": "bad2c_06",
+        "faceId": 9
+    },
+    "bad2c_06": {
+        "speaker": "なこ",
+        "text": "「……足りないですよね？ 笑顔だけじゃ」",
+        "next": "bad2c_07",
+        "faceId": 18,
+        "voice": "scenarios/nako/assets/voice/bad/bad_02_04_03.wav"
+    },
+    "bad2c_07": {
+        "speaker": "なこ",
+        "text": "「わかりました……私自身を、食べてください……///」",
+        "next": "bad2c_08",
+        "faceId": 11
+    },
+    "bad2c_08": {
+        "speaker": "俺",
+        "text": "「えっ」",
+        "next": "bad2c_09",
+        "faceId": 11
+    },
+    "bad2c_09": {
+        "speaker": "",
+        "text": "ススッ",
+        "next": "bad2c_10",
+        "faceId": 11
+    },
+    "bad2c_10": {
+        "speaker": "",
+        "text": "（なこがエプロンを脱ぎ始めた。朝からR-18展開は放送できない）",
+        "next": "bad2c_11",
+        "faceId": 2
+    },
+    "bad2c_11": {
+        "speaker": "俺",
+        "text": "「ちょ、まっ……！」",
+        "next": "bad2c_12",
+        "faceId": 2
+    },
+    "bad2c_12": {
+        "speaker": "",
+        "text": "カッ！！！！",
+        "next": "bad2c_13",
+        "faceId": 2
+    },
+    "bad2c_13": {
+        "speaker": "",
+        "text": "（と思ったら、なこの身体が恥ずかしさで光りだした！）",
+        "next": "bad2c_14",
+        "faceId": 2
+    },
+    "bad2c_14": {
+        "speaker": "",
+        "text": "（直視できないほどの輝き！ 何も見えない！）",
+        "next": "bad2c_15",
+        "faceId": 2
+    },
+    "bad2c_15": {
+        "speaker": "俺",
+        "text": "「あああーっ！ 目が、目がぁぁーっ！」",
+        "next": "bad2c_16",
+        "faceId": 2
+    },
+    "bad2c_16": {
+        "speaker": "",
+        "text": "（そのまま俺は視力を失ってしまった……太陽を直視してはいけない）",
+        "next": "bad2c_end",
+        "faceId": 2
+    },
+    "bad2c_end": {
+        "speaker": "",
+        "text": "",
+        "isEnd": true,
+        "isGameOver": true
+    },
+    "t2_01": {
+        "speaker": "俺",
+        "text": "「……なるほど、美味そうだな」",
+        "next": "t2_02",
+        "faceId": 11
+    },
+    "t2_02": {
+        "speaker": "俺",
+        "text": "「だがなこ、よく聞け。この最高級のエネルギー（ジャム）を味わうには、土台となる『パン』が必要不可欠なんだ」",
+        "next": "t2_03",
+        "faceId": 14
+    },
+    "t2_03": {
+        "speaker": "なこ",
+        "text": "「パ、パンですか！？」",
+        "next": "t2_04",
+        "faceId": 14
+    },
+    "t2_04": {
+        "speaker": "俺",
+        "text": "「そうだ。あと、エネルギーの吸収効率を高める『ベーコンエッグ』と、潤滑油としての『コーヒー』もあれば完璧だ」",
+        "next": "t2_05",
+        "faceId": 3
+    },
+    "t2_05": {
+        "speaker": "俺",
+        "text": "「お前の愛を無駄にしないためにも、至急用意してくれ」",
+        "next": "t2_06",
+        "faceId": 3
+    },
+    "t2_06": {
+        "speaker": "なこ",
+        "text": "「は、はいっ！ わかりました！」",
+        "next": "t2_07",
+        "faceId": 3
+    },
+    "t2_07": {
+        "speaker": "なこ",
+        "text": "「私のエネルギーを最高に美味しく食べるために、そこまで考えてくれていたなんて……！」",
+        "next": "t2_08",
+        "faceId": 11
+    },
+    "t2_08": {
+        "speaker": "なこ",
+        "text": "「ご主人様は天才です！ すぐに焼いてきますね！」",
+        "next": "t2_09",
+        "faceId": 1
+    },
+    "t2_09": {
+        "speaker": "",
+        "text": "バタバタ……",
+        "next": "t2_10",
+        "faceId": 1
+    },
+    "t2_10": {
+        "speaker": "俺",
+        "text": "「……ふぅ。危ないところだった」",
+        "next": "t2_11",
+        "faceId": 1
+    },
+    "t2_11": {
+        "speaker": "",
+        "text": "ジュージュー……",
+        "next": "t2_12",
+        "faceId": 3
+    },
+    "t2_12": {
+        "speaker": "なこ",
+        "text": "「待っててくださいねー！ 愛情（カロリー）マシマシにしておきますからー！」",
+        "next": "t2_13",
+        "faceId": 3
+    },
+    "t2_13": {
+        "speaker": "俺",
+        "text": "（……こうして、自称ひまわりの妖精との奇妙な同居生活が始まった）",
+        "next": "t2_14",
+        "faceId": 3
+    },
+    "t2_14": {
+        "speaker": "",
+        "text": "（毎朝カーテンを全開にされ、風呂のお湯を飲まれそうになり、扇風機と喧嘩するのを仲裁する毎日）",
+        "next": "t2_15",
+        "faceId": 3
+    },
+    "t2_15": {
+        "speaker": "俺",
+        "text": "「……そんな騒がしい日々が、一ヶ月も続いた頃だった」",
+        "next": "s5_start",
+        "faceId": 3
+    },
+    "s5_start": {
+        "bgImage": "assets/bg/nako/park_night.png",
+        "sceneId": "scene5",
+        "next": "s5_01"
+    },
+    "s5_01": {
+        "speaker": "",
+        "text": "（涼しい風が頬にあたる）",
+        "next": "s5_02",
+        "faceId": 7
+    },
+    "s5_02": {
+        "speaker": "",
+        "text": "（外の散歩も、もう夜になると快適だな）",
+        "next": "s5_03",
+        "faceId": 7
+    },
+    "s5_03": {
+        "speaker": "",
+        "text": "リーン、リーン……",
+        "next": "s5_04",
+        "faceId": 4
+    },
+    "s5_04": {
+        "speaker": "",
+        "text": "（秋の虫が鳴き始めている）",
+        "next": "s5_05",
+        "faceId": 4
+    },
+    "s5_05": {
+        "speaker": "なこ",
+        "text": "「……夜は、やっぱり寂しいですね」",
+        "next": "s5_06",
+        "faceId": 7
+    },
+    "s5_06": {
+        "speaker": "",
+        "text": "（公園のベンチに座り、夜空を見上げるなこ）",
+        "next": "s5_07",
+        "faceId": 4
+    },
+    "s5_07": {
+        "speaker": "",
+        "text": "（その横顔は、いつもの元気さが嘘のように静かだった）",
+        "next": "s5_08",
+        "faceId": 4
+    },
+    "s5_08": {
+        "speaker": "俺",
+        "text": "「……光合成できないからか？」",
+        "next": "s5_09",
+        "faceId": 4
+    },
+    "s5_09": {
+        "speaker": "なこ",
+        "text": "「それもありますけど……」",
+        "next": "s5_10",
+        "faceId": 9
+    },
+    "s5_10": {
+        "speaker": "なこ",
+        "text": "「……少しずつ、太陽さんの時間が短くなってる気がして」",
+        "next": "s5_11",
+        "faceId": 7
+    },
+    "s5_11": {
+        "speaker": "",
+        "text": "（彼女は膝を抱え、小さく呟く）",
+        "next": "s5_12",
+        "faceId": 4
+    },
+    "s5_12": {
+        "speaker": "なこ",
+        "text": "「……もう、夏も終わりなんですね」",
+        "next": "s5_13",
+        "faceId": 4
+    },
+    "s5_13": {
+        "speaker": "俺",
+        "text": "（ひまわりの季節が終わる。それはつまり、彼女との別れが近いことを意味しているのかもしれない）",
+        "next": "s5_14",
+        "faceId": 13
+    },
+    "s5_14": {
+        "speaker": "俺",
+        "text": "「……しんみりするのは、性に合わないな」",
+        "next": "s5_15",
+        "faceId": 13
+    },
+    "s5_15": {
+        "speaker": "俺",
+        "text": "「……ほら、なこ」",
+        "next": "s5_16",
+        "faceId": 13
+    },
+    "s5_16": {
+        "speaker": "",
+        "text": "ガサゴソ……",
+        "next": "s5_17",
+        "faceId": 13
+    },
+    "s5_17": {
+        "speaker": "なこ",
+        "text": "「……なんですか？ その細長い棒」",
+        "next": "s5_18",
+        "faceId": 13
+    },
+    "s5_18": {
+        "speaker": "俺",
+        "text": "「夜にしか咲かない花だ。……ほら、火をつけるぞ」",
+        "next": "s5_19",
+        "faceId": 3
+    },
+    "s5_19": {
+        "speaker": "",
+        "text": "シュボッ。チリチリチリ……",
+        "next": "s5_20",
+        "faceId": 3
+    },
+    "s5_20": {
+        "speaker": "なこ",
+        "text": "「わぁ……！」",
+        "next": "s5_21",
+        "faceId": 3
+    },
+    "s5_21": {
+        "speaker": "",
+        "text": "（小さな火花が、パチパチとはじけて落ちていく）",
+        "next": "s5_22",
+        "faceId": 11
+    },
+    "s5_22": {
+        "speaker": "",
+        "text": "（なこの瞳の中に、小さな光が灯る）",
+        "next": "s5_23",
+        "faceId": 11
+    },
+    "s5_23": {
+        "speaker": "なこ",
+        "text": "「綺麗……。まるで、小さな太陽みたい」",
+        "next": "s5_24",
+        "faceId": 4
+    },
+    "s5_24": {
+        "speaker": "俺",
+        "text": "「だろ？ 夏の終わりには、こいつがよく似合うんだ」",
+        "next": "s5_25",
+        "faceId": 7
+    },
+    "s5_25": {
+        "speaker": "なこ",
+        "text": "「……はい」",
+        "next": "s5_26",
+        "faceId": 7
+    },
+    "s5_26": {
+        "speaker": "なこ",
+        "text": "「……熱くて、綺麗で、でもすぐに消えちゃう」",
+        "next": "s5_27",
+        "faceId": 4
+    },
+    "s5_27": {
+        "speaker": "",
+        "text": "（火玉がぽとり、と地面に落ちて消えた）",
+        "next": "s5_28",
+        "faceId": 4
+    },
+    "s5_28": {
+        "speaker": "",
+        "text": "（辺りが再び、静寂に包まれる）",
+        "next": "s5_29",
+        "faceId": 4
+    },
+    "s5_29": {
+        "speaker": "なこ",
+        "text": "「……まるで、私とご主人様の夏（じかん）みたいですね」",
+        "next": "choice3",
+        "faceId": 4
+    },
+    "choice3": {
+        "speaker": "",
+        "text": "",
+        "choices": [
+            {
+                "text": "「勝手に過去形にするな。……まだ、残ってるだろ」",
+                "next": "t3_01"
+            },
+            {
+                "text": "「そうだな。騒がしくて落ち着かない、セミみたいな夏だったよ」",
+                "next": "bad3a_01"
+            },
+            {
+                "text": "「安心しろ。ドン・キホーテで徳用パック買ったからあと50本ある」",
+                "next": "bad3b_01"
+            },
+            {
+                "text": "「案山子（あんやまこ）ってしってるか？」",
+                "next": "bad3c_01"
+            }
+        ],
+        "faceId": 4
+    },
+    "bad3a_01": {
+        "speaker": "俺",
+        "text": "「そうだな。騒がしくて落ち着かない、セミみたいな夏だったよ」",
+        "next": "bad3a_02",
+        "faceId": 8
+    },
+    "bad3a_02": {
+        "speaker": "なこ",
+        "text": "「……っ」",
+        "next": "bad3a_03",
+        "faceId": 8,
+        "voice": "scenarios/nako/assets/voice/bad/bad_03_02_01.wav"
+    },
+    "bad3a_03": {
+        "speaker": "",
+        "text": "（なこが唇を噛み締め、涙目でこちらを睨む）",
+        "next": "bad3a_04",
+        "faceId": 7
+    },
+    "bad3a_04": {
+        "speaker": "なこ",
+        "text": "「……ひどいです。人がせっかく……！」",
+        "next": "bad3a_05",
+        "faceId": 8,
+        "voice": "scenarios/nako/assets/voice/bad/bad_03_02_02.wav"
+    },
+    "bad3a_05": {
+        "speaker": "なこ",
+        "text": "「もういいです！ ご主人様なんて、冬のナマコみたいにジメジメしてればいいんです！」",
+        "next": "bad3a_06",
+        "faceId": 8,
+        "voice": "scenarios/nako/assets/voice/bad/bad_03_02_03.wav"
+    },
+    "bad3a_06": {
+        "speaker": "",
+        "text": "（走り去っていく）",
+        "next": "bad3a_07",
+        "faceId": 8
+    },
+    "bad3a_07": {
+        "speaker": "",
+        "text": "（最期の時間を、最悪の空気にしてしまった……）",
+        "next": "bad3a_end"
+    },
+    "bad3a_end": {
+        "speaker": "",
+        "text": "",
+        "isEnd": true,
+        "isGameOver": true
+    },
+    "bad3b_01": {
+        "speaker": "俺",
+        "text": "「安心しろ。ドン・キホーテで徳用パック買ったからあと50本ある」",
+        "next": "bad3b_02",
+        "faceId": 5
+    },
+    "bad3b_02": {
+        "speaker": "",
+        "text": "ガサッ！",
+        "next": "bad3b_03",
+        "faceId": 5
+    },
+    "bad3b_03": {
+        "speaker": "なこ",
+        "text": "「……はぁ」",
+        "next": "bad3b_04",
+        "faceId": 5,
+        "voice": "scenarios/nako/assets/voice/bad/bad_03_03_01.wav"
+    },
+    "bad3b_04": {
+        "speaker": "",
+        "text": "（なこが深い深いため息をつく）",
+        "next": "bad3b_05",
+        "faceId": 19
+    },
+    "bad3b_05": {
+        "speaker": "なこ",
+        "text": "「……ご主人様って、本当にムードがないですね」",
+        "next": "bad3b_06",
+        "faceId": 5,
+        "voice": "scenarios/nako/assets/voice/bad/bad_03_03_02.wav"
+    },
+    "bad3b_06": {
+        "speaker": "なこ",
+        "text": "「50本もやってたら、私、枯れちゃうかもです……」",
+        "next": "bad3b_07",
+        "faceId": 5,
+        "voice": "scenarios/nako/assets/voice/bad/bad_03_03_03.wav"
+    },
+    "bad3b_07": {
+        "speaker": "",
+        "text": "（呆れられてしまった。エモさのかけらもない……）",
+        "next": "bad3b_end"
+    },
+    "bad3b_end": {
+        "speaker": "",
+        "text": "",
+        "isEnd": true,
+        "isGameOver": true
+    },
+    "bad3c_01": {
+        "speaker": "俺",
+        "text": "「案山子（あんやまこ）ってしってるか？」",
+        "next": "bad3c_02",
+        "faceId": 4
+    },
+    "bad3c_02": {
+        "speaker": "",
+        "text": "ヒュッ……",
+        "next": "bad3c_03",
+        "faceId": 4
+    },
+    "bad3c_03": {
+        "speaker": "",
+        "text": "（急に空気が変わった。夜の虫の音さえも、一瞬で消え失せた）",
+        "next": "bad3c_04",
+        "faceId": 4
+    },
+    "bad3c_04": {
+        "speaker": "なこ",
+        "text": "「…………」",
+        "next": "bad3c_05",
+        "faceId": 6
+    },
+    "bad3c_05": {
+        "speaker": "",
+        "text": "（なこがゆっくりと顔を上げる。その瞳からは、先ほどまで宿っていた光（ハイライト）が完全に消えていた）",
+        "next": "bad3c_06",
+        "faceId": 6
+    },
+    "bad3c_06": {
+        "speaker": "なこ",
+        "text": "「……なぜ、それをご主人様が知っているのですか？」",
+        "next": "bad3c_07",
+        "faceId": 6,
+        "voice": "scenarios/nako/assets/voice/bad/bad_03_04_01.wav"
+    },
+    "bad3c_07": {
+        "speaker": "俺",
+        "text": "「え？ いや、ちょっと聞いてみただけで……」",
+        "next": "bad3c_08",
+        "faceId": 15
+    },
+    "bad3c_08": {
+        "speaker": "なこ",
+        "text": "「いいえ。……答える必要はないです」",
+        "next": "bad3c_09",
+        "faceId": 15,
+        "voice": "scenarios/nako/assets/voice/bad/bad_03_04_02.wav"
+    },
+    "bad3c_09": {
+        "speaker": "",
+        "text": "ザシュッ！！",
+        "next": "bad3c_10",
+        "faceId": 6
+    },
+    "bad3c_10": {
+        "speaker": "俺",
+        "text": "「……あ……？」",
+        "next": "bad3c_11",
+        "faceId": 6
+    },
+    "bad3c_11": {
+        "speaker": "",
+        "text": "（鋭い音が響き、俺の視界が傾いた）",
+        "next": "bad3c_12",
+        "faceId": 6
+    },
+    "bad3c_12": {
+        "speaker": "",
+        "text": "（服の装飾だと思っていた彼女のスカートが、鋭利な刃物のように変化し……俺の胸を貫いていた）",
+        "next": "bad3c_13",
+        "faceId": 6
+    },
+    "bad3c_13": {
+        "speaker": "俺",
+        "text": "「な、こ……？」",
+        "next": "bad3c_14",
+        "faceId": 6
+    },
+    "bad3c_14": {
+        "speaker": "なこ",
+        "text": "「…………」",
+        "next": "bad3c_15",
+        "faceId": 6
+    },
+    "bad3c_15": {
+        "speaker": "",
+        "text": "（俺の意識が急速に遠のいていく）",
+        "next": "bad3c_16",
+        "faceId": 20
+    },
+    "bad3c_16": {
+        "speaker": "",
+        "text": "（薄れゆく視界の中で、無機質な表情の彼女が何かを呟いた）",
+        "next": "bad3c_17",
+        "faceId": 20
+    },
+    "bad3c_17": {
+        "speaker": "なこ",
+        "text": "「……別のご主人様、探さなきゃ……」",
+        "next": "bad3c_end",
+        "faceId": 20,
+        "voice": "scenarios/nako/assets/voice/bad/bad_03_04_03.wav"
+    },
+    "bad3c_end": {
+        "speaker": "",
+        "text": "",
+        "isEnd": true,
+        "isGameOver": true
+    },
+    "t3_01": {
+        "speaker": "俺",
+        "text": "「勝手に過去形にするな」",
+        "next": "t3_02",
+        "faceId": 16
+    },
+    "t3_02": {
+        "speaker": "俺",
+        "text": "「……まだ、残ってるだろ」",
+        "next": "t3_03",
+        "faceId": 16
+    },
+    "t3_03": {
+        "speaker": "",
+        "text": "シュボッ。",
+        "next": "t3_04",
+        "faceId": 11
+    },
+    "t3_04": {
+        "speaker": "俺",
+        "text": "「火が消えたら、またつければいい」",
+        "next": "t3_05",
+        "faceId": 11
+    },
+    "t3_05": {
+        "speaker": "俺",
+        "text": "「……お前がいなくなるまで、何度だってな」",
+        "next": "t3_06",
+        "faceId": 1
+    },
+    "t3_06": {
+        "speaker": "なこ",
+        "text": "「……っ」",
+        "next": "t3_07",
+        "faceId": 11
+    },
+    "t3_07": {
+        "speaker": "",
+        "text": "（新たな火花が、なこの顔を優しく照らす）",
+        "next": "t3_08",
+        "faceId": 11
+    },
+    "t3_08": {
+        "speaker": "",
+        "text": "（彼女は涙を拭い、満面の笑みを浮かべた）",
+        "next": "t3_09",
+        "faceId": 11
+    },
+    "t3_09": {
+        "speaker": "なこ",
+        "text": "「……はい！」",
+        "next": "t3_10",
+        "faceId": 11
+    },
+    "t3_10": {
+        "speaker": "なこ",
+        "text": "「……ふふっ、ご主人様。……大好きです！」",
+        "next": "t3_11",
+        "faceId": 4
+    },
+    "t3_11": {
+        "speaker": "",
+        "text": "（パチパチという音だけが、二人の間に優しく響く）",
+        "next": "t3_12",
+        "faceId": 1
+    },
+    "t3_12": {
+        "speaker": "",
+        "text": "（そして、最後の火玉が落ちる瞬間――）",
+        "next": "t3_13",
+        "faceId": 11
+    },
+    "t3_13": {
+        "speaker": "",
+        "text": "（なこの体が、ふわりと光の粒子になり始める）",
+        "next": "t3_14",
+        "faceId": 18
+    },
+    "t3_14": {
+        "speaker": "なこ",
+        "text": "「……ご主人様。……私、とっても楽しかったです！」",
+        "next": "t3_15",
+        "faceId": 11
+    },
+    "t3_15": {
+        "speaker": "なこ",
+        "text": "「コンクリートの隙間で枯れかけていた私に、お水と、居場所と……たくさんの思い出をくれて」",
+        "next": "t3_16",
+        "faceId": 11
+    },
+    "t3_16": {
+        "speaker": "なこ",
+        "text": "「本当に、ありがとうございました！」",
+        "next": "t3_17",
+        "faceId": 11
+    },
+    "t3_17": {
+        "speaker": "俺",
+        "text": "「おい、なこ……！」",
+        "next": "t3_18",
+        "faceId": 11
+    },
+    "t3_18": {
+        "speaker": "なこ",
+        "text": "「……そろそろ、お休みの時間みたいです」",
+        "next": "t3_19",
+        "faceId": 11
+    },
+    "t3_19": {
+        "speaker": "なこ",
+        "text": "「でも、さよならじゃありませんよ？」",
+        "next": "t3_20",
+        "faceId": 11
+    },
+    "t3_20": {
+        "speaker": "",
+        "text": "（光に包まれながら、彼女は悪戯っぽく微笑んだ）",
+        "next": "t3_21",
+        "faceId": 11
+    },
+    "t3_21": {
+        "speaker": "なこ",
+        "text": "「……来年、また会いに来ますね」",
+        "next": "t3_22",
+        "faceId": 11
+    },
+    "t3_22": {
+        "speaker": "",
+        "text": "パァァァ……",
+        "next": "t3_23"
+    },
+    "t3_23": {
+        "speaker": "",
+        "text": "キラキラ……",
+        "next": "t3_24"
+    },
+    "t3_24": {
+        "speaker": "",
+        "text": "（あとには静かな夜だけが残された）",
+        "next": "t3_25"
+    },
+    "t3_25": {
+        "speaker": "俺",
+        "text": "「……あいつ、本当に妖精だったのかよ」",
+        "next": "t3_26"
+    },
+    "t3_26": {
+        "speaker": "",
+        "text": "（涼しい秋風が吹く）",
+        "next": "t3_27"
+    },
+    "t3_27": {
+        "speaker": "俺",
+        "text": "「……来年、か」",
+        "next": "t3_28"
+    },
+    "t3_28": {
+        "speaker": "",
+        "text": "（気が長い話だが……まあ、待つとするか）",
+        "next": "t3_28b"
+    },
+    "t3_28b": {
+        "bgImage": "assets/bg/nako/room_living.png",
+        "next": "epilogue_start"
+    },
+    "epilogue_start": {
+        "bgImage": "assets/bg/nako/summer_road.png",
+        "sceneId": "scene1",
+        "next": "ep_01"
+    },
+    "ep_01": {
+        "speaker": "",
+        "text": "ー 1年後 ー",
+        "next": "ep_02"
+    },
+    "ep_02": {
+        "speaker": "",
+        "text": "（再び、けたたましいセミの声が聴けるありがたい時期）",
+        "next": "ep_03"
+    },
+    "ep_03": {
+        "speaker": "",
+        "text": "「ミーンミンミン……」",
+        "next": "ep_04"
+    },
+    "ep_04": {
+        "speaker": "俺",
+        "text": "（また、あの暑苦しい季節が巡ってきた）",
+        "next": "ep_05"
+    },
+    "ep_05": {
+        "speaker": "俺",
+        "text": "「あぢー……」",
+        "next": "ep_06"
+    },
+    "ep_06": {
+        "speaker": "",
+        "text": "（俺の体力を奪っていく）",
+        "next": "ep_07"
+    },
+    "ep_07": {
+        "speaker": "",
+        "text": "（スマホでカレンダーを確認する）",
+        "next": "ep_08"
+    },
+    "ep_08": {
+        "speaker": "俺",
+        "text": "「……そろそろか」",
+        "next": "ep_09"
+    },
+    "ep_09": {
+        "speaker": "",
+        "text": "（じりじりと照りつける太陽を見上げる）",
+        "next": "ep_10"
+    },
+    "ep_10": {
+        "speaker": "",
+        "text": "（すると、後ろの方から、聞き覚えのある元気な足音が聞こえてきた）",
+        "next": "ep_11",
+        "faceId": 1
+    },
+    "ep_11": {
+        "speaker": "",
+        "text": "バァン！！",
+        "next": "ep_12",
+        "faceId": 1
+    },
+    "ep_12": {
+        "speaker": "なこ",
+        "text": "「ご主人様！ たっだいまー！！」",
+        "next": "ep_13",
+        "faceId": 1
+    },
+    "ep_13": {
+        "speaker": "",
+        "text": "（勢いよく飛び込んでくる）",
+        "next": "ep_14",
+        "faceId": 1
+    },
+    "ep_14": {
+        "speaker": "俺",
+        "text": "「……おかえり。相変わらず騒がしいやつだな」",
+        "next": "ep_15",
+        "faceId": 1
+    },
+    "ep_15": {
+        "speaker": "",
+        "text": "（去年と同じひまわりのような笑顔のなこと、呆れつつも笑っている俺）",
+        "next": "ep_16",
+        "faceId": 1
+    },
+    "ep_16": {
+        "speaker": "なこ",
+        "text": "「えへへ！ 今年もたーっぷり、お世話になりますからね！」",
+        "next": "ep_17",
+        "faceId": 17
+    },
+    "ep_17": {
+        "speaker": "",
+        "text": "（今年も騒がしい夏になりそうだ）",
+        "next": "true_end",
+        "faceId": 17
+    },
+    "true_end": {
+        "speaker": "",
+        "text": "",
+        "isEnd": true,
+        "isGameOver": false,
+        "faceId": 17
+    }
+}

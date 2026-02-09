@@ -1,0 +1,1876 @@
+{
+    "start": {
+        "bgImage": "assets/bg/common/black.jpg",
+        "sceneId": "scene1",
+        "next": "s1_prologue_01"
+    },
+    "s1_prologue_01": {
+        "speaker": "",
+        "text": "（仕事でミスをして、心身ともに疲れ果てた夕暮れ）",
+        "next": "s1_prologue_02"
+    },
+    "s1_prologue_02": {
+        "speaker": "",
+        "text": "（大した失敗じゃない。そう言い聞かせても、胸の奥の重さは消えてくれなかった）",
+        "next": "s1_prologue_03"
+    },
+    "s1_prologue_03": {
+        "speaker": "",
+        "text": "（誰にも見せないようにしてきた弱音が、喉の奥までせり上がってくる）",
+        "next": "s1_prologue_04"
+    },
+    "s1_prologue_04": {
+        "speaker": "",
+        "text": "（……今日は、甘いものでも食べないと持ちそうにないな）",
+        "next": "s1_prologue_05"
+    },
+    "s1_prologue_05": {
+        "speaker": "",
+        "text": "（無意識のうちに足が向かっていたのは、昔から変わらないこの店だった）",
+        "next": "s1_prologue_06"
+    },
+    "s1_prologue_06": {
+        "speaker": "",
+        "text": "（理由なんて考えなくてもいい。『ここなら大丈夫』って、身体が覚えている）",
+        "next": "s1_transition"
+    },
+    "s1_transition": {
+        "speaker": "",
+        "text": "（糖分を求めて、いつもの喫茶店のドアを開けると……）",
+        "next": "s1_cafe_start"
+    },
+    "s1_cafe_start": {
+        "bgImage": "assets/bg/aisu/cafe.jpg",
+        "next": "s1_03"
+    },
+    "s1_03": {
+        "speaker": "あいす",
+        "text": "「……ん～っ！ んふふ……おいしぃ……」",
+        "next": "s1_04",
+        "faceId": 1
+    },
+    "s1_04": {
+        "speaker": "",
+        "text": "（モグモグ、ハムハム……という幸せそうな咀嚼音が聞こえる）",
+        "next": "s1_05",
+        "faceId": 16
+    },
+    "s1_05": {
+        "speaker": "あいす",
+        "text": "「やっぱり、新作の『ベリーベリーストロベリー』は至高だねぇ……」",
+        "next": "s1_06",
+        "faceId": 16
+    },
+    "s1_06": {
+        "speaker": "",
+        "text": "（カウンターの奥で、ピンクのツインテを揺らしながら、店員のあいすがスプーンを咥えて蕩けている）",
+        "next": "s1_07",
+        "faceId": 16
+    },
+    "s1_07": {
+        "speaker": "",
+        "text": "（客が来たことに気づいていない）",
+        "next": "s1_08",
+        "faceId": 16
+    },
+    "s1_08": {
+        "speaker": "俺",
+        "text": "「……あの、すいません」",
+        "next": "s1_09",
+        "faceId": 16
+    },
+    "s1_09": {
+        "speaker": "あいす",
+        "text": "「ひゃうっ！？」",
+        "next": "s1_10",
+        "faceId": 11
+    },
+    "s1_10": {
+        "speaker": "",
+        "text": "（ガチャン！とスプーンを落とす）",
+        "next": "s1_11",
+        "faceId": 11
+    },
+    "s1_11": {
+        "speaker": "あいす",
+        "text": "「あ、あわわ！ い、いらっしゃいませぇ！」",
+        "next": "s1_12",
+        "faceId": 11
+    },
+    "s1_12": {
+        "speaker": "あいす",
+        "text": "「……って、なんだぁ。『しっくん』かぁ……」",
+        "next": "s1_13",
+        "faceId": 13
+    },
+    "s1_13": {
+        "speaker": "",
+        "text": "（俺の顔を見て、ホッとしたように胸を撫で下ろす）",
+        "next": "s1_14",
+        "faceId": 13
+    },
+    "s1_14": {
+        "speaker": "",
+        "text": "（その口元には、しっかりとピンク色のアイスがついている）",
+        "next": "s1_15",
+        "faceId": 13
+    },
+    "s1_15": {
+        "speaker": "あいす",
+        "text": "「びっくりさせないでよぉ。心臓がアイスみたいに溶けちゃうかと思ったじゃん」",
+        "next": "s1_16",
+        "faceId": 13
+    },
+    "s1_16": {
+        "speaker": "",
+        "text": "（こいつは夢咲あいす。物心ついた時からの腐れ縁だ）",
+        "next": "s1_17",
+        "faceId": 3
+    },
+    "s1_17": {
+        "speaker": "",
+        "text": "（ちなみに『しっくん』というのは、子供の頃、俺が転んでよく『シクシク』泣いていたからつけられた不名誉なあだ名だ）",
+        "next": "s1_18",
+        "faceId": 3
+    },
+    "s1_18": {
+        "speaker": "",
+        "text": "（未だにその呼び名を使うのは、世界でこいつだけだ）",
+        "next": "s1_19",
+        "faceId": 3
+    },
+    "s1_19": {
+        "speaker": "俺",
+        "text": "「仕事中に堂々とつまみ食いですか、看板娘さん」",
+        "next": "s1_20",
+        "faceId": 3
+    },
+    "s1_20": {
+        "speaker": "あいす",
+        "text": "「ち、ちがうよ！？ これはあれ！ 『幼馴染特権の品質チェック』！」",
+        "next": "s1_21",
+        "faceId": 18
+    },
+    "s1_21": {
+        "speaker": "あいす",
+        "text": "「しっくんに最高のアイスを届けるために、お姉ちゃんが責任を持って味見をしてたの！」",
+        "next": "s1_22",
+        "faceId": 18
+    },
+    "s1_22": {
+        "speaker": "あいす",
+        "text": "「……私が食いしん坊だからじゃないもん。……たぶん」",
+        "next": "s1_23",
+        "faceId": 13
+    },
+    "s1_23": {
+        "speaker": "",
+        "text": "（最後の一言は小声だったが、しっかり聞こえた）",
+        "next": "s1_24",
+        "faceId": 13
+    },
+    "s1_24": {
+        "speaker": "あいす",
+        "text": "「……で？ どうしたの、そんな顔して」",
+        "next": "s1_25",
+        "faceId": 4
+    },
+    "s1_25": {
+        "speaker": "あいす",
+        "text": "「昔、公園で転んで膝擦りむいた時と同じ顔してるよ？」",
+        "next": "s1_26",
+        "faceId": 3
+    },
+    "s1_26": {
+        "speaker": "あいす",
+        "text": "「……また何かあって、泣きそうになってるんでしょ？」",
+        "next": "s1_27",
+        "faceId": 3
+    },
+    "s1_27": {
+        "speaker": "俺",
+        "text": "「……泣いてないよ。ちょっと疲れただけだ」",
+        "next": "s1_28",
+        "faceId": 3
+    },
+    "s1_28": {
+        "speaker": "あいす",
+        "text": "「ふふん、隠しても無駄無駄ぁ」",
+        "next": "s1_29",
+        "faceId": 2
+    },
+    "s1_29": {
+        "speaker": "あいす",
+        "text": "「よし！ ならば、君の保護者代表であるこの私が！」",
+        "next": "s1_30",
+        "faceId": 1
+    },
+    "s1_30": {
+        "speaker": "あいす",
+        "text": "「とっておきの『裏メニュー』で、その泣き虫な顔を笑顔にしてあげようじゃないか！」",
+        "next": "s1_31",
+        "faceId": 10
+    },
+    "s1_31": {
+        "speaker": "",
+        "text": "（ドヤァ……という効果音が見えるような決めポーズ）",
+        "next": "s1_32",
+        "faceId": 10
+    },
+    "s1_32": {
+        "speaker": "",
+        "text": "（胸を張って威張っているが、口元のクリームはついたままだ）",
+        "next": "s2_start",
+        "faceId": 10
+    },
+    "s2_start": {
+        "bgImage": "assets/bg/aisu/cafe.jpg",
+        "sceneId": "scene2",
+        "next": "s2_01"
+    },
+    "s2_01": {
+        "speaker": "俺",
+        "text": "「……」",
+        "next": "s2_02",
+        "faceId": 2
+    },
+    "s2_02": {
+        "speaker": "",
+        "text": "（カチャカチャと食器の音が聞こえる）",
+        "next": "s2_03",
+        "faceId": 2
+    },
+    "s2_03": {
+        "speaker": "俺",
+        "text": "「……」",
+        "next": "s2_04",
+        "faceId": 2
+    },
+    "s2_04": {
+        "speaker": "",
+        "text": "（ホイップクリームを絞ってるな）",
+        "next": "s2_05",
+        "faceId": 2
+    },
+    "s2_05": {
+        "speaker": "あいす",
+        "text": "「いい？ よく見ててね」",
+        "next": "s2_06",
+        "faceId": 2
+    },
+    "s2_06": {
+        "speaker": "あいす",
+        "text": "「私の『おっとり包容力』と『天才的センス』をミックスすると……すごいことになるんだから」",
+        "next": "s2_07",
+        "faceId": 2
+    },
+    "s2_07": {
+        "speaker": "",
+        "text": "ゴトッ！",
+        "next": "s2_08",
+        "faceId": 2
+    },
+    "s2_08": {
+        "speaker": "",
+        "text": "（何かが机に置かれる）",
+        "next": "s2_09",
+        "faceId": 2
+    },
+    "s2_09": {
+        "speaker": "あいす",
+        "text": "「……お待たせ！ あいす特製『しっくん元気だしてねスペシャル』だよっ！」",
+        "next": "s2_10",
+        "faceId": 16
+    },
+    "s2_10": {
+        "speaker": "俺",
+        "text": "「……でかっ」",
+        "next": "s2_11",
+        "faceId": 16
+    },
+    "s2_11": {
+        "speaker": "",
+        "text": "（目の前に置かれたのは、パフェグラスから溢れんばかりのアイスとフルーツの山）",
+        "next": "s2_12",
+        "faceId": 16
+    },
+    "s2_12": {
+        "speaker": "",
+        "text": "（これ、明らかに一人分じゃない）",
+        "next": "s2_13",
+        "faceId": 16
+    },
+    "s2_13": {
+        "speaker": "あいす",
+        "text": "「すごいでしょ～？ イチゴにチョコ、バニラにマカロン……」",
+        "next": "s2_14",
+        "faceId": 16
+    },
+    "s2_14": {
+        "speaker": "あいす",
+        "text": "「私が……じゃなかった、しっくんが好きそうなものを全部乗せてみたの！」",
+        "next": "s2_15",
+        "faceId": 16
+    },
+    "s2_15": {
+        "speaker": "俺",
+        "text": "「……あの、これ俺が全部食べるのか？」",
+        "next": "s2_16",
+        "faceId": 16
+    },
+    "s2_16": {
+        "speaker": "あいす",
+        "text": "「え？ もちろん君のために……」",
+        "next": "s2_17",
+        "faceId": 2
+    },
+    "s2_17": {
+        "speaker": "",
+        "text": "（あいすの視線が、パフェの頂上に乗った『限定プリン』に釘付けになる）",
+        "next": "s2_18",
+        "faceId": 17
+    },
+    "s2_18": {
+        "speaker": "あいす",
+        "text": "「…………」",
+        "next": "s2_19",
+        "faceId": 17,
+        "noVoice": true
+    },
+    "s2_19": {
+        "speaker": "",
+        "text": "（ゴクリ）",
+        "next": "s2_20",
+        "faceId": 20
+    },
+    "s2_20": {
+        "speaker": "あいす",
+        "text": "「……でも、このプリンは今日までの限定で……」",
+        "next": "s2_21",
+        "faceId": 5
+    },
+    "s2_21": {
+        "speaker": "あいす",
+        "text": "「下のアイスが溶けちゃう前に食べないと……風味が……」",
+        "next": "s2_22",
+        "faceId": 5
+    },
+    "s2_22": {
+        "speaker": "あいす",
+        "text": "「ああっ、生クリームが垂れてきそう……！」",
+        "next": "s2_23",
+        "faceId": 5
+    },
+    "s2_23": {
+        "speaker": "",
+        "text": "（完全に目が「食べたい」と言っている）",
+        "next": "s2_24",
+        "faceId": 5
+    },
+    "s2_24": {
+        "speaker": "",
+        "text": "（君のために作ったと言いながら、スプーンを持つ手が震えている）",
+        "next": "s2_25",
+        "faceId": 5
+    },
+    "s2_25": {
+        "speaker": "あいす",
+        "text": "「うぅ……だ、だめだめ！ これは可愛い弟分（しっくん）のための……！」",
+        "next": "s2_26",
+        "faceId": 5
+    },
+    "s2_26": {
+        "speaker": "あいす",
+        "text": "「でも……一口くらいなら……いや、毒味が必要かも……？」",
+        "next": "s2_27",
+        "faceId": 5
+    },
+    "s2_27": {
+        "speaker": "",
+        "text": "（……このままでは、俺のパフェが『毒味』という名目で消滅してしまう）",
+        "next": "s2_28",
+        "faceId": 5
+    },
+    "s2_28": {
+        "speaker": "",
+        "text": "（昔から、美味しいものを前にしたこいつの理性はザルだ）",
+        "next": "s2_choice",
+        "faceId": 20
+    },
+    "s2_choice": {
+        "speaker": "",
+        "text": "【選択肢①：パフェへの対応】",
+        "choices": [
+            {
+                "text": "「ほら、あいすも一緒に食べよう。『あーん』してやるよ」",
+                "next": "bad1a_01",
+                "qIndex": 1,
+                "cIndex": 1
+            },
+            {
+                "text": "「そんなに食べたら太るぞ。せっかくスタイルいいのに」",
+                "next": "bad1b_01",
+                "qIndex": 1,
+                "cIndex": 2
+            },
+            {
+                "text": "「お子様ランチみたいで可愛いな、あいすにぴったりだ」",
+                "next": "bad1c_01",
+                "qIndex": 1,
+                "cIndex": 3
+            },
+            {
+                "text": "「ブラックコーヒーくれ、スプーンも（イケボ）」",
+                "next": "true1_01",
+                "qIndex": 1,
+                "cIndex": 4
+            }
+        ],
+        "faceId": 20
+    },
+    "bad1a_01": {
+        "speaker": "俺",
+        "text": "「ほら、あいすも一緒に食べよう。『あーん』してやるよ」",
+        "next": "bad1a_02",
+        "faceId": 1
+    },
+    "bad1a_02": {
+        "speaker": "",
+        "text": "（スプーンを近づける）",
+        "next": "bad1a_03",
+        "faceId": 1
+    },
+    "bad1a_03": {
+        "speaker": "あいす",
+        "text": "「ひゃっ！？」",
+        "next": "bad1a_04",
+        "faceId": 11,
+        "voice": "scenarios/aisu/assets/voice/bad/bad_01_01_01.wav"
+    },
+    "bad1a_04": {
+        "speaker": "あいす",
+        "text": "「な、ななな……！？」",
+        "next": "bad1a_05",
+        "faceId": 2,
+        "voice": "scenarios/aisu/assets/voice/bad/bad_01_01_02.wav"
+    },
+    "bad1a_05": {
+        "speaker": "",
+        "text": "（あいすは顔を真っ赤にして、バッと身を引いた）",
+        "next": "bad1a_06",
+        "faceId": 11
+    },
+    "bad1a_06": {
+        "speaker": "あいす",
+        "text": "「し、したいんでしょ！ そういうことしたいんでしょー！？」",
+        "next": "bad1a_07",
+        "faceId": 6,
+        "voice": "scenarios/aisu/assets/voice/bad/bad_01_01_03.wav"
+    },
+    "bad1a_07": {
+        "speaker": "あいす",
+        "text": "「セクハラだー！ きゃー！ しっくんのエッチー！！」",
+        "next": "bad1a_08",
+        "faceId": 6,
+        "voice": "scenarios/aisu/assets/voice/bad/bad_01_01_04.wav"
+    },
+    "bad1a_08": {
+        "speaker": "",
+        "text": "ザッ！ ザッ！ ザッ！",
+        "next": "bad1a_09",
+        "faceId": 7
+    },
+    "bad1a_09": {
+        "speaker": "",
+        "text": "（な、なんだ？重い足音が）",
+        "next": "bad1a_10",
+        "faceId": 7
+    },
+    "bad1a_10": {
+        "speaker": "親衛隊A",
+        "text": "「おい！ あいすちゃんに何してんだテメェ！！」",
+        "next": "bad1a_11",
+        "faceId": 7
+    },
+    "bad1a_11": {
+        "speaker": "親衛隊B",
+        "text": "「俺たちのアイドルに気安く触れるな！」",
+        "next": "bad1a_12",
+        "faceId": 7
+    },
+    "bad1a_12": {
+        "speaker": "親衛隊C",
+        "text": "「連行だ！！」",
+        "next": "bad1a_13",
+        "faceId": 7
+    },
+    "bad1a_13": {
+        "speaker": "俺",
+        "text": "「えっ、ちょ、どこから湧いて……！？」",
+        "next": "bad1a_14",
+        "faceId": 7
+    },
+    "bad1a_14": {
+        "speaker": "",
+        "text": "（店内に潜んでいた「あいす親衛隊」に囲まれ、俺はそのまま店の外へ担ぎ出されてしまった）",
+        "next": "bad1a_end",
+        "faceId": 7
+    },
+    "bad1a_end": {
+        "speaker": "",
+        "text": "",
+        "isEnd": true,
+        "isGameOver": true
+    },
+    "bad1b_01": {
+        "speaker": "俺",
+        "text": "「そんなに食べたら太るぞ。せっかくスタイルいいのに」",
+        "next": "bad1b_02",
+        "faceId": 1
+    },
+    "bad1b_02": {
+        "speaker": "あいす",
+        "text": "「……はぁ？」",
+        "next": "bad1b_03",
+        "faceId": 12,
+        "voice": "scenarios/aisu/assets/voice/bad/bad_01_02_01.wav"
+    },
+    "bad1b_03": {
+        "speaker": "",
+        "text": "（あいすの動きがピタリと止まり、ジトッとした目でこちらを見る）",
+        "next": "bad1b_04",
+        "faceId": 12
+    },
+    "bad1b_04": {
+        "speaker": "あいす",
+        "text": "「……失敬だなぁ、しっくんは」",
+        "next": "bad1b_05",
+        "faceId": 12,
+        "voice": "scenarios/aisu/assets/voice/bad/bad_01_02_02.wav"
+    },
+    "bad1b_05": {
+        "speaker": "あいす",
+        "text": "「私のこのナイスバディを見て言ってるの？」",
+        "next": "bad1b_06",
+        "faceId": 12,
+        "voice": "scenarios/aisu/assets/voice/bad/bad_01_02_03.wav"
+    },
+    "bad1b_06": {
+        "speaker": "",
+        "text": "（スラッとした足を組み替える）",
+        "next": "bad1b_07",
+        "faceId": 12
+    },
+    "bad1b_07": {
+        "speaker": "あいす",
+        "text": "「私はね、食べた分だけ可愛さに変換される『ハイブリッド構造』なの！」",
+        "next": "bad1b_08",
+        "faceId": 12,
+        "voice": "scenarios/aisu/assets/voice/bad/bad_01_02_04.wav"
+    },
+    "bad1b_08": {
+        "speaker": "あいす",
+        "text": "「もういいもん！ 君にはあげない！ 私が全部責任を持って処理します！」",
+        "next": "bad1b_09",
+        "faceId": 12,
+        "voice": "scenarios/aisu/assets/voice/bad/bad_01_02_05.wav"
+    },
+    "bad1b_09": {
+        "speaker": "",
+        "text": "（ヤケ食いしてやがる）",
+        "next": "bad1b_10",
+        "faceId": 12
+    },
+    "bad1b_10": {
+        "speaker": "",
+        "text": "（パフェは没収され、俺はただ幼馴染のモグモグタイムを見せつけられるだけだった……）",
+        "next": "bad1b_end",
+        "faceId": 16
+    },
+    "bad1b_end": {
+        "speaker": "",
+        "text": "",
+        "isEnd": true,
+        "isGameOver": true
+    },
+    "bad1c_01": {
+        "speaker": "俺",
+        "text": "「お子様ランチみたいで可愛いな、あいすにぴったりだ」",
+        "next": "bad1c_02",
+        "faceId": 1
+    },
+    "bad1c_02": {
+        "speaker": "あいす",
+        "text": "「……むっ」",
+        "next": "bad1c_03",
+        "faceId": 6,
+        "voice": "scenarios/aisu/assets/voice/bad/bad_01_03_01.wav"
+    },
+    "bad1c_03": {
+        "speaker": "",
+        "text": "（頬をぷくっと膨らませる）",
+        "next": "bad1c_04",
+        "faceId": 6
+    },
+    "bad1c_04": {
+        "speaker": "あいす",
+        "text": "「誰がお子様だって？」",
+        "next": "bad1c_05",
+        "faceId": 6,
+        "voice": "scenarios/aisu/assets/voice/bad/bad_01_03_02.wav"
+    },
+    "bad1c_05": {
+        "speaker": "あいす",
+        "text": "「これでも私は成人済みで、君のお姉さん役で、大人の色気ムンムンなんだからね！？」",
+        "next": "bad1c_06",
+        "faceId": 6,
+        "voice": "scenarios/aisu/assets/voice/bad/bad_01_03_03.wav"
+    },
+    "bad1c_06": {
+        "speaker": "あいす",
+        "text": "「身長がちょっと……コンパクトなだけだし！」",
+        "next": "bad1c_07",
+        "faceId": 6,
+        "voice": "scenarios/aisu/assets/voice/bad/bad_01_03_04.wav"
+    },
+    "bad1c_07": {
+        "speaker": "あいす",
+        "text": "「もう知らない！ 子供扱いする生意気な弟には、お冷やしか出しません！」",
+        "next": "bad1c_08",
+        "faceId": 6,
+        "voice": "scenarios/aisu/assets/voice/bad/bad_01_03_05.wav"
+    },
+    "bad1c_08": {
+        "speaker": "",
+        "text": "（ドン！と水を置かれる）",
+        "next": "bad1c_09",
+        "faceId": 6
+    },
+    "bad1c_09": {
+        "speaker": "",
+        "text": "（昔からの地雷を踏み抜いてしまったようだ……）",
+        "next": "bad1c_end",
+        "faceId": 6
+    },
+    "bad1c_end": {
+        "speaker": "",
+        "text": "",
+        "isEnd": true,
+        "isGameOver": true
+    },
+    "true1_01": {
+        "speaker": "俺",
+        "text": "「ブラックコーヒーくれ、スプーンも」",
+        "next": "true1_02",
+        "faceId": 1
+    },
+    "true1_02": {
+        "speaker": "あいす",
+        "text": "「……はぁ？」",
+        "next": "true1_03",
+        "faceId": 17
+    },
+    "true1_03": {
+        "speaker": "あいす",
+        "text": "「な、なにカッコつけてるの！？」",
+        "next": "true1_04",
+        "faceId": 17
+    },
+    "true1_04": {
+        "speaker": "",
+        "text": "（あいすは呆れたように口を尖らせる）",
+        "next": "true1_05",
+        "faceId": 13
+    },
+    "true1_05": {
+        "speaker": "あいす",
+        "text": "「しっくん、いっつもココアでしょ！ しかもマシュマロ入りの甘いやつ！」",
+        "next": "true1_06",
+        "faceId": 18
+    },
+    "true1_06": {
+        "speaker": "あいす",
+        "text": "「無理しちゃってさー、知ってるんだからねーだ！」",
+        "next": "true1_07",
+        "faceId": 4
+    },
+    "true1_07": {
+        "speaker": "俺",
+        "text": "「……違うって。甘いの食べるのにちょうどいいんだよ」",
+        "next": "true1_08",
+        "faceId": 18
+    },
+    "true1_08": {
+        "speaker": "俺",
+        "text": "「コーヒーに、パフェの生クリームを少し入れるんだ。ウインナーコーヒーみたいになって美味いから」",
+        "next": "true1_09",
+        "faceId": 18
+    },
+    "true1_09": {
+        "speaker": "俺",
+        "text": "「それに、そんな大きいパフェならなおさらちょうどいい」",
+        "next": "true1_10",
+        "faceId": 17
+    },
+    "true1_10": {
+        "speaker": "あいす",
+        "text": "「……あっ」",
+        "next": "true1_11",
+        "faceId": 17
+    },
+    "true1_11": {
+        "speaker": "",
+        "text": "（あいすは目を丸くして、パフェと俺の顔を交互に見る）",
+        "next": "true1_12",
+        "faceId": 11
+    },
+    "true1_12": {
+        "speaker": "",
+        "text": "（俺の意図――「一緒に食べるためのブラックコーヒー」だと気づいたようだ）",
+        "next": "true1_13",
+        "faceId": 11
+    },
+    "true1_13": {
+        "speaker": "あいす",
+        "text": "「……もぅ。仕方ないですねー！」",
+        "next": "true1_14",
+        "faceId": 1
+    },
+    "true1_14": {
+        "speaker": "",
+        "text": "（パァァァッ！と、花が咲いたような満面の笑みを浮かべる）",
+        "next": "true1_15",
+        "faceId": 16
+    },
+    "true1_15": {
+        "speaker": "あいす",
+        "text": "「これはお客様からのお願いで、業務の一環です！」",
+        "next": "true1_16",
+        "faceId": 16
+    },
+    "true1_16": {
+        "speaker": "あいす",
+        "text": "「特別に、付き合ってあげますよーだ！」",
+        "next": "true1_17",
+        "faceId": 1
+    },
+    "true1_17": {
+        "speaker": "",
+        "text": "（カチャ、とスプーンを二本並べる）",
+        "next": "true1_18",
+        "faceId": 10
+    },
+    "true1_18": {
+        "speaker": "俺",
+        "text": "「はいはい。いっぱい食えよ、お姉ちゃん」",
+        "next": "s3_start",
+        "faceId": 16
+    },
+    "s3_start": {
+        "bgImage": "assets/bg/aisu/park_evening.jpg",
+        "sceneId": "scene3",
+        "next": "s3_01"
+    },
+    "s3_01": {
+        "speaker": "",
+        "text": "（仕事が終わった後、あいすが『腹ごなしに少し歩きたい』と言うので、昔よく遊んだ公園に寄り道することになった）",
+        "next": "s3_02",
+        "faceId": 2
+    },
+    "s3_02": {
+        "speaker": "",
+        "text": "（並んでブランコに乗るなんて、何年ぶりだろうか）",
+        "next": "s3_03",
+        "faceId": 2
+    },
+    "s3_03": {
+        "speaker": "あいす",
+        "text": "「……懐かしいねぇ」",
+        "next": "s3_04",
+        "faceId": 2
+    },
+    "s3_04": {
+        "speaker": "あいす",
+        "text": "「昔はさ、ここでしっくんが派手に転んで、ビービー泣いてたよね～」",
+        "next": "s3_05",
+        "faceId": 13
+    },
+    "s3_05": {
+        "speaker": "",
+        "text": "（ブランコを漕ぎながら、あいすがニシシと笑う）",
+        "next": "s3_06",
+        "faceId": 13
+    },
+    "s3_06": {
+        "speaker": "あいす",
+        "text": "「私が『痛いの痛いの飛んでけー』ってしても泣き止まなくてさ」",
+        "next": "s3_07",
+        "faceId": 1
+    },
+    "s3_07": {
+        "speaker": "あいす",
+        "text": "「結局、私がなけなしのお小遣いでアイス買ってきて、やっと泣き止んだんだよね」",
+        "next": "s3_08",
+        "faceId": 13
+    },
+    "s3_08": {
+        "speaker": "俺",
+        "text": "「……古い話を掘り返すなよ。今はもう泣かないって」",
+        "next": "s3_09",
+        "faceId": 13
+    },
+    "s3_09": {
+        "speaker": "あいす",
+        "text": "「えー？ どうかなぁ？」",
+        "next": "s3_10",
+        "faceId": 4
+    },
+    "s3_10": {
+        "speaker": "あいす",
+        "text": "「今日だって、お店に来た時、泣きそうな顔してたじゃん」",
+        "next": "s3_11",
+        "faceId": 4
+    },
+    "s3_11": {
+        "speaker": "あいす",
+        "text": "「……私にはわかるんだから。しっくんが強がってるの」",
+        "next": "s3_12",
+        "faceId": 4
+    },
+    "s3_12": {
+        "speaker": "",
+        "text": "（ブランコの音が止まる）",
+        "next": "s3_13",
+        "faceId": 4
+    },
+    "s3_13": {
+        "speaker": "あいす",
+        "text": "「……でもね」",
+        "next": "s3_14",
+        "faceId": 2
+    },
+    "s3_14": {
+        "speaker": "あいす",
+        "text": "「昔は私が守ってあげなきゃって思ってたけど……」",
+        "next": "s3_15",
+        "faceId": 2
+    },
+    "s3_15": {
+        "speaker": "",
+        "text": "（あいすが地面を蹴り、少しだけ俺の方に顔を近づける）",
+        "next": "s3_16",
+        "faceId": 2
+    },
+    "s3_16": {
+        "speaker": "",
+        "text": "（夕陽に照らされた彼女の表情は、いつもの「お姉ちゃんぶった顔」ではなく、少しだけ大人びて見えた）",
+        "next": "s3_17",
+        "faceId": 9
+    },
+    "s3_17": {
+        "speaker": "あいす",
+        "text": "「……今日のしっくん、ちょっとだけカッコよかったよ？」",
+        "next": "s3_18",
+        "faceId": 9
+    },
+    "s3_18": {
+        "speaker": "あいす",
+        "text": "「ブラックコーヒーとか、頼んじゃってさ」",
+        "next": "s3_19",
+        "faceId": 9
+    },
+    "s3_19": {
+        "speaker": "あいす",
+        "text": "「……少しは、大人になったのかなぁって」",
+        "next": "s3_20",
+        "faceId": 9
+    },
+    "s3_20": {
+        "speaker": "",
+        "text": "（……珍しく素直な物言いだ）",
+        "next": "s3_21",
+        "faceId": 9
+    },
+    "s3_21": {
+        "speaker": "",
+        "text": "（いつも子供扱いしてくるくせに、こういう時だけズルい顔をする）",
+        "next": "s3_22",
+        "faceId": 9
+    },
+    "s3_22": {
+        "speaker": "",
+        "text": "（さて、なんて返してやるか）",
+        "next": "s3_choice",
+        "faceId": 20
+    },
+    "s3_choice": {
+        "speaker": "",
+        "text": "【選択肢②：夕暮れの公園で】",
+        "choices": [
+            {
+                "text": "「今は、あいすが泣いてたら俺が守ってやるよ」",
+                "next": "bad2a_01",
+                "qIndex": 2,
+                "cIndex": 1
+            },
+            {
+                "text": "「あいすも大人になったよ」",
+                "next": "true2_01",
+                "qIndex": 2,
+                "cIndex": 2
+            },
+            {
+                "text": "「暗くなってきたし、そろそろお化け出るぞ～」",
+                "next": "bad2b_01",
+                "qIndex": 2,
+                "cIndex": 3
+            },
+            {
+                "text": "「……大人になっても、あいすが好きだ。」",
+                "next": "bad2c_01",
+                "qIndex": 2,
+                "cIndex": 4
+            }
+        ],
+        "faceId": 20
+    },
+    "bad2a_01": {
+        "speaker": "俺",
+        "text": "「今は、あいすが泣いてたら俺が守ってやるよ」",
+        "next": "bad2a_02",
+        "faceId": 1
+    },
+    "bad2a_02": {
+        "speaker": "あいす",
+        "text": "「へぇ～？」",
+        "next": "bad2a_03",
+        "faceId": 18,
+        "voice": "scenarios/aisu/assets/voice/bad/bad_02_01_01.wav"
+    },
+    "bad2a_03": {
+        "speaker": "",
+        "text": "（あいすがニヤニヤしながら顔を覗き込んでくる）",
+        "next": "bad2a_04",
+        "faceId": 4
+    },
+    "bad2a_04": {
+        "speaker": "あいす",
+        "text": "「じゃあ、しっくんはお兄ちゃんだね？」",
+        "next": "bad2a_05",
+        "faceId": 18,
+        "voice": "scenarios/aisu/assets/voice/bad/bad_02_01_02.wav"
+    },
+    "bad2a_05": {
+        "speaker": "あいす",
+        "text": "「なら、何かあったら守ってもらおうかな？ 弟くーん♪」",
+        "next": "bad2a_06",
+        "faceId": 4,
+        "voice": "scenarios/aisu/assets/voice/bad/bad_02_01_03.wav"
+    },
+    "bad2a_06": {
+        "speaker": "",
+        "text": "（完全にからかわれている。主導権を握るのはまだ早かったようだ……）",
+        "next": "bad2a_end",
+        "faceId": 18
+    },
+    "bad2a_end": {
+        "speaker": "",
+        "text": "",
+        "isEnd": true,
+        "isGameOver": true
+    },
+    "bad2b_01": {
+        "speaker": "俺",
+        "text": "「暗くなってきたし、そろそろお化け出るぞ～」",
+        "next": "bad2b_02",
+        "faceId": 1
+    },
+    "bad2b_02": {
+        "speaker": "俺",
+        "text": "「ほら、あそこの茂み……」",
+        "next": "bad2b_03",
+        "faceId": 1
+    },
+    "bad2b_03": {
+        "speaker": "あいす",
+        "text": "「なっ……！？」",
+        "next": "bad2b_04",
+        "faceId": 7,
+        "voice": "scenarios/aisu/assets/voice/bad/bad_02_03_01.wav"
+    },
+    "bad2b_04": {
+        "speaker": "あいす",
+        "text": "「な、なに怖がらせにきてるの！？ 怖くないよ！」",
+        "next": "bad2b_05",
+        "faceId": 7,
+        "voice": "scenarios/aisu/assets/voice/bad/bad_02_03_02.wav"
+    },
+    "bad2b_05": {
+        "speaker": "",
+        "text": "（強がっているが、声が震えている。目には涙が溜まっている）",
+        "next": "bad2b_06",
+        "faceId": 7
+    },
+    "bad2b_06": {
+        "speaker": "あいす",
+        "text": "「うぅ……しっくんのバカぁ！ 泣きそう……！」",
+        "next": "bad2b_07",
+        "faceId": 14,
+        "voice": "scenarios/aisu/assets/voice/bad/bad_02_03_03.wav"
+    },
+    "bad2b_07": {
+        "speaker": "",
+        "text": "（ガササッ！！茂みが揺れる）",
+        "next": "bad2b_08",
+        "faceId": 7
+    },
+    "bad2b_08": {
+        "speaker": "親衛隊A・B・C",
+        "text": "「誰だ！！ あいすちゃんを泣かそうとしてるのはーッ！！」",
+        "next": "bad2b_09",
+        "faceId": 5
+    },
+    "bad2b_09": {
+        "speaker": "俺",
+        "text": "「ひぃっ！？」",
+        "next": "bad2b_10",
+        "faceId": 7
+    },
+    "bad2b_10": {
+        "speaker": "",
+        "text": "（お化けよりも怖い人たちが現れた……）",
+        "next": "bad2b_end",
+        "faceId": 7
+    },
+    "bad2b_end": {
+        "speaker": "",
+        "text": "",
+        "isEnd": true,
+        "isGameOver": true
+    },
+    "bad2c_01": {
+        "speaker": "俺",
+        "text": "「……大人になっても、あいすが好きだ。」",
+        "next": "bad2c_02",
+        "faceId": 1
+    },
+    "bad2c_02": {
+        "speaker": "あいす",
+        "text": "「……へ？」",
+        "next": "bad2c_03",
+        "faceId": 17,
+        "voice": "scenarios/aisu/assets/voice/bad/bad_02_04_01.wav"
+    },
+    "bad2c_03": {
+        "speaker": "",
+        "text": "（あいすはきょとんとして、数秒固まる）",
+        "next": "bad2c_04",
+        "faceId": 17
+    },
+    "bad2c_04": {
+        "speaker": "",
+        "text": "（そして、ボンッ！と音がしそうなほど顔を真っ赤にした）",
+        "next": "bad2c_05",
+        "faceId": 11
+    },
+    "bad2c_05": {
+        "speaker": "あいす",
+        "text": "「は、はぁぁぁあ！？」",
+        "next": "bad2c_06",
+        "faceId": 11,
+        "voice": "scenarios/aisu/assets/voice/bad/bad_02_04_02.wav"
+    },
+    "bad2c_06": {
+        "speaker": "あいす",
+        "text": "「な、ななな、なに言って……ば、バカ！！」",
+        "next": "bad2c_07",
+        "faceId": 6,
+        "voice": "scenarios/aisu/assets/voice/bad/bad_02_04_03.wav"
+    },
+    "bad2c_07": {
+        "speaker": "",
+        "text": "（ギュルルルル……（盛大な腹の虫の音））",
+        "next": "bad2c_08",
+        "faceId": 6
+    },
+    "bad2c_08": {
+        "speaker": "あいす",
+        "text": "「あ」",
+        "next": "bad2c_09",
+        "faceId": 15,
+        "voice": "scenarios/aisu/assets/voice/bad/bad_02_04_04.wav"
+    },
+    "bad2c_09": {
+        "speaker": "俺",
+        "text": "「……」",
+        "next": "bad2c_10",
+        "faceId": 15
+    },
+    "bad2c_10": {
+        "speaker": "あいす",
+        "text": "「……」",
+        "next": "bad2c_11",
+        "faceId": 15
+    },
+    "bad2c_11": {
+        "speaker": "",
+        "text": "（極度の緊張と動揺で、彼女の胃袋が悲鳴を上げたらしい）",
+        "next": "bad2c_12",
+        "faceId": 15
+    },
+    "bad2c_12": {
+        "speaker": "",
+        "text": "（甘いムードは一瞬で消し飛んだ）",
+        "next": "bad2c_end",
+        "faceId": 15
+    },
+    "bad2c_end": {
+        "speaker": "",
+        "text": "",
+        "isEnd": true,
+        "isGameOver": true
+    },
+    "true2_01": {
+        "speaker": "俺",
+        "text": "「あいすも大人になったよ」",
+        "next": "true2_02",
+        "faceId": 1
+    },
+    "true2_02": {
+        "speaker": "あいす",
+        "text": "「……え？」",
+        "next": "true2_03",
+        "faceId": 17
+    },
+    "true2_03": {
+        "speaker": "",
+        "text": "（あいすがジト目で自分の体を見下ろす）",
+        "next": "true2_04",
+        "faceId": 6
+    },
+    "true2_04": {
+        "speaker": "あいす",
+        "text": "「ほんとにそう思ってるー？？」",
+        "next": "true2_05",
+        "faceId": 6
+    },
+    "true2_05": {
+        "speaker": "あいす",
+        "text": "「もしかして、身体的な話してますかー？」",
+        "next": "true2_06",
+        "faceId": 6
+    },
+    "true2_06": {
+        "speaker": "あいす",
+        "text": "「一部の発育が良いとか、そういうセクハラ的な……」",
+        "next": "true2_07",
+        "faceId": 6
+    },
+    "true2_07": {
+        "speaker": "俺",
+        "text": "「……違うって」",
+        "next": "true2_08",
+        "faceId": 6
+    },
+    "true2_08": {
+        "speaker": "俺",
+        "text": "「今日も、俺を傷つけずさりげなく励まそうとしてくれたりな」",
+        "next": "true2_09",
+        "faceId": 6
+    },
+    "true2_09": {
+        "speaker": "俺",
+        "text": "「そういうとこ、ちゃんとお姉さんだなって思ったよ」",
+        "next": "true2_10",
+        "faceId": 6
+    },
+    "true2_10": {
+        "speaker": "あいす",
+        "text": "「……っ！」",
+        "next": "true2_11",
+        "faceId": 11
+    },
+    "true2_11": {
+        "speaker": "",
+        "text": "（あいすは驚いたように目を見開き、それから……茹でダコみたいに赤くなった）",
+        "next": "true2_12",
+        "faceId": 2
+    },
+    "true2_12": {
+        "speaker": "あいす",
+        "text": "「～～～～っ！」",
+        "next": "true2_13",
+        "faceId": 11
+    },
+    "true2_13": {
+        "speaker": "あいす",
+        "text": "「べ、別に！ 私はいつだって完璧なお姉さんだし！？」",
+        "next": "true2_14",
+        "faceId": 10
+    },
+    "true2_14": {
+        "speaker": "あいす",
+        "text": "「しっくんが今更気づいただけだしー！！」",
+        "next": "true2_15",
+        "faceId": 4
+    },
+    "true2_15": {
+        "speaker": "",
+        "text": "（照れ隠しで叫んでいるが、その顔は嬉しさで緩みっぱなしだ）",
+        "next": "true2_16",
+        "faceId": 9
+    },
+    "true2_16": {
+        "speaker": "",
+        "text": "（立ち上がる）",
+        "next": "true2_17",
+        "faceId": 9
+    },
+    "true2_17": {
+        "speaker": "あいす",
+        "text": "「……もー！ 調子狂うなぁ……」",
+        "next": "true2_18",
+        "faceId": 1
+    },
+    "true2_18": {
+        "speaker": "あいす",
+        "text": "「さ、帰ろ！」",
+        "next": "true2_19",
+        "faceId": 16
+    },
+    "true2_19": {
+        "speaker": "あいす",
+        "text": "「お腹空いた！ 今日の晩ごはんなににしようかな！」",
+        "next": "true2_20",
+        "faceId": 16
+    },
+    "true2_20": {
+        "speaker": "俺",
+        "text": "「……さっきデカいパフェ食ったろ」",
+        "next": "true2_21",
+        "faceId": 16
+    },
+    "true2_21": {
+        "speaker": "あいす",
+        "text": "「あれは別腹！ 晩ごはんは晩ごはん！」",
+        "next": "true2_22",
+        "faceId": 16
+    },
+    "true2_22": {
+        "speaker": "あいす",
+        "text": "「……ていうか、今日まだ何も用意してないなー。しっくんは？」",
+        "next": "true2_23",
+        "faceId": 1
+    },
+    "true2_23": {
+        "speaker": "俺",
+        "text": "「俺もまだ考えてないけど……」",
+        "next": "true2_24",
+        "faceId": 1
+    },
+    "true2_24": {
+        "speaker": "あいす",
+        "text": "「……！」",
+        "next": "true2_25",
+        "faceId": 1
+    },
+    "true2_25": {
+        "speaker": "",
+        "text": "（あいすがクルッと振り返り、ニカッと笑った）",
+        "next": "true2_26",
+        "faceId": 1
+    },
+    "true2_26": {
+        "speaker": "あいす",
+        "text": "「じゃあ決まりっ！ 私の家で一緒に食べよ！」",
+        "next": "true2_27",
+        "faceId": 16
+    },
+    "true2_27": {
+        "speaker": "あいす",
+        "text": "「材料あるから、お鍋にしよ！ お酒も飲んじゃうもんねー！」",
+        "next": "true2_28",
+        "faceId": 1
+    },
+    "true2_28": {
+        "speaker": "俺",
+        "text": "「お前ん家かよ……まあ、いいけど」",
+        "next": "true2_29",
+        "faceId": 1
+    },
+    "true2_29": {
+        "speaker": "あいす",
+        "text": "「よし、交渉成立！」",
+        "next": "true2_30",
+        "faceId": 1
+    },
+    "true2_30": {
+        "speaker": "あいす",
+        "text": "「ほら、早く行かないと買い出しのお店閉まっちゃうよ！」",
+        "next": "true2_31",
+        "faceId": 1
+    },
+    "true2_31": {
+        "speaker": "あいす",
+        "text": "「急げ急げー！」",
+        "next": "true2_32",
+        "faceId": 1
+    },
+    "true2_32": {
+        "speaker": "",
+        "text": "（俺の手を引いて走り出すあいす。……結局、こいつのペースだ）",
+        "next": "s4_start",
+        "faceId": 16
+    },
+    "s4_start": {
+        "bgImage": "assets/bg/aisu/room.jpg",
+        "sceneId": "scene4",
+        "next": "s4_01"
+    },
+    "s4_01": {
+        "speaker": "",
+        "text": "（コトコトコト……と鍋が煮える音）",
+        "next": "s4_02",
+        "faceId": 8
+    },
+    "s4_02": {
+        "speaker": "あいす",
+        "text": "「かんぱーい！！」",
+        "next": "s4_03",
+        "faceId": 1
+    },
+    "s4_03": {
+        "speaker": "",
+        "text": "カシュッ！",
+        "next": "s4_04",
+        "faceId": 8
+    },
+    "s4_04": {
+        "speaker": "",
+        "text": "（缶チューハイを開ける音）",
+        "next": "s4_05",
+        "faceId": 8
+    },
+    "s4_05": {
+        "speaker": "あいす",
+        "text": "「ぷはぁーっ！ お仕事終わりのお酒は染みるねぇ～！」",
+        "next": "s4_06",
+        "faceId": 1
+    },
+    "s4_06": {
+        "speaker": "",
+        "text": "（店を出た時の私服のまま、あいすがほんのり顔を赤くして笑っている）",
+        "next": "s4_07",
+        "faceId": 8
+    },
+    "s4_07": {
+        "speaker": "",
+        "text": "（鍋の湯気のせいか、それともお酒のせいか……どこか艶っぽく見える）",
+        "next": "s4_08",
+        "faceId": 8
+    },
+    "s4_08": {
+        "speaker": "俺",
+        "text": "「……お前、ペース早くないか？ 大丈夫か？」",
+        "next": "s4_09",
+        "faceId": 8
+    },
+    "s4_09": {
+        "speaker": "あいす",
+        "text": "「平気平気っ！ 私、お酒強いもん！」",
+        "next": "s4_10",
+        "faceId": 8
+    },
+    "s4_10": {
+        "speaker": "あいす",
+        "text": "「それよりほら、お肉食べて！ お野菜も！」",
+        "next": "s4_11",
+        "faceId": 16
+    },
+    "s4_11": {
+        "speaker": "あいす",
+        "text": "「しっくん最近痩せすぎだから、お姉ちゃんが餌付けしてあげる！」",
+        "next": "s4_12",
+        "faceId": 16
+    },
+    "s4_12": {
+        "speaker": "",
+        "text": "（ハフハフ、と鍋をつつく音）",
+        "next": "s4_13",
+        "faceId": 16
+    },
+    "s4_13": {
+        "speaker": "あいす",
+        "text": "「……ん～ふふ♪」",
+        "next": "s4_14",
+        "faceId": 8
+    },
+    "s4_14": {
+        "speaker": "あいす",
+        "text": "「なんかいいねぇ、こういうの」",
+        "next": "s4_15",
+        "faceId": 8
+    },
+    "s4_15": {
+        "speaker": "あいす",
+        "text": "「仕事終わって、美味しいもの食べて、しっくんが隣にいて……」",
+        "next": "s4_16",
+        "faceId": 8
+    },
+    "s4_16": {
+        "speaker": "",
+        "text": "（あいすがトロンとした目で見つめてくる）",
+        "next": "s4_17",
+        "faceId": 3
+    },
+    "s4_17": {
+        "speaker": "",
+        "text": "（……酔っ払ってるな、これ）",
+        "next": "s4_18",
+        "faceId": 3
+    },
+    "s4_18": {
+        "speaker": "あいす",
+        "text": "「……ねぇ、しっくん」",
+        "next": "s4_19",
+        "faceId": 3
+    },
+    "s4_19": {
+        "speaker": "",
+        "text": "（衣擦れの音）",
+        "next": "s4_20",
+        "faceId": 3
+    },
+    "s4_20": {
+        "speaker": "",
+        "text": "（あいすがズルズルと座布団を寄せて、俺の隣にぴったりとくっついてきた）",
+        "next": "s4_21",
+        "faceId": 3
+    },
+    "s4_21": {
+        "speaker": "",
+        "text": "（甘いお酒の匂いと、シャンプーの香りが混ざる）",
+        "next": "s4_22",
+        "faceId": 3
+    },
+    "s4_22": {
+        "speaker": "あいす",
+        "text": "「……さっき、大人になったって言ってくれたけどさぁ」",
+        "next": "s4_23",
+        "faceId": 3
+    },
+    "s4_23": {
+        "speaker": "",
+        "text": "（俺の肩に、こてん、と頭を預けてくる）",
+        "next": "s4_24",
+        "faceId": 3
+    },
+    "s4_24": {
+        "speaker": "あいす",
+        "text": "「……しっくんは、私のこと……」",
+        "next": "s4_25",
+        "faceId": 3
+    },
+    "s4_25": {
+        "speaker": "あいす",
+        "text": "「ただの幼馴染じゃなくて……『女の子』として、見てくれてる？」",
+        "next": "s4_26",
+        "faceId": 3
+    },
+    "s4_26": {
+        "speaker": "",
+        "text": "（上目遣いで、至近距離から見つめられる）",
+        "next": "s4_27",
+        "faceId": 3
+    },
+    "s4_27": {
+        "speaker": "",
+        "text": "（その瞳は、いつものふざけた調子ではなく、とろりと潤んでいた）",
+        "next": "s4_28",
+        "faceId": 3
+    },
+    "s4_28": {
+        "speaker": "",
+        "text": "（……不意打ちは卑怯だ）",
+        "next": "s4_29",
+        "faceId": 3
+    },
+    "s4_29": {
+        "speaker": "",
+        "text": "（無防備な姿に、この距離感。……俺だって男だ）",
+        "next": "s4_choice",
+        "faceId": 20
+    },
+    "s4_choice": {
+        "speaker": "",
+        "text": "【選択肢③：幼馴染との距離】",
+        "choices": [
+            {
+                "text": "「……酔っ払いすぎだ。顔、赤いぞ」",
+                "next": "bad3a_01",
+                "qIndex": 3,
+                "cIndex": 1
+            },
+            {
+                "text": "「…気づいてなかったのか？ もう何年も片思いだ」",
+                "next": "true3_01",
+                "qIndex": 3,
+                "cIndex": 2
+            },
+            {
+                "text": "「よし、プロレスごっこするか！ ヘッドロック！」",
+                "next": "bad3b_01",
+                "qIndex": 3,
+                "cIndex": 3
+            },
+            {
+                "text": "「……イチゴ柄か…趣味は変わってないんだな」",
+                "next": "bad3c_01",
+                "qIndex": 3,
+                "cIndex": 4
+            }
+        ],
+        "faceId": 20
+    },
+    "bad3a_01": {
+        "speaker": "俺",
+        "text": "「……酔っ払いすぎだ。顔、赤いぞ」",
+        "next": "bad3a_02",
+        "faceId": 1
+    },
+    "bad3a_02": {
+        "speaker": "あいす",
+        "text": "「むぅ……」",
+        "next": "bad3a_03",
+        "faceId": 6,
+        "voice": "scenarios/aisu/assets/voice/bad/bad_03_01_01.wav"
+    },
+    "bad3a_03": {
+        "speaker": "",
+        "text": "（頬を膨らませて、俺から離れる）",
+        "next": "bad3a_04",
+        "faceId": 6
+    },
+    "bad3a_04": {
+        "speaker": "あいす",
+        "text": "「……しっくんのバカ。意気地なし」",
+        "next": "bad3a_05",
+        "faceId": 6,
+        "voice": "scenarios/aisu/assets/voice/bad/bad_03_01_02.wav"
+    },
+    "bad3a_05": {
+        "speaker": "あいす",
+        "text": "「せっかくお姉さんが隙を見せてあげたのにぃ……」",
+        "next": "bad3a_06",
+        "faceId": 6,
+        "voice": "scenarios/aisu/assets/voice/bad/bad_03_01_03.wav"
+    },
+    "bad3a_06": {
+        "speaker": "あいす",
+        "text": "「もういいもん！ お鍋全部食べてやるんだから！」",
+        "next": "bad3a_07",
+        "faceId": 6,
+        "voice": "scenarios/aisu/assets/voice/bad/bad_03_01_04.wav"
+    },
+    "bad3a_07": {
+        "speaker": "",
+        "text": "（ヤケ酒をあおるあいす）",
+        "next": "bad3a_08",
+        "faceId": 1
+    },
+    "bad3a_08": {
+        "speaker": "",
+        "text": "（微妙な空気のまま、ただの飲み会で終わってしまった……）",
+        "next": "bad3a_end",
+        "faceId": 1
+    },
+    "bad3a_end": {
+        "speaker": "",
+        "text": "",
+        "isEnd": true,
+        "isGameOver": true
+    },
+    "bad3b_01": {
+        "speaker": "俺",
+        "text": "「よし、プロレスごっこするか！ ヘッドロック！」",
+        "next": "bad3b_02",
+        "faceId": 1
+    },
+    "bad3b_02": {
+        "speaker": "あいす",
+        "text": "「ぎゃっ！？ くるしっ、ギブギブ！！」",
+        "next": "bad3b_03",
+        "faceId": 7,
+        "voice": "scenarios/aisu/assets/voice/bad/bad_03_03_01.wav"
+    },
+    "bad3b_03": {
+        "speaker": "",
+        "text": "（バタバタと暴れるあいす）",
+        "next": "bad3b_04",
+        "faceId": 7
+    },
+    "bad3b_04": {
+        "speaker": "あいす",
+        "text": "「……信じらんない！ ムードのかけらもない！」",
+        "next": "bad3b_05",
+        "faceId": 6,
+        "voice": "scenarios/aisu/assets/voice/bad/bad_03_03_02.wav"
+    },
+    "bad3b_05": {
+        "speaker": "あいす",
+        "text": "「しっくんなんて一生独身だよ！ バーカ！！」",
+        "next": "bad3b_06",
+        "faceId": 6,
+        "voice": "scenarios/aisu/assets/voice/bad/bad_03_03_03.wav"
+    },
+    "bad3b_06": {
+        "speaker": "",
+        "text": "（枕を投げつけられた。幼馴染止まり確定だ……）",
+        "next": "bad3b_end",
+        "faceId": 6
+    },
+    "bad3b_end": {
+        "speaker": "",
+        "text": "",
+        "isEnd": true,
+        "isGameOver": true
+    },
+    "bad3c_01": {
+        "speaker": "俺",
+        "text": "「……イチゴ柄か…趣味は変わってないんだな」",
+        "next": "bad3c_02",
+        "faceId": 1
+    },
+    "bad3c_02": {
+        "speaker": "",
+        "text": "（無防備な体勢で、見えてしまったものをつい口にしてしまった）",
+        "next": "bad3c_03",
+        "faceId": 1
+    },
+    "bad3c_03": {
+        "speaker": "あいす",
+        "text": "「……へ？」",
+        "next": "bad3c_04",
+        "faceId": 2,
+        "voice": "scenarios/aisu/assets/voice/bad/bad_03_04_01.wav"
+    },
+    "bad3c_04": {
+        "speaker": "",
+        "text": "（あいすは自分のスカートの裾をゆっくりと見て、自分がとんでもなく無防備だったことに気づく）",
+        "next": "bad3c_05",
+        "faceId": 11
+    },
+    "bad3c_05": {
+        "speaker": "あいす",
+        "text": "「……っ！」",
+        "next": "bad3c_06",
+        "faceId": 11,
+        "voice": "scenarios/aisu/assets/voice/bad/bad_03_04_02.wav"
+    },
+    "bad3c_06": {
+        "speaker": "あいす",
+        "text": "「…………見たな！？」",
+        "next": "bad3c_07",
+        "faceId": 6,
+        "voice": "scenarios/aisu/assets/voice/bad/bad_03_04_03.wav"
+    },
+    "bad3c_07": {
+        "speaker": "",
+        "text": "（恥ずかしさで顔が沸騰しそうだ）",
+        "next": "bad3c_08",
+        "faceId": 6
+    },
+    "bad3c_08": {
+        "speaker": "俺",
+        "text": "「いや、見えたというか……茶化したというか……」",
+        "next": "bad3c_09",
+        "faceId": 6
+    },
+    "bad3c_09": {
+        "speaker": "あいす",
+        "text": "「うるさいうるさい！ しっくんのばかーッ！！」",
+        "next": "bad3c_10",
+        "faceId": 6,
+        "voice": "scenarios/aisu/assets/voice/bad/bad_03_04_04.wav"
+    },
+    "bad3c_10": {
+        "speaker": "あいす",
+        "text": "「目潰しッ！！！」",
+        "next": "bad3c_11",
+        "faceId": 6,
+        "voice": "scenarios/aisu/assets/voice/bad/bad_03_04_05.wav"
+    },
+    "bad3c_11": {
+        "speaker": "",
+        "text": "ブスッ！！",
+        "next": "bad3c_12",
+        "faceId": 6
+    },
+    "bad3c_12": {
+        "speaker": "俺",
+        "text": "「ぐあああっ！？」",
+        "next": "bad3c_13",
+        "faceId": 6
+    },
+    "bad3c_13": {
+        "speaker": "",
+        "text": "（容赦ない二本指が俺の眼球を襲う）",
+        "next": "bad3c_14",
+        "faceId": 6
+    },
+    "bad3c_14": {
+        "speaker": "",
+        "text": "（そのまま俺は部屋を追い出され、しばらくの間、世界の全てがピンク色に見えることになった……）",
+        "next": "bad3c_end",
+        "faceId": 6
+    },
+    "bad3c_end": {
+        "speaker": "",
+        "text": "",
+        "isEnd": true,
+        "isGameOver": true
+    },
+    "true3_01": {
+        "speaker": "俺",
+        "text": "「…気づいてなかったのか？ もう何年も片思いだ」",
+        "next": "true3_02",
+        "faceId": 1
+    },
+    "true3_02": {
+        "speaker": "あいす",
+        "text": "「……えっ？」",
+        "next": "true3_03",
+        "faceId": 11
+    },
+    "true3_03": {
+        "speaker": "",
+        "text": "（あいすの動きが完全に止まる）",
+        "next": "true3_04",
+        "faceId": 11
+    },
+    "true3_04": {
+        "speaker": "",
+        "text": "（酔いが一瞬で冷めたように、大きく目を見開いている）",
+        "next": "true3_05",
+        "faceId": 11
+    },
+    "true3_05": {
+        "speaker": "あいす",
+        "text": "「え、うそ……」",
+        "next": "true3_06",
+        "faceId": 11
+    },
+    "true3_06": {
+        "speaker": "あいす",
+        "text": "「……しっくんが？ 私を？ ……何年も？」",
+        "next": "true3_07",
+        "faceId": 11
+    },
+    "true3_07": {
+        "speaker": "俺",
+        "text": "「嘘ついてどうする」",
+        "next": "true3_08",
+        "faceId": 11
+    },
+    "true3_08": {
+        "speaker": "俺",
+        "text": "「お前が『お姉ちゃん』ぶるから、ずっと言い出せなかっただけだ」",
+        "next": "true3_09",
+        "faceId": 11
+    },
+    "true3_09": {
+        "speaker": "あいす",
+        "text": "「…………」",
+        "next": "true3_10",
+        "faceId": 11
+    },
+    "true3_10": {
+        "speaker": "",
+        "text": "（あいすは口元を手で覆い、顔を真っ赤にして俯いてしまう）",
+        "next": "true3_11",
+        "faceId": 11
+    },
+    "true3_11": {
+        "speaker": "",
+        "text": "（そして、蚊の鳴くような声で呟いた）",
+        "next": "true3_12",
+        "faceId": 2
+    },
+    "true3_12": {
+        "speaker": "あいす",
+        "text": "「……ばか」",
+        "next": "true3_13",
+        "faceId": 9
+    },
+    "true3_13": {
+        "speaker": "あいす",
+        "text": "「……気づくわけないじゃん。いっつも憎まれ口ばっかりで……」",
+        "next": "true3_14",
+        "faceId": 5
+    },
+    "true3_14": {
+        "speaker": "あいす",
+        "text": "「……私だけが、空回りしてると思ってたのに……」",
+        "next": "true3_15",
+        "faceId": 9
+    },
+    "true3_15": {
+        "speaker": "",
+        "text": "（もぞもぞと落ち着きのない視線と動きをしている）",
+        "next": "true3_16",
+        "faceId": 9
+    },
+    "true3_16": {
+        "speaker": "",
+        "text": "（あいすが、おずおずと俺の胸に顔を埋めてくる）",
+        "next": "true3_17",
+        "faceId": 9
+    },
+    "true3_17": {
+        "speaker": "あいす",
+        "text": "「……責任、取ってくれるんだよね？」",
+        "next": "true3_18",
+        "faceId": 9
+    },
+    "true3_18": {
+        "speaker": "",
+        "text": "（とても甘い匂いとアルコールの匂い）",
+        "next": "true3_19",
+        "faceId": 9
+    },
+    "true3_19": {
+        "speaker": "",
+        "text": "（なにより伝わってくる体温がどうしようもなく愛おしく感じた）",
+        "next": "true3_20",
+        "faceId": 9
+    },
+    "true3_20": {
+        "speaker": "あいす",
+        "text": "「……これからは、幼馴染じゃなくて……恋人として、甘やかしてくれる？」",
+        "next": "true3_21",
+        "faceId": 9
+    },
+    "true3_21": {
+        "speaker": "俺",
+        "text": "「……ああ。覚悟してくれ」",
+        "next": "true3_22",
+        "faceId": 9
+    },
+    "true3_22": {
+        "speaker": "",
+        "text": "（俺が抱きしめ返すと、あいすは幸せそうに、とろけるような笑顔を見せた）",
+        "next": "true3_23",
+        "faceId": 9
+    },
+    "true3_23": {
+        "speaker": "あいす",
+        "text": "「……えへへ。大好きだよ、しっくん……♪」",
+        "next": "true_end",
+        "faceId": 9
+    },
+    "true_end": {
+        "speaker": "",
+        "text": "",
+        "isEnd": true
+    }
+}

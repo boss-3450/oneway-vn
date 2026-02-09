@@ -1,0 +1,1660 @@
+{
+    "start": {
+        "bgImage": "assets/bg/mitchon/office_day.jpg",
+        "sceneId": "scene1",
+        "next": "s1_prologue_01"
+    },
+    "s1_prologue_01": {
+        "speaker": "",
+        "text": "（昼休み）",
+        "next": "s1_prologue_02"
+    },
+    "s1_prologue_02": {
+        "speaker": "",
+        "text": "（午前中の会議、鳴り止まないチャット、意味のない修正指示）",
+        "next": "s1_prologue_03"
+    },
+    "s1_prologue_03": {
+        "speaker": "",
+        "text": "（それらすべてを乗り越えて、今――）",
+        "next": "s1_prologue_04"
+    },
+    "s1_prologue_04": {
+        "speaker": "",
+        "text": "（ようやく訪れた、俺だけの時間）",
+        "next": "s1_prologue_05"
+    },
+    "s1_prologue_05": {
+        "speaker": "",
+        "text": "（昼休みは戦場じゃない）",
+        "next": "s1_prologue_06"
+    },
+    "s1_prologue_06": {
+        "speaker": "",
+        "text": "（ここは、誰にも邪魔されない『聖域』だ）",
+        "next": "s1_prologue_07"
+    },
+    "s1_prologue_07": {
+        "speaker": "",
+        "text": "（そして、その聖域を完成させる最後のピースが――）",
+        "next": "s1_01"
+    },
+    "s1_01": {
+        "speaker": "",
+        "text": "ガタッ",
+        "next": "s1_02"
+    },
+    "s1_02": {
+        "speaker": "",
+        "text": "（椅子に深く腰を下ろし、思わず目を閉じる）",
+        "next": "s1_02b"
+    },
+    "s1_02b": {
+        "speaker": "",
+        "text": "（これから訪れる『至福』を、全身で受け止めるために）",
+        "next": "s1_03"
+    },
+    "s1_03": {
+        "speaker": "俺",
+        "text": "「……長かった。激務の午前中を乗り越え、ようやく手に入れた至福の時間……」",
+        "next": "s1_04"
+    },
+    "s1_04": {
+        "speaker": "俺",
+        "text": "「駅前のカフェで30分並んでゲットした、新作『極甘・マシマシフラペチーノ』」",
+        "next": "s1_05"
+    },
+    "s1_05": {
+        "speaker": "俺",
+        "text": "「この一口のために、俺は今日会社に来たと言っても過言ではない……」",
+        "next": "s1_06"
+    },
+    "s1_06": {
+        "speaker": "",
+        "text": "カポッ",
+        "next": "s1_06b"
+    },
+    "s1_06b": {
+        "speaker": "",
+        "text": "（蓋を外す）",
+        "next": "s1_06c"
+    },
+    "s1_06c": {
+        "speaker": "",
+        "text": "（甘い香りが、ふわりと鼻をくすぐる）",
+        "next": "s1_07"
+    },
+    "s1_07": {
+        "speaker": "俺",
+        "text": "「さて……いただくとしますか……」",
+        "next": "s1_08"
+    },
+    "s1_08": {
+        "speaker": "",
+        "text": "ビリッ",
+        "next": "s1_08b"
+    },
+    "s1_08b": {
+        "speaker": "",
+        "text": "（ストローの袋を破る音）",
+        "next": "s1_08c"
+    },
+    "s1_08c": {
+        "speaker": "",
+        "text": "（……その瞬間だった）",
+        "next": "s1_08d"
+    },
+    "s1_08d": {
+        "speaker": "",
+        "text": "（背中に、妙な違和感を感じたのは）",
+        "next": "s1_09"
+    },
+    "s1_09": {
+        "speaker": "",
+        "text": "スタスタ",
+        "next": "s1_10"
+    },
+    "s1_10": {
+        "speaker": "？？？",
+        "text": "「……じーーーーーーっ」",
+        "chara": "assets/chara/mitchon_05.png",
+        "voice": "assets/voice/true/voice_001.wav",
+        "next": "s1_11"
+    },
+    "s1_11": {
+        "speaker": "俺",
+        "text": "「……ん？」",
+        "chara": "assets/chara/mitchon_05.png",
+        "next": "s1_12"
+    },
+    "s1_12": {
+        "speaker": "",
+        "text": "（振り返ると、柱の陰からみっちょんが顔半分だけ出して、俺の手元を凝視している）",
+        "chara": "assets/chara/mitchon_05.png",
+        "next": "s1_13"
+    },
+    "s1_13": {
+        "speaker": "",
+        "text": "（その目は、獲物を狙う猫のように鋭く、しかし計算された可愛さを帯びている）",
+        "chara": "assets/chara/mitchon_05.png",
+        "next": "s1_14"
+    },
+    "s1_14": {
+        "speaker": "みっちょん",
+        "text": "「……やっぱり。先輩、それ『ラス１』だったやつですよね？」",
+        "chara": "assets/chara/mitchon_18.png",
+        "voice": "assets/voice/true/voice_002.wav",
+        "next": "s1_15"
+    },
+    "s1_15": {
+        "speaker": "俺",
+        "text": "「みっちょん……その通り数量限定のスペシャルドリンクだ。」",
+        "chara": "assets/chara/mitchon_18.png",
+        "next": "s1_16"
+    },
+    "s1_16": {
+        "speaker": "みっちょん",
+        "text": "「私、ちょうどその直前で売り切れちゃったんですよね～。運悪いな～私」",
+        "chara": "assets/chara/mitchon_15.png",
+        "voice": "assets/voice/true/voice_003.wav",
+        "next": "s1_17"
+    },
+    "s1_17": {
+        "speaker": "みっちょん",
+        "text": "「はぁ～……」",
+        "chara": "assets/chara/mitchon_07.png",
+        "voice": "assets/voice/true/voice_004.wav",
+        "next": "s1_18"
+    },
+    "s1_18": {
+        "speaker": "",
+        "text": "（チラチラとこちらを見ながら、大げさに肩を落としてみせる）",
+        "chara": "assets/chara/mitchon_07.png",
+        "next": "s1_19"
+    },
+    "s1_19": {
+        "speaker": "",
+        "text": "（とてとてと歩み寄る軽い足音）",
+        "chara": "assets/chara/mitchon_18.png",
+        "next": "s1_20"
+    },
+    "s1_20": {
+        "speaker": "みっちょん",
+        "text": "「いいな～、美味しそうだな～。クリーム増量か～……」",
+        "chara": "assets/chara/mitchon_05.png",
+        "voice": "assets/voice/true/voice_005.wav",
+        "next": "s1_21"
+    },
+    "s1_21": {
+        "speaker": "みっちょん",
+        "text": "「でも先輩、それ一人で全部飲むんですか？」",
+        "chara": "assets/chara/mitchon_22.png",
+        "voice": "assets/voice/true/voice_006.wav",
+        "next": "s1_22"
+    },
+    "s1_22": {
+        "speaker": "みっちょん",
+        "text": "「カロリーお化けですよ？生活習慣病、気にした方がいいんじゃないですか？」",
+        "chara": "assets/chara/mitchon_15.png",
+        "voice": "assets/voice/true/voice_007.wav",
+        "next": "choice1"
+    },
+    "choice1": {
+        "speaker": "",
+        "text": "",
+        "chara": "assets/chara/mitchon_15.png",
+        "choices": [
+            {
+                "text": "「余計なお世話だ。これが俺の燃料なんだよ」",
+                "next": "t1_01"
+            },
+            {
+                "text": "「……もしかして、一口欲しいのか？」",
+                "next": "bad1a_01"
+            },
+            {
+                "text": "「確かに……じゃあ、みっちょんにあげるよ」",
+                "next": "bad1b_01"
+            },
+            {
+                "text": "「スカートをめくる」",
+                "next": "bad1c_01"
+            }
+        ]
+    },
+    "bad1a_01": {
+        "speaker": "俺",
+        "text": "「……もしかして、一口欲しいのか？」",
+        "chara": "assets/chara/mitchon_15.png",
+        "next": "bad1a_02"
+    },
+    "bad1a_02": {
+        "speaker": "みっちょん",
+        "text": "「っ！……さっすが先輩、話が早いですね～！」",
+        "chara": "assets/chara/mitchon_17.png",
+        "voice": "assets/voice/bad/bad_01_01_01.wav",
+        "next": "bad1a_03"
+    },
+    "bad1a_03": {
+        "speaker": "",
+        "text": "（パッと表情を明るくし、遠慮のかけらもなく手を伸ばしてくる）",
+        "chara": "assets/chara/mitchon_17.png",
+        "next": "bad1a_04"
+    },
+    "bad1a_04": {
+        "speaker": "みっちょん",
+        "text": "「いや～、先輩がどうしても飲んでほしいって顔してたんで？仕方なく付き合ってあげようかなーって」",
+        "chara": "assets/chara/mitchon_10.png",
+        "voice": "assets/voice/bad/bad_01_01_02.wav",
+        "next": "bad1a_05"
+    },
+    "bad1a_05": {
+        "speaker": "俺",
+        "text": "「素直じゃないなぁ……。ほらよ！」",
+        "chara": "assets/chara/mitchon_10.png",
+        "next": "bad1a_06"
+    },
+    "bad1a_06": {
+        "speaker": "みっちょん",
+        "text": "「ありがとうございまーす！そんなに優しいと騙されますよ！では！会議に行ってまいります！」",
+        "chara": "assets/chara/mitchon_15.png",
+        "voice": "assets/voice/bad/bad_01_01_03.wav",
+        "next": "bad1a_07"
+    },
+    "bad1a_07": {
+        "speaker": "",
+        "text": "（ダッシュで去っていく音）",
+        "next": "bad1a_08"
+    },
+    "bad1a_08": {
+        "speaker": "俺",
+        "text": "「おう！頑張れよー！」",
+        "next": "bad1a_09"
+    },
+    "bad1a_09": {
+        "speaker": "",
+        "text": "（……俺の手には何も残らなかった）",
+        "next": "bad1a_10"
+    },
+    "bad1a_10": {
+        "speaker": "俺",
+        "text": "「……あれ？俺のフラペチーノは……？」",
+        "next": "bad1a_end"
+    },
+    "bad1a_end": {
+        "speaker": "",
+        "text": "（その後、俺は『極甘・マシマシフラペチーノ』が忘れられず、外回りといって外に出た後に糖分を摂取。そのまま外で仕事をして帰宅した）",
+        "isEnd": true,
+        "isGameOver": true
+    },
+    "bad1b_01": {
+        "speaker": "俺",
+        "text": "「確かに……じゃあ、みっちょんにあげるよ」",
+        "chara": "assets/chara/mitchon_15.png",
+        "next": "bad1b_02"
+    },
+    "bad1b_02": {
+        "speaker": "みっちょん",
+        "text": "「えっ、全部！？やった！」",
+        "chara": "assets/chara/mitchon_20.png",
+        "voice": "assets/voice/bad/bad_01_02_01.wav",
+        "next": "bad1b_03"
+    },
+    "bad1b_03": {
+        "speaker": "",
+        "text": "バシッ",
+        "chara": "assets/chara/mitchon_20.png",
+        "next": "bad1b_04"
+    },
+    "bad1b_04": {
+        "speaker": "",
+        "text": "（奪い取られた...）",
+        "chara": "assets/chara/mitchon_20.png",
+        "next": "bad1b_05"
+    },
+    "bad1b_05": {
+        "speaker": "みっちょん",
+        "text": "「あ、物で釣ろうとしてますか？ごめんなさい！デートは気が向いたらで！」",
+        "chara": "assets/chara/mitchon_15.png",
+        "voice": "assets/voice/bad/bad_01_02_02.wav",
+        "next": "bad1b_06"
+    },
+    "bad1b_06": {
+        "speaker": "みっちょん",
+        "text": "「では、お疲れ様です！」",
+        "chara": "assets/chara/mitchon_15.png",
+        "voice": "assets/voice/bad/bad_01_02_03.wav",
+        "next": "bad1b_07"
+    },
+    "bad1b_07": {
+        "speaker": "",
+        "text": "（軽い足取りで去っていく音）",
+        "next": "bad1b_end"
+    },
+    "bad1b_end": {
+        "speaker": "",
+        "text": "（その後、外回りに行き、仕事をして帰宅した）",
+        "isEnd": true,
+        "isGameOver": true
+    },
+    "bad1c_01": {
+        "speaker": "俺",
+        "text": "「スカートをめくる」",
+        "chara": "assets/chara/mitchon_15.png",
+        "next": "bad1c_02"
+    },
+    "bad1c_02": {
+        "speaker": "",
+        "text": "バッ",
+        "next": "bad1c_03"
+    },
+    "bad1c_03": {
+        "speaker": "みっちょん",
+        "text": "「……え？」",
+        "chara": "assets/chara/mitchon_22.png",
+        "voice": "assets/voice/bad/bad_01_03_01.wav",
+        "next": "bad1c_04"
+    },
+    "bad1c_04": {
+        "speaker": "",
+        "text": "（みっちょんの瞳から光が消える。真顔になり、一歩引かれる）",
+        "chara": "assets/chara/mitchon_21.png",
+        "next": "bad1c_05"
+    },
+    "bad1c_05": {
+        "speaker": "",
+        "text": "（ふわっとスカートがめくれ、スパッツがあらわになる）",
+        "chara": "assets/chara/mitchon_21.png",
+        "next": "bad1c_06"
+    },
+    "bad1c_06": {
+        "speaker": "俺",
+        "text": "「なるほど」",
+        "chara": "assets/chara/mitchon_21.png",
+        "next": "bad1c_07"
+    },
+    "bad1c_07": {
+        "speaker": "みっちょん",
+        "text": "「……」",
+        "chara": "assets/chara/mitchon_21.png",
+        "next": "bad1c_08"
+    },
+    "bad1c_08": {
+        "speaker": "",
+        "text": "（みっちょんは少し顔を赤らめながら、ゴミを見るような目でこちらを見下ろしている）",
+        "chara": "assets/chara/mitchon_21.png",
+        "next": "bad1c_09"
+    },
+    "bad1c_09": {
+        "speaker": "みっちょん",
+        "text": "「バカじゃないですか？」",
+        "chara": "assets/chara/mitchon_21.png",
+        "voice": "assets/voice/bad/bad_01_03_02.wav",
+        "next": "bad1c_10"
+    },
+    "bad1c_10": {
+        "speaker": "",
+        "text": "パコーン！",
+        "next": "bad1c_11"
+    },
+    "bad1c_11": {
+        "speaker": "俺",
+        "text": "「あがが...なんて平手打ちだ...」",
+        "chara": "assets/chara/mitchon_21.png",
+        "next": "bad1c_end"
+    },
+    "bad1c_end": {
+        "speaker": "",
+        "text": "（その後、人事から自宅待機命令が出た後に左遷された）",
+        "isEnd": true,
+        "isGameOver": true
+    },
+    "t1_01": {
+        "speaker": "俺",
+        "text": "「余計なお世話だ。これが俺の燃料なんだよ」",
+        "chara": "assets/chara/mitchon_15.png",
+        "next": "t1_02"
+    },
+    "t1_02": {
+        "speaker": "みっちょん",
+        "text": "「え～……ケチ。先輩のケチ」",
+        "chara": "assets/chara/mitchon_05.png",
+        "voice": "assets/voice/true/voice_008.wav",
+        "next": "t1_03"
+    },
+    "t1_03": {
+        "speaker": "",
+        "text": "（頬を膨らませて抗議してくるが、目は笑っていない。まだ諦めていない証拠だ）",
+        "chara": "assets/chara/mitchon_05.png",
+        "next": "t1_04"
+    },
+    "t1_04": {
+        "speaker": "みっちょん",
+        "text": "「私、午後からすっごく重い会議あるのに……。糖分がないと、私倒れちゃうかも……」",
+        "chara": "assets/chara/mitchon_06.png",
+        "voice": "assets/voice/true/voice_009.wav",
+        "next": "t1_05"
+    },
+    "t1_05": {
+        "speaker": "みっちょん",
+        "text": "「可哀想な後輩、見捨てちゃうんですか？（チラッ）」",
+        "chara": "assets/chara/mitchon_10.png",
+        "voice": "assets/voice/true/voice_010.wav",
+        "next": "t1_06"
+    },
+    "t1_06": {
+        "speaker": "俺",
+        "text": "（……あざとい。分かっていても抗えない、この完成されたあざとさ……）",
+        "chara": "assets/chara/mitchon_10.png",
+        "next": "t1_07"
+    },
+    "t1_07": {
+        "speaker": "俺",
+        "text": "「……はぁ。わかったよ、一口だけな？」",
+        "chara": "assets/chara/mitchon_05.png",
+        "next": "t1_08"
+    },
+    "t1_08": {
+        "speaker": "みっちょん",
+        "text": "「やった！先輩大好き！（棒読み）」",
+        "chara": "assets/chara/mitchon_20.png",
+        "voice": "assets/voice/true/voice_011.wav",
+        "next": "t1_09"
+    },
+    "t1_09": {
+        "speaker": "みっちょん",
+        "text": "「じゃあ、お言葉に甘えて……いっただっきまーす！」",
+        "chara": "assets/chara/mitchon_17.png",
+        "voice": "assets/voice/true/voice_012.wav",
+        "next": "t1_10"
+    },
+    "t1_10": {
+        "speaker": "",
+        "text": "ズズズーッ！！ズゴゴゴッ！",
+        "chara": "assets/chara/mitchon_20.png",
+        "next": "t1_11"
+    },
+    "t1_11": {
+        "speaker": "",
+        "text": "（豪快に吸引する音）",
+        "chara": "assets/chara/mitchon_20.png",
+        "next": "t1_12"
+    },
+    "t1_12": {
+        "speaker": "俺",
+        "text": "「ちょ、おい！勢いすごくないか！？」",
+        "chara": "assets/chara/mitchon_20.png",
+        "next": "t1_13"
+    },
+    "t1_13": {
+        "speaker": "みっちょん",
+        "text": "「ぷはーっ！生き返る～！……あ、半分飲んじゃった。てへ」",
+        "chara": "assets/chara/mitchon_10.png",
+        "voice": "assets/voice/true/voice_013.wav",
+        "next": "t1_14"
+    },
+    "t1_14": {
+        "speaker": "",
+        "text": "（彼女は悪戯っぽく舌を出して笑う。俺のフラペチーノは無惨にも半分以下になっている）",
+        "chara": "assets/chara/mitchon_10.png",
+        "next": "t1_15"
+    },
+    "t1_15": {
+        "speaker": "俺",
+        "text": "「てへ、じゃないだろ……俺の至福が……」",
+        "chara": "assets/chara/mitchon_10.png",
+        "next": "t1_16"
+    },
+    "t1_16": {
+        "speaker": "みっちょん",
+        "text": "「え、そんなに落ち込むことですか？もしかして……間接キスとか意識しちゃいました？」",
+        "chara": "assets/chara/mitchon_10.png",
+        "voice": "assets/voice/true/voice_014.wav",
+        "next": "t1_17"
+    },
+    "t1_17": {
+        "speaker": "みっちょん",
+        "text": "「うわ～、むっつり～。先輩ってそういうとこありますよね」",
+        "chara": "assets/chara/mitchon_15.png",
+        "voice": "assets/voice/true/voice_015.wav",
+        "next": "t1_18"
+    },
+    "t1_18": {
+        "speaker": "俺",
+        "text": "「誰のせいだと思ってるんだ……」",
+        "chara": "assets/chara/mitchon_15.png",
+        "next": "t1_19"
+    },
+    "t1_19": {
+        "speaker": "みっちょん",
+        "text": "「大丈夫ですよ。私、こういうの『福利厚生的・緊急措置』として処理するんで。ノーカンノーカン♪」",
+        "chara": "assets/chara/mitchon_15.png",
+        "voice": "assets/voice/true/voice_016.wav",
+        "next": "t1_20"
+    },
+    "t1_20": {
+        "speaker": "みっちょん",
+        "text": "「ごちそうさまでした！午後も頑張ってくださいね、私の分まで！」",
+        "chara": "assets/chara/mitchon_15.png",
+        "voice": "assets/voice/true/voice_017.wav",
+        "next": "t1_21"
+    },
+    "t1_21": {
+        "speaker": "",
+        "text": "（ヒラヒラと手を振りパタパタと去っていった）",
+        "next": "t1_22"
+    },
+    "t1_22": {
+        "speaker": "俺",
+        "text": "（……あいつ、絶対確信犯だろ。嵐のように来て、俺の糖分だけ奪っていきやがった……）",
+        "next": "s2_start"
+    },
+    "s2_start": {
+        "bgImage": "assets/bg/mitchon/entrance_rain.jpg",
+        "sceneId": "scene2",
+        "next": "s2_01"
+    },
+    "s2_01": {
+        "speaker": "",
+        "text": "（数時間後、定時過ぎの会社の玄関）",
+        "next": "s2_02"
+    },
+    "s2_02": {
+        "speaker": "",
+        "text": "ザーーッ",
+        "next": "s2_03"
+    },
+    "s2_03": {
+        "speaker": "",
+        "text": "ゴロゴロ……",
+        "next": "s2_04"
+    },
+    "s2_04": {
+        "speaker": "俺",
+        "text": "「うわ、すごい雨……。予報だと晴れだったのにな」",
+        "next": "s2_05"
+    },
+    "s2_05": {
+        "speaker": "",
+        "text": "（傘を開こうとすると、玄関の隅でスマホを睨んでいるみっちょんを発見する）",
+        "chara": "assets/chara/mitchon_07.png",
+        "next": "s2_06"
+    },
+    "s2_06": {
+        "speaker": "",
+        "text": "（いつもの余裕たっぷりの表情は消え、焦りと苛立ちが滲んでいる）",
+        "chara": "assets/chara/mitchon_07.png",
+        "next": "s2_07"
+    },
+    "s2_07": {
+        "speaker": "俺",
+        "text": "「お疲れ。……もしかして、帰れない感じ？」",
+        "chara": "assets/chara/mitchon_07.png",
+        "next": "s2_08"
+    },
+    "s2_08": {
+        "speaker": "みっちょん",
+        "text": "「あ、先輩。……見ての通りですよ。最悪です」",
+        "chara": "assets/chara/mitchon_07.png",
+        "voice": "assets/voice/true/voice_018.wav",
+        "next": "s2_09"
+    },
+    "s2_09": {
+        "speaker": "みっちょん",
+        "text": "「タクシーアプリも全然捕まらないし……。配車まで40分待ちとか、ありえないんですけど」",
+        "chara": "assets/chara/mitchon_06.png",
+        "voice": "assets/voice/true/voice_019.wav",
+        "next": "s2_10"
+    },
+    "s2_10": {
+        "speaker": "",
+        "text": "（イライラした様子でスマホを連打している）",
+        "chara": "assets/chara/mitchon_06.png",
+        "next": "s2_11"
+    },
+    "s2_11": {
+        "speaker": "俺",
+        "text": "「大通りまで歩けばタクシー拾えるんじゃないか？」",
+        "chara": "assets/chara/mitchon_06.png",
+        "next": "s2_12"
+    },
+    "s2_12": {
+        "speaker": "みっちょん",
+        "text": "「この雨の中をですか？私の服、水に弱い素材なんですけど。……先輩と違ってデリケートなんで」",
+        "chara": "assets/chara/mitchon_05.png",
+        "voice": "assets/voice/true/voice_020.wav",
+        "next": "s2_13"
+    },
+    "s2_13": {
+        "speaker": "俺",
+        "text": "「はいはい。じゃあ、止むまで待つしかないな。お先」",
+        "chara": "assets/chara/mitchon_05.png",
+        "next": "s2_14"
+    },
+    "s2_14": {
+        "speaker": "",
+        "text": "バリッ",
+        "chara": "assets/chara/mitchon_05.png",
+        "next": "s2_15"
+    },
+    "s2_15": {
+        "speaker": "",
+        "text": "バサッ",
+        "chara": "assets/chara/mitchon_05.png",
+        "next": "s2_16"
+    },
+    "s2_16": {
+        "speaker": "",
+        "text": "（俺は歩き出そうとする）",
+        "chara": "assets/chara/mitchon_05.png",
+        "next": "s2_17"
+    },
+    "s2_17": {
+        "speaker": "みっちょん",
+        "text": "「……あ」",
+        "chara": "assets/chara/mitchon_22.png",
+        "voice": "assets/voice/true/voice_021.wav",
+        "next": "s2_18"
+    },
+    "s2_18": {
+        "speaker": "",
+        "text": "（一歩踏み出す足音、すぐに止まる）",
+        "chara": "assets/chara/mitchon_22.png",
+        "next": "s2_19"
+    },
+    "s2_19": {
+        "speaker": "みっちょん",
+        "text": "「…………」",
+        "chara": "assets/chara/mitchon_05.png",
+        "next": "s2_20",
+        "noVoice": true
+    },
+    "s2_20": {
+        "speaker": "",
+        "text": "（プライドが高くて素直に頼めないのか、無言で俺の背中に念を送ってくる）",
+        "chara": "assets/chara/mitchon_05.png",
+        "next": "s2_21"
+    },
+    "s2_21": {
+        "speaker": "",
+        "text": "（「気づけ、誘え、空気を読め」という強烈なプレッシャーを感じる）",
+        "chara": "assets/chara/mitchon_05.png",
+        "next": "s2_22"
+    },
+    "s2_22": {
+        "speaker": "",
+        "text": "（しかし、この天邪鬼が服を着て歩いてるような子に素直に言っていいものか）",
+        "chara": "assets/chara/mitchon_05.png",
+        "next": "choice2"
+    },
+    "choice2": {
+        "speaker": "",
+        "text": "",
+        "chara": "assets/chara/mitchon_05.png",
+        "choices": [
+            {
+                "text": "「……はぁ。わかったよ。駅までで良ければ、入る？」",
+                "next": "t2_01"
+            },
+            {
+                "text": "「じゃ、お疲れー！風邪ひくなよ！」",
+                "next": "bad2a_01"
+            },
+            {
+                "text": "「……背中が痛いんだけど、何か呪いかけてる？」",
+                "next": "bad2b_01"
+            },
+            {
+                "text": "「雨宿り代、30分500円な」",
+                "next": "bad2c_01"
+            }
+        ]
+    },
+    "bad2a_01": {
+        "speaker": "俺",
+        "text": "「じゃ、お疲れー！風邪ひくなよ！」",
+        "chara": "assets/chara/mitchon_05.png",
+        "next": "bad2a_02"
+    },
+    "bad2a_02": {
+        "speaker": "",
+        "text": "（スタスタと歩き出す音）",
+        "chara": "assets/chara/mitchon_05.png",
+        "next": "bad2a_03"
+    },
+    "bad2a_03": {
+        "speaker": "みっちょん",
+        "text": "「……は？」",
+        "chara": "assets/chara/mitchon_08.png",
+        "voice": "assets/voice/bad/bad_02_01_01.wav",
+        "next": "bad2a_04"
+    },
+    "bad2a_04": {
+        "speaker": "",
+        "text": "（みっちょんは信じられないものを見る目で、俺の背中を見つめている）",
+        "chara": "assets/chara/mitchon_08.png",
+        "next": "bad2a_05"
+    },
+    "bad2a_05": {
+        "speaker": "みっちょん",
+        "text": "「信じらんない……。あんなの先輩じゃない、ただの他人だ……」",
+        "chara": "assets/chara/mitchon_09.png",
+        "voice": "assets/voice/bad/bad_02_01_02.wav",
+        "next": "bad2a_06"
+    },
+    "bad2a_06": {
+        "speaker": "",
+        "text": "ゴロゴロ……",
+        "chara": "assets/chara/mitchon_21.png",
+        "next": "bad2a_07"
+    },
+    "bad2a_07": {
+        "speaker": "みっちょん",
+        "text": "「……ううっ、誰か拾って……」",
+        "chara": "assets/chara/mitchon_11.png",
+        "voice": "assets/voice/bad/bad_02_01_03.wav",
+        "next": "bad2a_end"
+    },
+    "bad2a_end": {
+        "speaker": "",
+        "text": "（その後、みっちょんは風邪を引き、翌日主人公は社内で「冷徹人間」という噂を流された）",
+        "isEnd": true,
+        "isGameOver": true
+    },
+    "bad2b_01": {
+        "speaker": "俺",
+        "text": "「……背中が痛いんだけど、何か呪いかけてる？」",
+        "chara": "assets/chara/mitchon_05.png",
+        "next": "bad2b_02"
+    },
+    "bad2b_02": {
+        "speaker": "みっちょん",
+        "text": "「……」",
+        "chara": "assets/chara/mitchon_05.png",
+        "next": "bad2b_03"
+    },
+    "bad2b_03": {
+        "speaker": "",
+        "text": "キラーン",
+        "chara": "assets/chara/mitchon_21.png",
+        "next": "bad2b_04"
+    },
+    "bad2b_04": {
+        "speaker": "みっちょん",
+        "text": "「……はい、呪いました。先輩が一生タクシー捕まらない呪いをかけました」",
+        "chara": "assets/chara/mitchon_21.png",
+        "voice": "assets/voice/bad/bad_02_02_01.wav",
+        "next": "bad2b_05"
+    },
+    "bad2b_05": {
+        "speaker": "みっちょん",
+        "text": "「もういいです、先輩の傘なんて入りません。結界張られてるみたいで気持ち悪いんで」",
+        "chara": "assets/chara/mitchon_21.png",
+        "voice": "assets/voice/bad/bad_02_02_02.wav",
+        "next": "bad2b_06"
+    },
+    "bad2b_06": {
+        "speaker": "俺",
+        "text": "「そ、そうか……」",
+        "chara": "assets/chara/mitchon_21.png",
+        "next": "bad2b_end"
+    },
+    "bad2b_end": {
+        "speaker": "",
+        "text": "（取り付く島もなく、会話が終了した）",
+        "isEnd": true,
+        "isGameOver": true
+    },
+    "bad2c_01": {
+        "speaker": "俺",
+        "text": "「雨宿り代、30分500円な」",
+        "chara": "assets/chara/mitchon_05.png",
+        "next": "bad2c_02"
+    },
+    "bad2c_02": {
+        "speaker": "みっちょん",
+        "text": "「うっわ……」",
+        "chara": "assets/chara/mitchon_21.png",
+        "voice": "assets/voice/bad/bad_02_03_01.wav",
+        "next": "bad2c_03"
+    },
+    "bad2c_03": {
+        "speaker": "",
+        "text": "（みっちょんの顔が引きつる）",
+        "chara": "assets/chara/mitchon_21.png",
+        "next": "bad2c_04"
+    },
+    "bad2c_04": {
+        "speaker": "みっちょん",
+        "text": "「足元見るってレベルじゃないですね。災害便乗商法ですか？」",
+        "chara": "assets/chara/mitchon_21.png",
+        "voice": "assets/voice/bad/bad_02_03_02.wav",
+        "next": "bad2c_05"
+    },
+    "bad2c_05": {
+        "speaker": "みっちょん",
+        "text": "「コンプラ的にアウトなんで通報しますね。……さようなら」",
+        "chara": "assets/chara/mitchon_21.png",
+        "voice": "assets/voice/bad/bad_02_03_03.wav",
+        "next": "bad2c_end"
+    },
+    "bad2c_end": {
+        "speaker": "",
+        "text": "（交渉決裂。俺は一人寂しく帰路についた）",
+        "isEnd": true,
+        "isGameOver": true
+    },
+    "t2_01": {
+        "speaker": "俺",
+        "text": "「……はぁ。わかったよ。駅までで良ければ、入る？」",
+        "chara": "assets/chara/mitchon_05.png",
+        "next": "t2_02"
+    },
+    "t2_02": {
+        "speaker": "みっちょん",
+        "text": "「……えっ」",
+        "chara": "assets/chara/mitchon_22.png",
+        "voice": "assets/voice/true/voice_022.wav",
+        "next": "t2_03"
+    },
+    "t2_03": {
+        "speaker": "みっちょん",
+        "text": "「べ、別に頼んでませんけど？……でもまあ、先輩がどうしてもって言うなら？」",
+        "chara": "assets/chara/mitchon_03.png",
+        "voice": "assets/voice/true/voice_023.wav",
+        "next": "t2_04"
+    },
+    "t2_04": {
+        "speaker": "",
+        "text": "（少し頬を緩ませるが、すぐにいつもの強気な態度を取り戻す）",
+        "chara": "assets/chara/mitchon_03.png",
+        "next": "t2_05"
+    },
+    "t2_05": {
+        "speaker": "みっちょん",
+        "text": "「断るのも失礼ですし？入ってあげなくもないです」",
+        "chara": "assets/chara/mitchon_18.png",
+        "voice": "assets/voice/true/voice_024.wav",
+        "next": "t2_06"
+    },
+    "t2_06": {
+        "speaker": "俺",
+        "text": "「じゃあ置いてくぞ」",
+        "chara": "assets/chara/mitchon_18.png",
+        "next": "t2_07"
+    },
+    "t2_07": {
+        "speaker": "みっちょん",
+        "text": "「あーっ！ごめんなさい嘘です！入ります！入れてください！」",
+        "chara": "assets/chara/mitchon_06.png",
+        "voice": "assets/voice/true/voice_025.wav",
+        "next": "t2_08"
+    },
+    "t2_08": {
+        "speaker": "",
+        "text": "（みっちょんは慌てて水たまりを走る）",
+        "chara": "assets/chara/mitchon_06.png",
+        "next": "t2_09"
+    },
+    "t2_09": {
+        "speaker": "",
+        "text": "バシャバシャッ",
+        "chara": "assets/chara/mitchon_06.png",
+        "next": "t2_10"
+    },
+    "t2_10": {
+        "speaker": "",
+        "text": "（みっちょんが傘の下に潜り込む）",
+        "chara": "assets/chara/mitchon_06.png",
+        "next": "s3_start"
+    },
+    "s3_start": {
+        "bgImage": "assets/bg/mitchon/street_rain.jpg",
+        "sceneId": "scene3",
+        "next": "s3_01"
+    },
+    "s3_01": {
+        "speaker": "みっちょん",
+        "text": "「ふぅ……助かりました。……先輩、意外と準備いいですね」",
+        "chara": "assets/chara/mitchon_18.png",
+        "voice": "assets/voice/true/voice_026.wav",
+        "next": "s3_02"
+    },
+    "s3_02": {
+        "speaker": "みっちょん",
+        "text": "「なんかこう……モテない男ほど準備周到というか、心配性というか」",
+        "chara": "assets/chara/mitchon_10.png",
+        "voice": "assets/voice/true/voice_027.wav",
+        "next": "s3_03"
+    },
+    "s3_03": {
+        "speaker": "俺",
+        "text": "「一言余計なんだよ。助けられただろ？」",
+        "chara": "assets/chara/mitchon_10.png",
+        "next": "s3_04"
+    },
+    "s3_04": {
+        "speaker": "",
+        "text": "チャプ、チャプ",
+        "chara": "assets/chara/mitchon_18.png",
+        "next": "s3_05"
+    },
+    "s3_05": {
+        "speaker": "",
+        "text": "（傘の中、ふとした拍子に彼女のシャンプーの香りが鼻をかすめる）",
+        "chara": "assets/chara/mitchon_18.png",
+        "next": "s3_06"
+    },
+    "s3_06": {
+        "speaker": "",
+        "text": "（しかし、みっちょんは俺との間に鞄を挟み、物理的な壁を作っている）",
+        "chara": "assets/chara/mitchon_18.png",
+        "next": "s3_07"
+    },
+    "s3_07": {
+        "speaker": "みっちょん",
+        "text": "「……あの、一応言っておきますけど」",
+        "chara": "assets/chara/mitchon_22.png",
+        "voice": "assets/voice/true/voice_028.wav",
+        "next": "s3_08"
+    },
+    "s3_08": {
+        "speaker": "俺",
+        "text": "「ん？」",
+        "chara": "assets/chara/mitchon_22.png",
+        "next": "s3_09"
+    },
+    "s3_09": {
+        "speaker": "みっちょん",
+        "text": "「これ、あくまで『緊急避難的措置』ですからね？」",
+        "chara": "assets/chara/mitchon_06.png",
+        "voice": "assets/voice/true/voice_029.wav",
+        "next": "s3_10"
+    },
+    "s3_10": {
+        "speaker": "みっちょん",
+        "text": "「相合傘だ～ドキドキ♡とか、これで社内恋愛のフラグ立った！とか勘違いしないでくださいね？（早口）」",
+        "chara": "assets/chara/mitchon_06.png",
+        "voice": "assets/voice/true/voice_030.wav",
+        "next": "s3_11"
+    },
+    "s3_11": {
+        "speaker": "みっちょん",
+        "text": "「私、先輩みたいな人と噂になるとか、リスクマネジメント的に絶対NGなんで（早口）」",
+        "chara": "assets/chara/mitchon_06.png",
+        "voice": "assets/voice/true/voice_031.wav",
+        "next": "s3_12"
+    },
+    "s3_12": {
+        "speaker": "みっちょん",
+        "text": "「もし誰かに見られたら、『先輩に無理やり傘に入れられた』って証言しますから（早口）」",
+        "chara": "assets/chara/mitchon_06.png",
+        "voice": "assets/voice/true/voice_032.wav",
+        "next": "s3_13"
+    },
+    "s3_13": {
+        "speaker": "俺",
+        "text": "「……お前なぁ。助けてもらってその態度はどうなんだ」",
+        "chara": "assets/chara/mitchon_06.png",
+        "next": "s3_14"
+    },
+    "s3_14": {
+        "speaker": "みっちょん",
+        "text": "「事実確認をしてるだけですー。……で、どうなんですか？」",
+        "chara": "assets/chara/mitchon_10.png",
+        "voice": "assets/voice/true/voice_033.wav",
+        "next": "choice3"
+    },
+    "choice3": {
+        "speaker": "",
+        "text": "",
+        "chara": "assets/chara/mitchon_10.png",
+        "choices": [
+            {
+                "text": "「噂になっても俺はいいけど？」",
+                "next": "bad3a_01"
+            },
+            {
+                "text": "「俺も後輩を守る『業務』の一環だから。勘違いすんな」",
+                "next": "t3_01"
+            },
+            {
+                "text": "「さっきのジュース代、これでチャラな」",
+                "next": "bad3b_01"
+            },
+            {
+                "text": "そっと肩に手を置いて「君の心の傘になりたいのさ」とつぶやく",
+                "next": "bad3c_01"
+            }
+        ]
+    },
+    "bad3a_01": {
+        "speaker": "俺",
+        "text": "「噂になっても俺はいいけど？」",
+        "chara": "assets/chara/mitchon_10.png",
+        "next": "bad3a_02"
+    },
+    "bad3a_02": {
+        "speaker": "みっちょん",
+        "text": "「……は？」",
+        "chara": "assets/chara/mitchon_21.png",
+        "voice": "assets/voice/bad/bad_03_01_01.wav",
+        "next": "bad3a_03"
+    },
+    "bad3a_03": {
+        "speaker": "",
+        "text": "ヒュォォ……",
+        "chara": "assets/chara/mitchon_21.png",
+        "next": "bad3a_04"
+    },
+    "bad3a_04": {
+        "speaker": "みっちょん",
+        "text": "「うわ、引くわー……。そういうとこですよ、先輩」",
+        "chara": "assets/chara/mitchon_21.png",
+        "voice": "assets/voice/bad/bad_03_01_02.wav",
+        "next": "bad3a_05"
+    },
+    "bad3a_05": {
+        "speaker": "みっちょん",
+        "text": "「冗談でも笑えないし、本気なら通報レベルです」",
+        "chara": "assets/chara/mitchon_21.png",
+        "voice": "assets/voice/bad/bad_03_01_03.wav",
+        "next": "bad3a_06"
+    },
+    "bad3a_06": {
+        "speaker": "",
+        "text": "（みっちょんが一歩下がる）",
+        "chara": "assets/chara/mitchon_21.png",
+        "next": "bad3a_07"
+    },
+    "bad3a_07": {
+        "speaker": "みっちょん",
+        "text": "「私、自分のブランドイメージ大事にしてるんで。……タクシー捕まりそうなんで、もういいです」",
+        "chara": "assets/chara/mitchon_21.png",
+        "voice": "assets/voice/bad/bad_03_01_04.wav",
+        "next": "bad3a_08"
+    },
+    "bad3a_08": {
+        "speaker": "",
+        "text": "（ダッシュで雨の中に消えていく）",
+        "next": "bad3a_09"
+    },
+    "bad3a_09": {
+        "speaker": "俺",
+        "text": "「あ、おい！なに傘もっていってるんだ……！」",
+        "next": "bad3a_10"
+    },
+    "bad3a_10": {
+        "speaker": "",
+        "text": "（激しい雨音と俺だけが残る）ザーーーッ……",
+        "next": "bad3a_end"
+    },
+    "bad3a_end": {
+        "speaker": "",
+        "text": "",
+        "isEnd": true,
+        "isGameOver": true
+    },
+    "bad3b_01": {
+        "speaker": "俺",
+        "text": "「さっきのジュース代、これでチャラな」",
+        "chara": "assets/chara/mitchon_10.png",
+        "next": "bad3b_02"
+    },
+    "bad3b_02": {
+        "speaker": "みっちょん",
+        "text": "「…………」",
+        "chara": "assets/chara/mitchon_22.png",
+        "next": "bad3b_03"
+    },
+    "bad3b_03": {
+        "speaker": "",
+        "text": "（みっちょんが立ち止まる）",
+        "chara": "assets/chara/mitchon_22.png",
+        "next": "bad3b_04"
+    },
+    "bad3b_04": {
+        "speaker": "みっちょん",
+        "text": "「先輩。……私、帰ります」",
+        "chara": "assets/chara/mitchon_21.png",
+        "voice": "assets/voice/bad/bad_03_02_01.wav",
+        "next": "bad3b_05"
+    },
+    "bad3b_05": {
+        "speaker": "俺",
+        "text": "「え？濡れるぞ？」",
+        "chara": "assets/chara/mitchon_21.png",
+        "next": "bad3b_06"
+    },
+    "bad3b_06": {
+        "speaker": "みっちょん",
+        "text": "「濡れる方がマシです。なんか、先輩のそういう……『損得勘定』で動くところ、見てて冷めます」",
+        "chara": "assets/chara/mitchon_21.png",
+        "voice": "assets/voice/bad/bad_03_02_02.wav",
+        "next": "bad3b_07"
+    },
+    "bad3b_07": {
+        "speaker": "みっちょん",
+        "text": "「私の安全、600円のジュースと同価値ですか？安く見られたもんですね」",
+        "chara": "assets/chara/mitchon_21.png",
+        "voice": "assets/voice/bad/bad_03_02_03.wav",
+        "next": "bad3b_08"
+    },
+    "bad3b_08": {
+        "speaker": "みっちょん",
+        "text": "「タクシー来るまでコンビニで待ちますから。お構いなく」",
+        "chara": "assets/chara/mitchon_21.png",
+        "voice": "assets/voice/bad/bad_03_02_04.wav",
+        "next": "bad3b_09"
+    },
+    "bad3b_09": {
+        "speaker": "",
+        "text": "（スタスタと去っていく）",
+        "next": "bad3b_10"
+    },
+    "bad3b_10": {
+        "speaker": "俺",
+        "text": "「あ……待てよ！」",
+        "next": "bad3b_11"
+    },
+    "bad3b_11": {
+        "speaker": "",
+        "text": "（俺の声は、雨音にかき消された……）",
+        "next": "bad3b_end"
+    },
+    "bad3b_end": {
+        "speaker": "",
+        "text": "",
+        "isEnd": true,
+        "isGameOver": true
+    },
+    "bad3c_01": {
+        "speaker": "俺",
+        "text": "（そっと肩に手を置いて『君の心の傘になりたいのさ』とつぶやく）",
+        "chara": "assets/chara/mitchon_10.png",
+        "next": "bad3c_02"
+    },
+    "bad3c_02": {
+        "speaker": "",
+        "text": "スッ……",
+        "chara": "assets/chara/mitchon_10.png",
+        "next": "bad3c_03"
+    },
+    "bad3c_03": {
+        "speaker": "俺",
+        "text": "「……君の心の傘に、なりたいのさ」",
+        "chara": "assets/chara/mitchon_10.png",
+        "next": "bad3c_04"
+    },
+    "bad3c_04": {
+        "speaker": "",
+        "text": "（時間が止まる音、あるいはヒュゥゥ…という寒々しい風の音）",
+        "chara": "assets/chara/mitchon_22.png",
+        "next": "bad3c_05"
+    },
+    "bad3c_05": {
+        "speaker": "みっちょん",
+        "text": "「…………」",
+        "chara": "assets/chara/mitchon_21.png",
+        "next": "bad3c_06"
+    },
+    "bad3c_06": {
+        "speaker": "",
+        "text": "バシッ！",
+        "chara": "assets/chara/mitchon_21.png",
+        "next": "bad3c_07"
+    },
+    "bad3c_07": {
+        "speaker": "みっちょん",
+        "text": "「……うわぁ」",
+        "chara": "assets/chara/mitchon_21.png",
+        "voice": "assets/voice/bad/bad_03_03_01.wav",
+        "next": "bad3c_08"
+    },
+    "bad3c_08": {
+        "speaker": "みっちょん",
+        "text": "「鳥肌立ちました。え、何ですかそれ？昭和のトレンディドラマ？」",
+        "chara": "assets/chara/mitchon_21.png",
+        "voice": "assets/voice/bad/bad_03_03_02.wav",
+        "next": "bad3c_09"
+    },
+    "bad3c_09": {
+        "speaker": "みっちょん",
+        "text": "「そういう自分に酔ってる感じ、生理的に一番無理なんで」",
+        "chara": "assets/chara/mitchon_21.png",
+        "voice": "assets/voice/bad/bad_03_03_03.wav",
+        "next": "bad3c_10"
+    },
+    "bad3c_10": {
+        "speaker": "",
+        "text": "ザッ",
+        "chara": "assets/chara/mitchon_21.png",
+        "next": "bad3c_11"
+    },
+    "bad3c_11": {
+        "speaker": "みっちょん",
+        "text": "「心の傘とかいらないんで、普通の傘だけ置いて帰ってください」",
+        "chara": "assets/chara/mitchon_21.png",
+        "voice": "assets/voice/bad/bad_03_03_04.wav",
+        "next": "bad3c_12"
+    },
+    "bad3c_12": {
+        "speaker": "みっちょん",
+        "text": "「さようなら」",
+        "chara": "assets/chara/mitchon_21.png",
+        "voice": "assets/voice/bad/bad_03_03_05.wav",
+        "next": "bad3c_13"
+    },
+    "bad3c_13": {
+        "speaker": "",
+        "text": "（傘をひったくられた）",
+        "next": "bad3c_14"
+    },
+    "bad3c_14": {
+        "speaker": "",
+        "text": "（一人でスタスタと走って行ってしまった）",
+        "next": "bad3c_15"
+    },
+    "bad3c_15": {
+        "speaker": "俺",
+        "text": "「……あ、俺の傘……」",
+        "next": "bad3c_16"
+    },
+    "bad3c_16": {
+        "speaker": "",
+        "text": "（俺は心も体もずぶ濡れになりながら、雨空を見上げた）",
+        "next": "bad3c_17"
+    },
+    "bad3c_17": {
+        "speaker": "俺",
+        "text": "「全く照屋さんめ」",
+        "next": "bad3c_end"
+    },
+    "bad3c_end": {
+        "speaker": "",
+        "text": "",
+        "isEnd": true,
+        "isGameOver": true
+    },
+    "t3_01": {
+        "speaker": "俺",
+        "text": "「俺も後輩を守る『業務』の一環だから。勘違いすんな」",
+        "chara": "assets/chara/mitchon_10.png",
+        "next": "t3_02"
+    },
+    "t3_02": {
+        "speaker": "みっちょん",
+        "text": "「へ……？」",
+        "chara": "assets/chara/mitchon_22.png",
+        "voice": "assets/voice/true/voice_034.wav",
+        "next": "t3_03"
+    },
+    "t3_03": {
+        "speaker": "",
+        "text": "（足音が止まる）",
+        "chara": "assets/chara/mitchon_22.png",
+        "next": "t3_04"
+    },
+    "t3_04": {
+        "speaker": "みっちょん",
+        "text": "「業務、ですか……。ふーん……」",
+        "chara": "assets/chara/mitchon_18.png",
+        "voice": "assets/voice/true/voice_035.wav",
+        "next": "t3_05"
+    },
+    "t3_05": {
+        "speaker": "",
+        "text": "（みっちょんは拍子抜けしたような、少しだけ残念そうな顔をする）",
+        "chara": "assets/chara/mitchon_22.png",
+        "next": "t3_06"
+    },
+    "t3_06": {
+        "speaker": "みっちょん",
+        "text": "「先輩って、もっとガツガツ来るかと思ってました。……意外と、紳士なんですね」",
+        "chara": "assets/chara/mitchon_03.png",
+        "voice": "assets/voice/true/voice_036.wav",
+        "next": "t3_07"
+    },
+    "t3_07": {
+        "speaker": "",
+        "text": "（みっちょんが鞄を逆に持ち変えて、ガードを下げる）",
+        "chara": "assets/chara/mitchon_03.png",
+        "next": "t3_08"
+    },
+    "t3_08": {
+        "speaker": "",
+        "text": "（彼女は俺たちを隔てていた鞄をそっと外した）",
+        "chara": "assets/chara/mitchon_03.png",
+        "next": "t3_09"
+    },
+    "t3_09": {
+        "speaker": "みっちょん",
+        "text": "「……じゃあ、業務なら仕方ないですね。……もう少しだけ、寄ってもいいですか？」",
+        "chara": "assets/chara/mitchon_02.png",
+        "voice": "assets/voice/true/voice_037.wav",
+        "next": "t3_10"
+    },
+    "t3_10": {
+        "speaker": "",
+        "text": "（肩が触れる距離まで、彼女が身を寄せてくる）",
+        "chara": "assets/chara/mitchon_02.png",
+        "next": "t3_11"
+    },
+    "t3_11": {
+        "speaker": "俺",
+        "text": "「濡れるからな。もっと中入れよ」",
+        "chara": "assets/chara/mitchon_02.png",
+        "next": "t3_12"
+    },
+    "t3_12": {
+        "speaker": "みっちょん",
+        "text": "「……ん。ありがとうございます」",
+        "chara": "assets/chara/mitchon_03.png",
+        "voice": "assets/voice/true/voice_038.wav",
+        "next": "s4_start"
+    },
+    "s4_start": {
+        "bgImage": "assets/bg/mitchon/station.jpg",
+        "sceneId": "scene4",
+        "next": "s4_01"
+    },
+    "s4_01": {
+        "speaker": "",
+        "text": "（雨音が遠ざかり、駅の構内環境音へ）",
+        "chara": "assets/chara/mitchon_03.png",
+        "next": "s4_02"
+    },
+    "s4_02": {
+        "speaker": "みっちょん",
+        "text": "「……ここまでで大丈夫です。ありがとうございました」",
+        "chara": "assets/chara/mitchon_18.png",
+        "voice": "assets/voice/true/voice_039.wav",
+        "next": "s4_03"
+    },
+    "s4_03": {
+        "speaker": "俺",
+        "text": "「おう。気をつけて帰れよ。みっちょんは8番乗り場だもんな」",
+        "chara": "assets/chara/mitchon_18.png",
+        "next": "s4_04"
+    },
+    "s4_04": {
+        "speaker": "",
+        "text": "（俺が背を向けて数歩歩き出したとき）",
+        "chara": "assets/chara/mitchon_18.png",
+        "next": "s4_05"
+    },
+    "s4_05": {
+        "speaker": "",
+        "text": "（ふと背を向けたときに服の裾が引っ張られる）",
+        "chara": "assets/chara/mitchon_18.png",
+        "next": "s4_06"
+    },
+    "s4_06": {
+        "speaker": "",
+        "text": "クイッ",
+        "chara": "assets/chara/mitchon_18.png",
+        "next": "s4_07"
+    },
+    "s4_07": {
+        "speaker": "みっちょん",
+        "text": "「……ちょ、ちょっと待ってくださいよ」",
+        "chara": "assets/chara/mitchon_03.png",
+        "voice": "assets/voice/true/voice_040.wav",
+        "next": "s4_08"
+    },
+    "s4_08": {
+        "speaker": "",
+        "text": "（振り返ると、みっちょんが俺のジャケットの裾を指先だけで掴んでいる）",
+        "chara": "assets/chara/mitchon_03.png",
+        "next": "s4_09"
+    },
+    "s4_09": {
+        "speaker": "",
+        "text": "（いつもの自信満々な態度はどこへやら、彼女はうつむいてモジモジしている）",
+        "chara": "assets/chara/mitchon_03.png",
+        "next": "s4_10"
+    },
+    "s4_10": {
+        "speaker": "みっちょん",
+        "text": "「……先輩って、バカなんですか？」",
+        "chara": "assets/chara/mitchon_05.png",
+        "voice": "assets/voice/true/voice_041.wav",
+        "next": "s4_11"
+    },
+    "s4_11": {
+        "speaker": "俺",
+        "text": "「は？いきなりなんだよ」",
+        "chara": "assets/chara/mitchon_05.png",
+        "next": "s4_12"
+    },
+    "s4_12": {
+        "speaker": "みっちょん",
+        "text": "「だって……私、先輩のこと『足』に使っただけですよ？ジュースも半分飲んだし、荷物持たせたし……」",
+        "chara": "assets/chara/mitchon_06.png",
+        "voice": "assets/voice/true/voice_042.wav",
+        "next": "s4_13"
+    },
+    "s4_13": {
+        "speaker": "みっちょん",
+        "text": "「なのに、なんでそんな……『彼氏面』もしないで、普通にしてるんですか」",
+        "chara": "assets/chara/mitchon_03.png",
+        "voice": "assets/voice/true/voice_043.wav",
+        "next": "s4_14"
+    },
+    "s4_14": {
+        "speaker": "みっちょん",
+        "text": "「……調子狂うんですけど」",
+        "chara": "assets/chara/mitchon_16.png",
+        "voice": "assets/voice/true/voice_044.wav",
+        "next": "s4_15"
+    },
+    "s4_15": {
+        "speaker": "",
+        "text": "（みっちょんは少し寒いのか少し鼻をすすっている）",
+        "chara": "assets/chara/mitchon_16.png",
+        "next": "s4_16"
+    },
+    "s4_16": {
+        "speaker": "",
+        "text": "（唇を尖らせて、上目遣いで睨んでくる。その瞳は少し潤んでいるように見える）",
+        "chara": "assets/chara/mitchon_16.png",
+        "next": "s4_17"
+    },
+    "s4_17": {
+        "speaker": "俺",
+        "text": "「別に。後輩が困ってたら助けるだろ、普通」",
+        "chara": "assets/chara/mitchon_16.png",
+        "next": "s4_18"
+    },
+    "s4_18": {
+        "speaker": "みっちょん",
+        "text": "「……っ、うわぁ……」",
+        "chara": "assets/chara/mitchon_03.png",
+        "voice": "assets/voice/true/voice_045.wav",
+        "next": "s4_19"
+    },
+    "s4_19": {
+        "speaker": "みっちょん",
+        "text": "「その『普通』が一番タチ悪いって、気づいてないんですか？天然ジゴロ……」",
+        "chara": "assets/chara/mitchon_06.png",
+        "voice": "assets/voice/true/voice_046.wav",
+        "next": "s4_20"
+    },
+    "s4_20": {
+        "speaker": "",
+        "text": "スゥ……",
+        "chara": "assets/chara/mitchon_06.png",
+        "next": "s4_21"
+    },
+    "s4_21": {
+        "speaker": "",
+        "text": "（みっちょんは何かを決意したように顔を上げる）",
+        "chara": "assets/chara/mitchon_22.png",
+        "next": "s4_22"
+    },
+    "s4_22": {
+        "speaker": "みっちょん",
+        "text": "「……はぁ。わかりました。私の負けでいいです」",
+        "chara": "assets/chara/mitchon_03.png",
+        "voice": "assets/voice/true/voice_047.wav",
+        "next": "s4_23"
+    },
+    "s4_23": {
+        "speaker": "俺",
+        "text": "「勝ち負けの話だったのか？」",
+        "chara": "assets/chara/mitchon_03.png",
+        "next": "s4_24"
+    },
+    "s4_24": {
+        "speaker": "みっちょん",
+        "text": "「……あのですね、先輩」",
+        "chara": "assets/chara/mitchon_03.png",
+        "voice": "assets/voice/true/voice_048.wav",
+        "next": "s4_25"
+    },
+    "s4_25": {
+        "speaker": "みっちょん",
+        "text": "「今日の『業務』のお礼……したいんですけど」",
+        "chara": "assets/chara/mitchon_03.png",
+        "voice": "assets/voice/true/voice_049.wav",
+        "next": "s4_26"
+    },
+    "s4_26": {
+        "speaker": "俺",
+        "text": "「お礼？ジュースでチャラだろ？」",
+        "chara": "assets/chara/mitchon_03.png",
+        "next": "s4_27"
+    },
+    "s4_27": {
+        "speaker": "みっちょん",
+        "text": "「……チャラになりません！私のプライドが許さないんで！」",
+        "chara": "assets/chara/mitchon_06.png",
+        "voice": "assets/voice/true/voice_050.wav",
+        "next": "s4_28"
+    },
+    "s4_28": {
+        "speaker": "みっちょん",
+        "text": "「だから……その……」",
+        "chara": "assets/chara/mitchon_03.png",
+        "voice": "assets/voice/true/voice_051.wav",
+        "next": "s4_29"
+    },
+    "s4_29": {
+        "speaker": "",
+        "text": "（珍しくもじもじと歯切れが悪い）",
+        "chara": "assets/chara/mitchon_03.png",
+        "next": "s4_30"
+    },
+    "s4_30": {
+        "speaker": "みっちょん",
+        "text": "「……明日も、私が暇そうにしてたら……休憩、誘ってくれませんか？」",
+        "chara": "assets/chara/mitchon_03.png",
+        "voice": "assets/voice/true/voice_052.wav",
+        "next": "s4_31"
+    },
+    "s4_31": {
+        "speaker": "みっちょん",
+        "text": "「あ、勘違いしないでくださいね！？別に一緒にいたいとかじゃなくて！」",
+        "chara": "assets/chara/mitchon_06.png",
+        "voice": "assets/voice/true/voice_053.wav",
+        "next": "s4_32"
+    },
+    "s4_32": {
+        "speaker": "みっちょん",
+        "text": "「先輩みたいな『お人好し』を野放しにしとくと危ないから、私が管理してあげるだけですから！」",
+        "chara": "assets/chara/mitchon_06.png",
+        "voice": "assets/voice/true/voice_054.wav",
+        "next": "s4_33"
+    },
+    "s4_33": {
+        "speaker": "みっちょん",
+        "text": "「……ジュース代くらいなら、今度は私が出しますし……」",
+        "chara": "assets/chara/mitchon_03.png",
+        "voice": "assets/voice/true/voice_055.wav",
+        "next": "s4_34"
+    },
+    "s4_34": {
+        "speaker": "俺",
+        "text": "（……そんな理屈、通るわけがない。でも、必死に言い訳を並べる彼女があまりに可愛くて、俺は思わず吹き出しそうになった）",
+        "chara": "assets/chara/mitchon_03.png",
+        "next": "s4_35"
+    },
+    "s4_35": {
+        "speaker": "俺",
+        "text": "「……分かった。明日、声かけるよ」",
+        "chara": "assets/chara/mitchon_03.png",
+        "next": "s4_36"
+    },
+    "s4_36": {
+        "speaker": "",
+        "text": "（パッと表情が明るくなる）",
+        "chara": "assets/chara/mitchon_17.png",
+        "next": "s4_37"
+    },
+    "s4_37": {
+        "speaker": "",
+        "text": "（みっちょんの顔に、今日一番の花が咲いたような笑顔が広がる）",
+        "chara": "assets/chara/mitchon_17.png",
+        "next": "s4_38"
+    },
+    "s4_38": {
+        "speaker": "みっちょん",
+        "text": "「……ふふっ、言質とりましたよ？」",
+        "chara": "assets/chara/mitchon_17.png",
+        "voice": "assets/voice/true/voice_056.wav",
+        "next": "s4_39"
+    },
+    "s4_39": {
+        "speaker": "みっちょん",
+        "text": "「契約成立ですね♪……覚悟しといてくださいよ、私の管理は厳しいんですから」",
+        "chara": "assets/chara/mitchon_17.png",
+        "voice": "assets/voice/true/voice_057.wav",
+        "next": "s4_40"
+    },
+    "s4_40": {
+        "speaker": "",
+        "text": "（一瞬だけ、本当に嬉しそうな、無防備な少女の顔を見せる）",
+        "chara": "assets/chara/mitchon_17.png",
+        "next": "s4_41"
+    },
+    "s4_41": {
+        "speaker": "みっちょん",
+        "text": "「……お疲れ様でした、先輩。……また明日！」",
+        "chara": "assets/chara/mitchon_19.png",
+        "voice": "assets/voice/true/voice_058.wav",
+        "next": "s4_42"
+    },
+    "s4_42": {
+        "speaker": "",
+        "text": "（明るく駆け出す）",
+        "next": "s4_43"
+    },
+    "s4_43": {
+        "speaker": "",
+        "text": "タッタッタッ……",
+        "next": "s4_44"
+    },
+    "s4_44": {
+        "speaker": "",
+        "text": "（小さく手を振って改札へ駆けていく後ろ姿。その足取りは、来た時よりも少し弾んでいるように見えた）",
+        "next": "s4_45"
+    },
+    "s4_45": {
+        "speaker": "俺",
+        "text": "「……やられたな。明日からも、彼女の手のひらの上で転がされる日々が続きそうだ」",
+        "next": "s4_46"
+    },
+    "s4_46": {
+        "speaker": "",
+        "text": "",
+        "chara": "assets/chara/mitchon_01.png",
+        "next": "s4_final"
+    },
+    "s4_final": {
+        "speaker": "俺",
+        "text": "（けれど、不思議と悪い気はしなかった）",
+        "chara": "assets/chara/mitchon_01.png",
+        "isEnd": true,
+        "isGameOver": false
+    }
+}

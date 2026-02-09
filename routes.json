@@ -1,0 +1,76 @@
+[
+    {
+        "id": "homare",
+        "title": "為永ほまれ",
+        "path": "scenarios/homare/story.json",
+        "enabled": false,
+        "tagline": "夜の保健室、二人だけの内緒話。",
+        "thumbnail": "scenarios/homare/assets/chara/thumb.png",
+        "image": "assets/chara/homare_thumb.png"
+    },
+    {
+        "id": "mitchon",
+        "title": "みっちょん",
+        "path": "scenarios/mitchon/story.json",
+        "enabled": true,
+        "tagline": "可愛い後輩に、ペースを全部持っていかれる。",
+        "thumbnail": "scenarios/mitchon/assets/chara/thumb.png",
+        "image": "assets/chara/mitchon_thumb.png",
+        "endingVideo": "assets/video/endings/mitchon_ending.mp4",
+        "sceneBgm": {
+            "scene1": "assets/bgm/scenes/mitchon/scene1.mp3",
+            "scene2": "assets/bgm/scenes/mitchon/scene2.mp3",
+            "scene3": "assets/bgm/scenes/mitchon/scene3.mp3",
+            "scene4": "assets/bgm/scenes/mitchon/scene4.mp3"
+        }
+    },
+    {
+        "id": "tsumugi",
+        "title": "白描つむぎ",
+        "path": "scenarios/tsumugi/story.json",
+        "enabled": true,
+        "tagline": "静かな距離感が、気づけば特別になる。",
+        "thumbnail": "scenarios/tsumugi/assets/chara/thumb.png",
+        "image": "assets/chara/tsumugi_thumb.png",
+        "endingVideo": "assets/video/endings/tsumugi_ending.mp4",
+        "sceneBgm": {
+            "scene1": "assets/bgm/scenes/tsumugi/scene1.mp3",
+            "scene2": "assets/bgm/scenes/tsumugi/scene2.mp3",
+            "scene3": "assets/bgm/scenes/tsumugi/scene3.mp3",
+            "scene4": "assets/bgm/scenes/tsumugi/scene4.mp3"
+        }
+    },
+    {
+        "id": "aisu",
+        "title": "夢咲あいす",
+        "path": "scenarios/aisu/story.json",
+        "enabled": true,
+        "tagline": "甘くてやさしい夜に、心がほどける。",
+        "thumbnail": "scenarios/aisu/assets/chara/thumb.png",
+        "image": "assets/chara/aisu_thumb.png",
+        "endingVideo": "assets/video/endings/aisu_ending.mp4",
+        "sceneBgm": {
+            "scene1": "assets/bgm/scenes/aisu/scene1.mp3",
+            "scene2": "assets/bgm/scenes/aisu/scene2.mp3",
+            "scene3": "assets/bgm/scenes/aisu/scene3.mp3",
+            "scene4": "assets/bgm/scenes/aisu/scene4.mp3"
+        }
+    },
+    {
+        "id": "nako",
+        "title": "日向なこ",
+        "path": "scenarios/nako/story.json",
+        "enabled": true,
+        "tagline": "ド根性ひまわりと、ひと夏の約束。",
+        "thumbnail": "scenarios/nako/assets/chara/thumb.png",
+        "image": "assets/chara/nako_thumb.png",
+        "endingVideo": "assets/video/endings/nako_ending.mp4",
+        "sceneBgm": {
+            "scene1": "assets/bgm/scenes/nako/scene1.mp3",
+            "scene2": "assets/bgm/scenes/nako/scene2.mp3",
+            "scene3": "assets/bgm/scenes/nako/scene3.mp3",
+            "scene4": "assets/bgm/scenes/nako/scene4.mp3",
+            "scene5": "assets/bgm/scenes/nako/scene5.mp3"
+        }
+    }
+]

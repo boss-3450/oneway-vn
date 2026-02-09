@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>りぷらいメモリアル ― 陽月てら編―</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="game-container">
+        <!-- Fullscreen Toggle Button -->
+        <button id="fullscreen-btn" title="Toggle Fullscreen">⛶</button>
+        <!-- Title Screen -->
+        <div id="title-screen" class="screen active">
+            <div id="title-particles">
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+            </div>
+            <!-- Fixed Position Menu Container -->
+            <div class="title-menu-container">
+                <button id="start-btn" class="btn-start">Start Game</button>
+            </div>
+        </div>
+
+        <!-- Game Screen -->
+        <div id="game-screen" class="screen">
+            <div id="background-layer"></div>
+            <div id="character-layer">
+                <img id="heroine-img" src="" alt="heroine" class="hidden">
+            </div>
+            <div id="fade-layer" class="hidden"></div>
+
+            <div id="ui-layer">
+                <div id="message-box">
+                    <p id="speaker-name"></p>
+                    <p id="message-text"></p>
+                </div>
+            </div>
+
+            <div id="choices-container" class="hidden">
+                <!-- Buttons will be injected here -->
+            </div>
+
+            <!-- Game Menu Button -->
+            <button id="game-menu-btn" title="メニュー">☰</button>
+
+            <!-- Game Menu Overlay -->
+            <div id="game-menu-overlay" class="hidden">
+                <div id="game-menu-panel">
+                    <button id="menu-return-title" class="menu-item">タイトルに戻る</button>
+                    <button id="menu-prev-choice" class="menu-item">一つ前の選択に戻る</button>
+                    <button id="menu-show-log" class="menu-item">会話ログを確認</button>
+                    <button id="menu-close" class="menu-item menu-close">× 閉じる</button>
+                </div>
+            </div>
+
+            <!-- Confirm Dialog -->
+            <div id="confirm-dialog" class="hidden">
+                <div id="confirm-panel">
+                    <p id="confirm-message">タイトルに戻りますか？</p>
+                    <div id="confirm-buttons">
+                        <button id="confirm-yes">はい</button>
+                        <button id="confirm-no">いいえ</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Log Overlay -->
+            <div id="log-overlay" class="hidden">
+                <div id="log-panel">
+                    <div id="log-header">
+                        <span>会話ログ</span>
+                        <button id="log-close">×</button>
+                    </div>
+                    <div id="log-content"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Story Select Screen -->
+        <div id="story-select-screen" class="screen">
+            <div class="select-header">
+                <h2 class="select-title">ストーリー選択</h2>
+                <p class="select-subtitle">誰の物語から始めますか？</p>
+            </div>
+            <div id="route-cards-container"></div>
+            <button id="back-to-title-btn" class="btn-back">◀ TITLEへ戻る</button>
+        </div>
+
+        <!-- Ending/Game Over Screen -->
+        <div id="ending-screen" class="screen">
+            <h2 id="ending-title">おしまい…</h2>
+            <p id="ending-message"></p>
+            <button id="continue-btn" class="btn hidden">つづきから</button>
+            <button id="restart-btn" class="btn btn-secondary">タイトルへ</button>
+        </div>
+
+        <!-- TRUE Ending Video Screen -->
+        <div id="video-screen" class="screen">
+            <video id="ending-video" playsinline>
+                <source src="assets/video/ending.mp4" type="video/mp4">
+            </video>
+
+            <!-- Video Skip Confirm Dialog -->
+            <div id="video-skip-dialog" class="hidden">
+                <div id="video-skip-panel">
+                    <p id="video-skip-message">スキップしてよろしいですか？</p>
+                    <div id="video-skip-buttons">
+                        <button id="video-skip-yes">はい</button>
+                        <button id="video-skip-no">いいえ</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Thank You Screen (after video) -->
+        <div id="thankyou-screen" class="screen">
+            <p id="thankyou-text">Thank you for playing</p>
+            <p id="thankyou-hint">画面をクリックでタイトルへ</p>
+        </div>
+
+        <!-- Toast Notification -->
+        <div id="toast" class="toast hidden">準備中です</div>
+    </div>
+
+    <script src="engine.js"></script>
+</body>
+
+</html>
