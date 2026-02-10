@@ -1286,8 +1286,7 @@
         "speaker": "なこ",
         "text": "「……！」",
         "next": "bad2c_04",
-        "faceId": 16,
-        "voice": "scenarios/nako/assets/voice/bad/bad_02_04_01.wav"
+        "faceId": 16
     },
     "bad2c_04": {
         "speaker": "なこ",
@@ -1313,7 +1312,8 @@
         "speaker": "なこ",
         "text": "「わかりました……私自身を、食べてください……///」",
         "next": "bad2c_08",
-        "faceId": 11
+        "faceId": 11,
+        "voice": "scenarios/nako/assets/voice/bad/bad_02_04_04.wav"
     },
     "bad2c_08": {
         "speaker": "俺",

@@ -253,8 +253,8 @@ document.addEventListener('DOMContentLoaded', () => {
             // Set random title background on initial load
             setRandomTitleBackground();
 
-            // Try to play Title BGM (might be blocked by browser - that's OK)
-            playBgm("title");
+            // Title BGM is NOT auto-played here (browser autoplay restriction).
+            // It will be triggered by the user's first click (START GAME).
 
             // Fullscreen Logic
             if (fullscreenBtn) {
@@ -365,6 +365,10 @@ document.addEventListener('DOMContentLoaded', () => {
     // Show Story Select screen (called when START GAME is clicked)
     function showStorySelect() {
         isAudioUnlocked = true;
+
+        // Start Title BGM on first user gesture (bypasses autoplay restriction)
+        playBgm("title");
+
         playSe("ui_click");
         showScreen('story-select');
     }
@@ -1759,8 +1763,9 @@ document.addEventListener('DOMContentLoaded', () => {
     function saveChoiceSnapshot(sceneId, scene) {
         const snapshot = {
             sceneId: sceneId,
-            bgImage: scene.bgImage || scene.background,
-            charaImage: scene.charaImage || scene.chara || scene.expression,
+            // Save the ACTUAL current background from DOM (not from scene node, which may not have it)
+            currentBgImage: backgroundLayer.style.backgroundImage,
+            currentBgColor: backgroundLayer.style.backgroundColor,
             choices: scene.choices
         };
         choiceHistory.push(snapshot);
@@ -1789,6 +1794,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Reload the scene with choices
         loadScene(snapshot.sceneId);
+
+        // Restore background to what it was at the time of the choice
+        if (snapshot.currentBgImage) {
+            backgroundLayer.style.backgroundImage = snapshot.currentBgImage;
+            backgroundLayer.style.backgroundColor = snapshot.currentBgColor || 'transparent';
+        }
     }
 
     // ===== Game State Reset =====
