@@ -1397,7 +1397,7 @@
     },
     "s4_07": {
         "speaker": "みっちょん",
-        "text": "「……ちょ、ちょっと待ってくださいよ」",
+        "text": "「……ちょ、ちょっと待ってください」",
         "chara": "assets/chara/mitchon_03.png",
         "voice": "assets/voice/true/voice_040.wav",
         "next": "s4_08"

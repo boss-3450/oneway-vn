@@ -27,6 +27,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const fullscreenBtn = document.getElementById('fullscreen-btn');
     const videoScreen = document.getElementById('video-screen');
     const endingVideo = document.getElementById('ending-video');
+    const ytWrap = document.getElementById('yt-wrap');
+    const ytPlayerContainer = document.getElementById('yt-player');
+    const ytOverlay = document.getElementById('yt-overlay');
+    let ytPlayer = null;
+    let ytReady = false;
     const thankyouScreen = document.getElementById('thankyou-screen');
 
     // Menu Elements
@@ -1298,15 +1303,20 @@ document.addEventListener('DOMContentLoaded', () => {
         endingMessage.textContent = '';
     }
 
+    // Track whether YouTube mode is active
+    let isYouTubePlaying = false;
+
+    // YouTube IFrame Player API ready callback
+    window.onYouTubeIframeAPIReady = function () {
+        ytReady = true;
+        console.log('[YT] IFrame API ready');
+    };
+
     function playEndingVideo() {
         // Stop BGM first
         stopBgm();
 
-        // Determine video source: route-specific or default
-        let videoSrc = 'assets/video/ending.mp4'; // Default
-        if (currentRoute && currentRoute.endingVideo) {
-            videoSrc = currentRoute.endingVideo;
-        }
+        const ytId = currentRoute?.endingYouTubeId;
 
         // Clean up whiteout and fade to black for video
         fadeLayer.classList.remove('whiteout');
@@ -1317,16 +1327,29 @@ document.addEventListener('DOMContentLoaded', () => {
         setTimeout(() => {
             fadeLayer.classList.remove('active');
             fadeLayer.classList.add('hidden');
+
+            if (ytId) {
+                // === YouTube IFrame Player API ===
+                playEndingYouTube(ytId);
+                return;
+            }
+
+            // === フォールバック（従来の mp4 再生） ===
+            isYouTubePlaying = false;
             showScreen('video');
 
-            // Set video source and play
+            let videoSrc = 'assets/video/ending.mp4';
+            if (currentRoute && currentRoute.endingVideo) {
+                videoSrc = currentRoute.endingVideo;
+            }
+
             if (endingVideo) {
-                // Update source if different
+                endingVideo.style.display = '';
                 const sourceEl = endingVideo.querySelector('source');
                 if (sourceEl) {
                     sourceEl.src = videoSrc;
                 }
-                endingVideo.load(); // Reload with new source
+                endingVideo.load();
 
                 endingVideo.currentTime = 0;
                 endingVideo.play().catch(e => {
@@ -1334,21 +1357,186 @@ document.addEventListener('DOMContentLoaded', () => {
                     showThankYouScreen();
                 });
 
-                // When video ends, show thank you screen
                 endingVideo.onended = () => {
                     cleanupVideoSkipListeners();
                     showThankYouScreen();
                 };
 
-                // Setup skip functionality
                 setupVideoSkipListeners();
             } else {
-                // No video element, go directly to thank you
                 showThankYouScreen();
             }
         }, 300);
     }
 
+    // ===== YouTube IFrame Player API 再生 =====
+    function playEndingYouTube(ytId) {
+        isYouTubePlaying = true;
+        showScreen('video');
+
+        // mp4 を非表示
+        if (endingVideo) {
+            endingVideo.pause();
+            endingVideo.onended = null;
+            endingVideo.style.display = 'none';
+        }
+
+        // wrap表示
+        if (ytWrap) ytWrap.classList.remove('hidden');
+
+        // 既存のプレイヤーがあれば破棄
+        if (ytPlayer) {
+            try { ytPlayer.destroy(); } catch (e) { }
+            ytPlayer = null;
+        }
+
+        // yt-player コンテナを復元（destroyで消されるため）
+        if (ytPlayerContainer && !document.getElementById('yt-player')) {
+            const newDiv = document.createElement('div');
+            newDiv.id = 'yt-player';
+            ytWrap.appendChild(newDiv);
+        }
+
+        const createPlayer = () => {
+            ytPlayer = new YT.Player('yt-player', {
+                videoId: ytId,
+                width: '100%',
+                height: '100%',
+                playerVars: {
+                    autoplay: 1,
+                    controls: 0,
+                    rel: 0,
+                    playsinline: 1,
+                    modestbranding: 1,
+                    fs: 0
+                },
+                events: {
+                    onStateChange: (event) => {
+                        if (event.data === YT.PlayerState.ENDED) {
+                            console.log('[YT] Video ended, transitioning to thank you');
+                            cleanupYouTubeSkipListeners();
+                            cleanupYouTubePlayer();
+                            showThankYouScreen();
+                        }
+                    },
+                    onReady: (event) => {
+                        console.log('[YT] Player ready, playing video');
+                        event.target.playVideo();
+                    }
+                }
+            });
+
+            setupVideoSkipListenersYouTube();
+            enableYouTubeOverlay();
+        };
+
+        if (ytReady && window.YT && window.YT.Player) {
+            createPlayer();
+        } else {
+            // API がまだ読み込まれていない場合、少し待ってリトライ
+            console.log('[YT] Waiting for IFrame API...');
+            const waitForApi = setInterval(() => {
+                if (window.YT && window.YT.Player) {
+                    clearInterval(waitForApi);
+                    ytReady = true;
+                    createPlayer();
+                }
+            }, 200);
+            // 10秒でタイムアウト
+            setTimeout(() => {
+                clearInterval(waitForApi);
+                if (!ytPlayer) {
+                    console.warn('[YT] API load timeout, skipping to thank you');
+                    cleanupYouTubePlayer();
+                    showThankYouScreen();
+                }
+            }, 10000);
+        }
+    }
+
+    // ===== YouTube クリーンアップ =====
+    function cleanupYouTubePlayer() {
+        isYouTubePlaying = false;
+        hideVideoSkipDialog();
+        disableYouTubeOverlay();
+
+        if (ytPlayer) {
+            try { ytPlayer.stopVideo(); } catch (e) { }
+            try { ytPlayer.destroy(); } catch (e) { }
+            ytPlayer = null;
+        }
+
+        if (ytWrap) ytWrap.classList.add('hidden');
+
+        // コンテナを復元（destroy で iframe に置き換えられるため）
+        if (ytWrap && !document.getElementById('yt-player')) {
+            const newDiv = document.createElement('div');
+            newDiv.id = 'yt-player';
+            ytWrap.appendChild(newDiv);
+        }
+
+        if (endingVideo) {
+            endingVideo.style.display = '';
+        }
+    }
+
+    // ===== YouTube オーバーレイ管理 =====
+    function enableYouTubeOverlay() {
+        if (!ytOverlay) return;
+        ytOverlay.classList.remove('hidden');
+
+        ytOverlay.onclick = (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            if (isVideoSkipDialogOpen) return;
+
+            playSe('ui_click');
+            showVideoSkipDialog();
+            try { ytPlayer?.pauseVideo(); } catch (err) { }
+        };
+    }
+
+    function disableYouTubeOverlay() {
+        if (!ytOverlay) return;
+        ytOverlay.classList.add('hidden');
+        ytOverlay.onclick = null;
+    }
+
+    // ===== YouTube 用スキップリスナー =====
+    function setupVideoSkipListenersYouTube() {
+        // オーバーレイがクリックを受けるので videoScreen のリスナーは不要
+
+        if (videoSkipYes) {
+            videoSkipYes.onclick = (e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                playSe('ui_click');
+                hideVideoSkipDialog();
+                disableYouTubeOverlay();
+                cleanupYouTubeSkipListeners();
+                cleanupYouTubePlayer();
+                showThankYouScreen();
+            };
+        }
+
+        if (videoSkipNo) {
+            videoSkipNo.onclick = (e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                playSe('ui_click');
+                hideVideoSkipDialog();
+                try { ytPlayer?.playVideo(); } catch (err) { }
+            };
+        }
+    }
+
+    function cleanupYouTubeSkipListeners() {
+        // onclick を解除
+        if (videoSkipYes) videoSkipYes.onclick = null;
+        if (videoSkipNo) videoSkipNo.onclick = null;
+    }
+
+    // ===== mp4 用スキップリスナー（従来） =====
     // Video skip dialog state
     let isVideoSkipDialogOpen = false;
 
@@ -1358,7 +1546,6 @@ document.addEventListener('DOMContentLoaded', () => {
             e.preventDefault();
             e.stopPropagation();
 
-            // Ignore if dialog is already open or clicking on dialog
             if (isVideoSkipDialogOpen) return;
             if (e.target.closest('#video-skip-dialog')) return;
 
@@ -1366,9 +1553,8 @@ document.addEventListener('DOMContentLoaded', () => {
         };
 
         videoScreen.addEventListener('click', onVideoClick);
-        videoScreen._skipClickHandler = onVideoClick; // Store for cleanup
+        videoScreen._skipClickHandler = onVideoClick;
 
-        // Yes button - skip video
         if (videoSkipYes) {
             const onSkipYes = (e) => {
                 e.preventDefault();
@@ -1378,7 +1564,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 hideVideoSkipDialog();
                 cleanupVideoSkipListeners();
 
-                // Stop video and go to thank you
                 if (endingVideo) {
                     endingVideo.pause();
                     endingVideo.onended = null;
@@ -1389,7 +1574,6 @@ document.addEventListener('DOMContentLoaded', () => {
             videoSkipYes._handler = onSkipYes;
         }
 
-        // No button - continue video
         if (videoSkipNo) {
             const onSkipNo = (e) => {
                 e.preventDefault();
@@ -1398,7 +1582,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 playSe('ui_click');
                 hideVideoSkipDialog();
 
-                // Resume video if paused
                 if (endingVideo && endingVideo.paused) {
                     endingVideo.play().catch(e => { });
                 }
@@ -1429,8 +1612,8 @@ document.addEventListener('DOMContentLoaded', () => {
             isVideoSkipDialogOpen = true;
             videoSkipDialog.classList.remove('hidden');
 
-            // Pause video while dialog is open
-            if (endingVideo && !endingVideo.paused) {
+            // mp4 の場合のみ pause
+            if (!isYouTubePlaying && endingVideo && !endingVideo.paused) {
                 endingVideo.pause();
             }
         }
@@ -1620,6 +1803,11 @@ document.addEventListener('DOMContentLoaded', () => {
             currentBgm.pause();
             currentBgm = null;
         }
+
+        // Cleanup YouTube player if active
+        cleanupYouTubeSkipListeners();
+        cleanupYouTubePlayer();
+        cleanupVideoSkipListeners();
 
         // Clear states
         conversationLog = [];

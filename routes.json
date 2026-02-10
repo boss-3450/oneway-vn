@@ -17,6 +17,7 @@
         "thumbnail": "scenarios/mitchon/assets/chara/thumb.png",
         "image": "assets/chara/mitchon_thumb.png",
         "endingVideo": "assets/video/endings/mitchon_ending.mp4",
+        "endingYouTubeId": "yxeh7u-vOAk",
         "sceneBgm": {
             "scene1": "assets/bgm/scenes/mitchon/scene1.mp3",
             "scene2": "assets/bgm/scenes/mitchon/scene2.mp3",
@@ -33,6 +34,7 @@
         "thumbnail": "scenarios/tsumugi/assets/chara/thumb.png",
         "image": "assets/chara/tsumugi_thumb.png",
         "endingVideo": "assets/video/endings/tsumugi_ending.mp4",
+        "endingYouTubeId": "rd7s4vnWJ5o",
         "sceneBgm": {
             "scene1": "assets/bgm/scenes/tsumugi/scene1.mp3",
             "scene2": "assets/bgm/scenes/tsumugi/scene2.mp3",
@@ -49,6 +51,7 @@
         "thumbnail": "scenarios/aisu/assets/chara/thumb.png",
         "image": "assets/chara/aisu_thumb.png",
         "endingVideo": "assets/video/endings/aisu_ending.mp4",
+        "endingYouTubeId": "5CZodg36BBQ",
         "sceneBgm": {
             "scene1": "assets/bgm/scenes/aisu/scene1.mp3",
             "scene2": "assets/bgm/scenes/aisu/scene2.mp3",
@@ -65,6 +68,7 @@
         "thumbnail": "scenarios/nako/assets/chara/thumb.png",
         "image": "assets/chara/nako_thumb.png",
         "endingVideo": "assets/video/endings/nako_ending.mp4",
+        "endingYouTubeId": "QVymVgeCWBk",
         "sceneBgm": {
             "scene1": "assets/bgm/scenes/nako/scene1.mp3",
             "scene2": "assets/bgm/scenes/nako/scene2.mp3",

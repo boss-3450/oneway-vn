@@ -703,6 +703,20 @@ html {
 #video-screen {
     background-color: #000;
     z-index: 200;
+    position: relative;
+}
+
+/* YouTube 操作封印オーバーレイ */
+.yt-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 9998;
+    background: rgba(0, 0, 0, 0);
+    cursor: pointer;
+}
+
+.yt-overlay.hidden {
+    display: none !important;
 }
 
 #video-screen.active {
@@ -715,6 +729,26 @@ html {
     width: 100%;
     height: 100%;
     object-fit: contain;
+}
+
+/* YouTube Embed Wrapper */
+#yt-wrap {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#yt-wrap.hidden {
+    display: none !important;
+}
+
+#yt-player,
+#yt-player iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
 }
 
 /* Thank You Screen */
@@ -1276,7 +1310,7 @@ html {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.6);
-    z-index: 300;
+    z-index: 9999;
     display: flex;
     justify-content: center;
     align-items: center;

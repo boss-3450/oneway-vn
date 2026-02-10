@@ -104,6 +104,15 @@
 
         <!-- TRUE Ending Video Screen -->
         <div id="video-screen" class="screen">
+            <!-- YouTube Embed (IFrame Player API が動的に生成) -->
+            <div id="yt-wrap" class="hidden">
+                <div id="yt-player"></div>
+            </div>
+
+            <!-- YouTube 操作封印用オーバーレイ -->
+            <div id="yt-overlay" class="yt-overlay hidden"></div>
+
+            <!-- 既存 mp4 video（フォールバック用） -->
             <video id="ending-video" playsinline>
                 <source src="assets/video/ending.mp4" type="video/mp4">
             </video>
@@ -130,6 +139,7 @@
         <div id="toast" class="toast hidden">準備中です</div>
     </div>
 
+    <script src="https://www.youtube.com/iframe_api"></script>
     <script src="engine.js"></script>
 </body>
 
