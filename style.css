@@ -25,7 +25,11 @@ html {
 #game-container {
     width: 1280px;
     height: 720px;
-    position: relative;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: center center;
+    /* transform は engine.js の updateScale() で一括管理 */
     background-color: #222;
     overflow: hidden;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
@@ -1373,4 +1377,32 @@ html {
     background: rgba(255, 255, 255, 0.1);
     border-color: rgba(255, 255, 255, 0.5);
     color: white;
+}
+
+/* ===== Rotate Prompt (Fullscreen Portrait) ===== */
+#rotate-prompt {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.85);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99999;
+    pointer-events: none;
+}
+
+#rotate-prompt.hidden {
+    display: none !important;
+}
+
+#rotate-prompt p {
+    color: white;
+    font-size: 1.3rem;
+    text-align: center;
+    line-height: 2;
+    letter-spacing: 0.05em;
+    animation: fadeInSlow 1s ease-out forwards;
 }

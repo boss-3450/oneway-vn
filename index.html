@@ -3,12 +3,17 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>りぷらいメモリアル </title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <!-- Rotate Prompt (shown in fullscreen + portrait) -->
+    <div id="rotate-prompt" class="hidden">
+        <p>📱 横向きにすると<br>フルサイズで楽しめます</p>
+    </div>
+
     <div id="game-container">
         <!-- Fullscreen Toggle Button -->
         <button id="fullscreen-btn" title="Toggle Fullscreen">⛶</button>
