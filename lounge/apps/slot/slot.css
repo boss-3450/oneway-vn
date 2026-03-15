@@ -1,0 +1,845 @@
+/* ============================================================
+   パチスロ風スロットマシン (slot.css)
+   ============================================================
+   
+   構造:
+     .cabinet-container  筐体基準コンテナ (aspect-ratio: 1476/2048)
+       img.casing-layer  筐体PNG (z-index:1, pointer-events:none)
+       .reel-layer       リール  (z-index:2, 筐体内部座標)
+       .controls-overlay 操作UI  (z-index:3)
+   
+   全てのUI要素は .cabinet-container 内で % 配置する。
+   body 基準の配置は禁止。
+   ============================================================ */
+
+
+/* ---- body余白・スクロール排除 ---- */
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+
+/* ---- 画面切り替え ---- */
+.screen {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.is-hidden {
+    display: none !important;
+}
+
+
+/* ============================================================
+   設定画面
+   ============================================================ */
+.settings-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background:
+        radial-gradient(ellipse at 50% 30%, rgba(255, 23, 68, 0.06) 0%, transparent 60%),
+        var(--color-bg);
+    overflow-y: auto;
+}
+
+.settings-main {
+    flex: 1;
+    width: 100%;
+    max-width: 560px;
+    padding: 100px 24px 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.settings-title {
+    font-size: clamp(1.4rem, 3vw, 2rem);
+    font-weight: 900;
+    letter-spacing: 0.1em;
+    text-align: center;
+    background: linear-gradient(135deg, var(--color-yellow), var(--color-red));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: slideUp 0.6s ease forwards;
+}
+
+.settings-subtitle {
+    margin-top: 8px;
+    font-size: 0.9rem;
+    color: var(--color-text-dim);
+    opacity: 0;
+    animation: slideUp 0.6s ease 0.15s forwards;
+}
+
+.settings-card {
+    width: 100%;
+    margin-top: 36px;
+    padding: 36px 28px;
+    background: var(--color-bg-card);
+    border-radius: var(--radius-lg);
+    border: 2px solid rgba(255, 255, 255, 0.06);
+    opacity: 0;
+    animation: slideUp 0.7s ease 0.3s forwards;
+}
+
+.setting-group {
+    margin-bottom: 28px;
+}
+
+.setting-label {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 900;
+    color: var(--color-text-dim);
+    letter-spacing: 0.08em;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+}
+
+.mode-toggle {
+    display: flex;
+    gap: 12px;
+}
+
+.mode-btn {
+    flex: 1;
+    padding: 16px 12px;
+    font-size: 1rem;
+    font-weight: 900;
+    color: var(--color-text-dim);
+    background: rgba(255, 255, 255, 0.04);
+    border: 2px solid rgba(255, 255, 255, 0.08);
+    border-radius: var(--radius);
+    cursor: pointer;
+    transition: all 0.25s ease;
+    text-align: center;
+    line-height: 1.4;
+}
+
+.mode-btn .mode-desc {
+    display: block;
+    font-size: 0.7rem;
+    font-weight: 400;
+    margin-top: 4px;
+    opacity: 0.6;
+}
+
+.mode-btn:hover {
+    border-color: rgba(255, 255, 255, 0.15);
+    background: rgba(255, 255, 255, 0.06);
+}
+
+.mode-btn--active {
+    color: #fff;
+    border-color: var(--color-red);
+    background: rgba(255, 23, 68, 0.15);
+    box-shadow: 0 0 20px rgba(255, 23, 68, 0.15);
+}
+
+.mode-btn--active[data-mode="punishment"] {
+    border-color: #9c27b0;
+    background: rgba(156, 39, 176, 0.15);
+    box-shadow: 0 0 20px rgba(156, 39, 176, 0.15);
+}
+
+.member-input {
+    width: 100%;
+    padding: 16px;
+    font-family: var(--font-main);
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--color-text);
+    background: rgba(0, 0, 0, 0.4);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: var(--radius);
+    resize: vertical;
+    outline: none;
+    transition: border-color 0.2s;
+    line-height: 1.8;
+}
+
+.member-input:focus {
+    border-color: var(--color-red);
+}
+
+.input-hint {
+    margin-top: 8px;
+    font-size: 0.75rem;
+    color: var(--color-text-dim);
+}
+
+.input-hint.is-error {
+    color: var(--color-red);
+}
+
+.start-btn {
+    width: 100%;
+    padding: 18px;
+    font-size: 1.3rem;
+    letter-spacing: 0.15em;
+    margin-top: 8px;
+}
+
+
+/* ============================================================
+   スロット画面（全画面、中央寄せ）
+   ============================================================ */
+.slot-screen {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #050505;
+    overflow: hidden;
+}
+
+
+/* ============================================================
+   筐体基準コンテナ
+   ============================================================ */
+.cabinet-container {
+    position: relative;
+    height: 100vh;
+    aspect-ratio: 1476 / 2048;
+    max-width: 100vw;
+    /* カメラズーム演出用 */
+    transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transform-origin: 50% 65%;
+}
+
+/* 結果表示時: リールへカメラ寄り */
+.cabinet-container.is-zoomed-in {
+    transform: scale(1.8);
+}
+
+
+/* ============================================================
+   筐体PNG画像 (z-index: 1)
+   ============================================================ */
+.casing-layer {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    z-index: 1;
+    pointer-events: none;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+
+/* ============================================================
+   リール (z-index: 2)
+   ============================================================ */
+.reel-layer {
+    position: absolute;
+    left: 23.37%;
+    top: 61.47%;
+    width: 55.28%;
+    height: 17.82%;
+    overflow: hidden;
+    z-index: 2;
+    background: #ffffff;
+    border-radius: 4px;
+}
+
+
+/* ---- モード表示（リール上部） ---- */
+.reel-mode-display {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 4px 0;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 2;
+}
+
+.reel-mode-text {
+    font-size: 0.7rem;
+    font-weight: 900;
+    letter-spacing: 0.1em;
+    color: var(--color-yellow);
+    text-shadow: 0 0 8px var(--color-yellow-glow);
+}
+
+.reel-mode-text.is-punishment {
+    color: #ce93d8;
+    text-shadow: 0 0 8px rgba(156, 39, 176, 0.6);
+}
+
+
+/* ---- 当選ライン ---- */
+.pay-line {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: var(--color-red);
+    box-shadow: 0 0 8px var(--color-red-glow), 0 0 20px var(--color-red-glow);
+    z-index: 5;
+    transform: translateY(-1px);
+}
+
+.pay-line-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 0.7rem;
+    color: var(--color-red);
+    text-shadow: 0 0 6px var(--color-red-glow);
+    z-index: 5;
+}
+
+.pay-line-arrow--left {
+    left: 3px;
+}
+
+.pay-line-arrow--right {
+    right: 3px;
+}
+
+
+/* ---- リール帯 ---- */
+.reel-strip {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: none;
+}
+
+
+/* ============================================================
+   図柄（1コマ）: 画像方式
+   ============================================================
+   上: 7図柄画像（大きめ）
+   下: メンバー名（テキスト）
+   ============================================================ */
+.reel-symbol {
+    width: 100%;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.06);
+    padding: 10px 16px;
+    background: linear-gradient(180deg, #ffffff 0%, #f8f8f0 100%);
+    position: relative;
+}
+
+/* ---- 7図柄画像 ---- */
+.symbol-img {
+    width: auto;
+    height: 90px;
+    max-width: 90%;
+    object-fit: contain;
+    flex-shrink: 0;
+    /* 軽い立体感 */
+    filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.3));
+    transition: transform 0.15s ease;
+}
+
+/* 停止時: 軽いポン拡大（0.15秒・控えめ） */
+.reel-symbol.is-landed .symbol-img {
+    animation: symbolPop 0.15s ease-out;
+}
+
+@keyframes symbolPop {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.12);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* ---- メンバー名（結果情報） ---- */
+.symbol-name {
+    font-size: 0.9rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    color: #333;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 90%;
+    text-align: center;
+}
+
+
+/* ---- リール発光演出 ---- */
+.reel-layer.is-spinning {
+    box-shadow: 0 0 20px var(--color-red-glow), 0 0 40px rgba(255, 23, 68, 0.15);
+}
+
+.reel-layer.is-winner-glow {
+    box-shadow:
+        0 0 30px var(--color-yellow-glow),
+        0 0 60px rgba(255, 214, 0, 0.3),
+        0 0 100px rgba(255, 214, 0, 0.15);
+    animation: winnerWindowGlow 1s ease-in-out infinite alternate;
+}
+
+@keyframes winnerWindowGlow {
+    from {
+        box-shadow: 0 0 30px var(--color-yellow-glow), 0 0 60px rgba(255, 214, 0, 0.2);
+    }
+
+    to {
+        box-shadow: 0 0 50px var(--color-yellow-glow), 0 0 100px rgba(255, 214, 0, 0.4);
+    }
+}
+
+.reel-layer.is-punishment-glow {
+    box-shadow:
+        0 0 30px rgba(156, 39, 176, 0.5),
+        0 0 60px rgba(156, 39, 176, 0.2);
+}
+
+
+/* ============================================================
+   操作UIオーバーレイ (z-index: 3)
+   ============================================================ */
+.controls-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 3;
+    pointer-events: none;
+}
+
+
+/* ---- 戻るボタン（左上） ---- */
+.slot-back-btn {
+    pointer-events: auto;
+    position: absolute;
+    top: 1.5%;
+    left: 3%;
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 16px;
+    font-size: 0.85rem;
+    font-weight: 900;
+    font-family: var(--font-main);
+    color: #fff;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    letter-spacing: 0.08em;
+}
+
+.slot-back-btn:hover {
+    background: rgba(255, 23, 68, 0.4);
+    border-color: var(--color-red);
+    box-shadow: 0 0 15px var(--color-red-glow);
+}
+
+
+/* ---- RESET ボタン（右上） ---- */
+.slot-reset-btn {
+    pointer-events: auto;
+    position: absolute;
+    top: 1.5%;
+    right: 3%;
+    padding: 8px 16px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    font-family: var(--font-main);
+    color: var(--color-text-dim);
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.slot-reset-btn:hover:not(:disabled) {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.15);
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.slot-reset-btn:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+}
+
+
+/* ---- ボタンコンテナ（筐体下部） ---- */
+.slot-buttons-area {
+    pointer-events: none;
+    position: absolute;
+    bottom: 4%;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 0 10%;
+}
+
+
+/* ============================================================
+   ネオンボタン（START / STOP）
+   ============================================================ */
+.neon-btn {
+    pointer-events: auto;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-main);
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+/* START (赤) */
+.neon-btn--start {
+    background: radial-gradient(circle at 40% 35%, #ff5252, #d50000 70%);
+    box-shadow:
+        0 0 15px var(--color-red-glow),
+        0 0 40px rgba(255, 23, 68, 0.3),
+        inset 0 2px 0 rgba(255, 255, 255, 0.25),
+        inset 0 -4px 8px rgba(0, 0, 0, 0.3);
+    animation: startPulse 2s ease-in-out infinite;
+}
+
+.neon-btn--start:hover:not(:disabled) {
+    transform: scale(1.1);
+    box-shadow:
+        0 0 25px var(--color-red-glow),
+        0 0 60px rgba(255, 23, 68, 0.5);
+}
+
+.neon-btn--start:active:not(:disabled) {
+    transform: scale(0.95);
+}
+
+.neon-btn--start:disabled {
+    background: radial-gradient(circle at 40% 35%, #555, #333 70%);
+    box-shadow: 0 0 5px rgba(100, 100, 100, 0.3);
+    cursor: not-allowed;
+    animation: none;
+}
+
+@keyframes startPulse {
+
+    0%,
+    100% {
+        box-shadow:
+            0 0 15px var(--color-red-glow),
+            0 0 40px rgba(255, 23, 68, 0.3),
+            inset 0 2px 0 rgba(255, 255, 255, 0.25),
+            inset 0 -4px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    50% {
+        box-shadow:
+            0 0 30px var(--color-red-glow),
+            0 0 80px rgba(255, 23, 68, 0.5),
+            inset 0 2px 0 rgba(255, 255, 255, 0.3),
+            inset 0 -4px 8px rgba(0, 0, 0, 0.3);
+    }
+}
+
+/* STOP (青) */
+.neon-btn--stop {
+    background: radial-gradient(circle at 40% 35%, #42a5f5, #0d47a1 70%);
+    box-shadow:
+        0 0 15px var(--color-blue-glow),
+        0 0 40px rgba(41, 121, 255, 0.3),
+        inset 0 2px 0 rgba(255, 255, 255, 0.25),
+        inset 0 -4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.neon-btn--stop:hover:not(:disabled) {
+    transform: scale(1.1);
+    box-shadow:
+        0 0 25px var(--color-blue-glow),
+        0 0 60px rgba(41, 121, 255, 0.5);
+}
+
+.neon-btn--stop:active:not(:disabled) {
+    transform: scale(0.95);
+}
+
+.neon-btn--stop:disabled {
+    background: radial-gradient(circle at 40% 35%, #444, #2a2a2a 70%);
+    box-shadow: 0 0 5px rgba(80, 80, 80, 0.3);
+    cursor: not-allowed;
+    animation: none;
+}
+
+.neon-btn--stop.is-active {
+    animation: stopPulse 1.5s ease-in-out infinite;
+}
+
+@keyframes stopPulse {
+
+    0%,
+    100% {
+        box-shadow:
+            0 0 15px var(--color-blue-glow),
+            0 0 40px rgba(41, 121, 255, 0.3),
+            inset 0 2px 0 rgba(255, 255, 255, 0.25),
+            inset 0 -4px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    50% {
+        box-shadow:
+            0 0 30px var(--color-blue-glow),
+            0 0 80px rgba(41, 121, 255, 0.5),
+            inset 0 2px 0 rgba(255, 255, 255, 0.3),
+            inset 0 -4px 8px rgba(0, 0, 0, 0.3);
+    }
+}
+
+/* ボタン内テキスト */
+.neon-btn__text {
+    position: relative;
+    z-index: 2;
+    font-size: 1rem;
+    font-weight: 900;
+    color: #fff;
+    letter-spacing: 0.15em;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+
+/* ============================================================
+   結果演出オーバーレイ (z-index: 100)
+   ============================================================ */
+.result-overlay {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    pointer-events: auto;
+    cursor: pointer;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.result-overlay.is-fading-out {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.result-content {
+    text-align: center;
+    z-index: 10;
+    animation: resultBounceIn 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+@keyframes resultBounceIn {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    60% {
+        transform: scale(1.15);
+    }
+
+    80% {
+        transform: scale(0.95);
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.result-label {
+    font-size: clamp(1.8rem, 5vw, 3rem);
+    font-weight: 900;
+    letter-spacing: 0.15em;
+    margin-bottom: 12px;
+}
+
+.result-name {
+    font-size: clamp(2.5rem, 8vw, 5rem);
+    font-weight: 900;
+    letter-spacing: 0.08em;
+}
+
+.result-overlay.is-winner {
+    background: radial-gradient(ellipse, rgba(255, 214, 0, 0.15) 0%, rgba(0, 0, 0, 0.85) 70%);
+}
+
+.result-overlay.is-winner .result-label {
+    color: var(--color-yellow);
+    text-shadow: 0 0 15px var(--color-yellow-glow), 0 0 40px var(--color-yellow-glow);
+}
+
+.result-overlay.is-winner .result-name {
+    color: #fff;
+    text-shadow: 0 0 20px var(--color-yellow-glow), 0 4px 0 rgba(0, 0, 0, 0.3);
+    animation: winnerNamePulse 0.6s ease-in-out infinite alternate;
+}
+
+@keyframes winnerNamePulse {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.05);
+        text-shadow: 0 0 40px var(--color-yellow-glow), 0 0 80px rgba(255, 214, 0, 0.3);
+    }
+}
+
+.result-overlay.is-punishment {
+    background: radial-gradient(ellipse, rgba(156, 39, 176, 0.15) 0%, rgba(0, 0, 0, 0.9) 70%);
+}
+
+.result-overlay.is-punishment .result-label {
+    color: #ce93d8;
+    text-shadow: 0 0 15px rgba(156, 39, 176, 0.6), 0 0 40px rgba(156, 39, 176, 0.4);
+}
+
+.result-overlay.is-punishment .result-name {
+    color: #ff1744;
+    text-shadow: 0 0 20px var(--color-red-glow), 0 4px 0 rgba(0, 0, 0, 0.3);
+    animation: punishNameFlash 0.3s ease-in-out infinite alternate;
+}
+
+@keyframes punishNameFlash {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0.7;
+    }
+}
+
+
+/* ---- 紙吹雪 ---- */
+.confetti-container {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.confetti {
+    position: absolute;
+    top: -10px;
+    width: 10px;
+    height: 10px;
+    opacity: 0;
+    animation: confettiFall linear forwards;
+}
+
+@keyframes confettiFall {
+    0% {
+        opacity: 1;
+        transform: translateY(0) rotate(0deg);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(100vh) rotate(1080deg);
+    }
+}
+
+
+/* ---- 稲妻 ---- */
+.lightning-container {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+}
+
+.lightning-flash {
+    position: absolute;
+    inset: 0;
+    background: rgba(156, 39, 176, 0.15);
+    animation: lightningFlash 0.15s ease;
+}
+
+@keyframes lightningFlash {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0.8;
+    }
+}
+
+
+/* ---- ヘッダーシンボル ---- */
+.header-symbol {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+    vertical-align: middle;
+    margin-right: 8px;
+    filter: drop-shadow(0 0 4px var(--color-red-glow));
+}
+
+
+/* ---- レスポンシブ ---- */
+@media (max-width: 480px) {
+    .reel-symbol {
+        height: 120px;
+        gap: 4px;
+        padding: 6px 10px;
+    }
+
+    .symbol-img {
+        height: 65px;
+    }
+
+    .symbol-name {
+        font-size: 0.75rem;
+    }
+
+    .neon-btn {
+        width: 70px;
+        height: 70px;
+    }
+
+    .neon-btn__text {
+        font-size: 0.8rem;
+    }
+
+    .slot-buttons-area {
+        gap: 16px;
+    }
+}

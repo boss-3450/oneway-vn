@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="回答フリップボード - ホスト操作画面">
+    <title>ホスト操作 - 回答フリップボード</title>
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="./css/answer_flip.css">
+</head>
+
+<body>
+    <div class="af-page page-fade-in" id="hostPage">
+
+        <!-- ヘッダー -->
+        <header class="af-header">
+            <div class="af-header-left">
+                <span class="logo-mini">📝 回答フリップボード</span>
+                <span id="roomIdBadge" style="font-size:0.7rem;color:var(--color-text-dim);font-family:monospace;"></span>
+            </div>
+            <div class="af-header-right">
+                <button class="af-btn af-btn--secondary af-btn--small" id="endRoomBtn">ルーム終了</button>
+            </div>
+        </header>
+
+        <div class="af-page-inner">
+
+            <!-- 入室管理 -->
+            <div class="af-panel" id="participantsPanel">
+                <div class="af-section-title"><span class="icon">👥</span> 参加者状態</div>
+                <div class="af-participants-grid" id="participantsGrid"></div>
+            </div>
+
+            <!-- 問題設定 -->
+            <div class="af-panel" id="questionPanel">
+                <div class="af-section-title"><span class="icon">❓</span> 問題設定 <span id="qIndexLabel" style="font-size:0.8rem;color:var(--color-text-dim);margin-left:8px;">Q1</span></div>
+                <div class="af-question-form">
+                    <div>
+                        <label class="af-label">問題文</label>
+                        <textarea class="af-input af-textarea" id="questionText" placeholder="ここに問題文を入力..."></textarea>
+                    </div>
+                    <div>
+                        <label class="af-label">問題画像（最大2枚）</label>
+                        <div class="af-image-upload-area">
+                            <div class="af-image-slot" id="imgSlot0">
+                                <span class="placeholder">＋ 画像1</span>
+                                <input type="file" accept="image/png,image/jpeg,image/webp" style="display:none" data-slot="0">
+                            </div>
+                            <div class="af-image-slot" id="imgSlot1">
+                                <span class="placeholder">＋ 画像2</span>
+                                <input type="file" accept="image/png,image/jpeg,image/webp" style="display:none" data-slot="1">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- タイマー設定 -->
+                    <div>
+                        <label class="af-label">制限時間</label>
+                        <div class="af-toggle-group" id="timerToggle">
+                            <button class="af-toggle active" data-value="0">なし</button>
+                            <button class="af-toggle" data-value="30">30秒</button>
+                            <button class="af-toggle" data-value="60">60秒</button>
+                            <button class="af-toggle" data-value="90">90秒</button>
+                            <button class="af-toggle" data-value="120">120秒</button>
+                        </div>
+                    </div>
+
+                    <!-- 公開モード -->
+                    <div>
+                        <label class="af-label">公開モード</label>
+                        <div class="af-toggle-group" id="revealModeToggle">
+                            <button class="af-toggle active" data-value="individual">個別公開</button>
+                            <button class="af-toggle" data-value="all">一斉公開</button>
+                        </div>
+                    </div>
+
+                    <!-- 回答スタート -->
+                    <div class="mt-16">
+                        <button class="af-btn af-btn--full af-btn--yellow" id="startAnsweringBtn">🚀 回答スタート</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 回答中 / 公開フェーズ -->
+            <div class="af-panel hidden" id="answerPhasePanel">
+                <!-- タイマー -->
+                <div class="af-timer hidden" id="timerDisplay">
+                    <span id="timerIcon">⏱️</span>
+                    <span id="timerValue">60</span>
+                </div>
+
+                <!-- 問題表示 -->
+                <div class="af-question-display" id="questionDisplay">
+                    <div class="question-label">QUESTION <span id="qNumDisplay">1</span></div>
+                    <div class="question-text" id="questionTextDisplay"></div>
+                    <div class="af-question-images" id="questionImagesDisplay"></div>
+                </div>
+
+                <!-- コントロール -->
+                <div class="af-host-controls" id="hostControls">
+                    <button class="af-btn af-btn--secondary" id="forceRevealPhaseBtn">回答締切 → 公開へ</button>
+                    <button class="af-btn af-btn--yellow hidden" id="revealAllBtn">🎆 一斉公開</button>
+                    <button class="af-btn hidden" id="nextQuestionBtn">次の質問へ →</button>
+                    <button class="af-btn af-btn--secondary af-btn--small hidden" id="savePngBtn">📷 PNG保存</button>
+                </div>
+
+                <!-- フリップボード（横並び） -->
+                <div class="af-flip-board" id="flipBoard"></div>
+            </div>
+
+            <!-- ルーム終了表示 -->
+            <div class="af-panel hidden" id="finishedPanel">
+                <div class="af-wait-screen">
+                    <div class="wait-icon">✅</div>
+                    <div class="wait-text">ルームは終了しました</div>
+                    <a href="../menu/index.html" class="af-btn mt-16">メニューに戻る</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="./js/answer_flip_common.js"></script>
+    <script src="./js/host.js"></script>
+</body>
+
+</html>

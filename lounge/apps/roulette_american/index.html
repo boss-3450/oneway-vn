@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="REPLAY LIVE LOUNGE - アメリカンルーレット 設定">
+    <title>アメリカンルーレット - 設定</title>
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="./roulette_american.css">
+</head>
+
+<body>
+    <!-- ヘッダー -->
+    <header class="rl-header">
+        <a href="../menu/index.html" class="rl-header__back">← メニュー</a>
+        <img src="../../assets/images/logo/logo_main.png" alt="REPLAY LIVE" class="rl-header__logo">
+    </header>
+
+    <!-- 設定画面 -->
+    <div class="setup-page page-fade-in" id="setupPage">
+        <h1 class="setup-title">🎡 AMERICAN ROULETTE</h1>
+        <p class="setup-subtitle">カテゴリを選んでメンバーを登録しよう</p>
+
+        <div class="category-grid" id="categoryGrid">
+            <!-- JSで7カテゴリを動的生成 -->
+        </div>
+
+        <button class="setup-start-btn" id="startBtn" disabled>🎰 SPIN START</button>
+        <p class="setup-error" id="setupError"></p>
+    </div>
+
+    <script src="./data.js"></script>
+</body>
+
+</html>

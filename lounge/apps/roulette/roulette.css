@@ -1,0 +1,385 @@
+/* ============================================================
+   メンバールーレット画面専用スタイル (roulette.css)
+   ============================================================ */
+
+.roulette-page {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background:
+        radial-gradient(ellipse at 50% 30%, rgba(255, 23, 68, 0.06) 0%, transparent 60%),
+        var(--color-bg);
+}
+
+
+/* ---- ヘッダー内シンボルアイコン ---- */
+.header-symbol {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+    vertical-align: middle;
+    margin-right: 8px;
+    filter: drop-shadow(0 0 4px var(--color-red-glow));
+}
+
+
+/* ---- メインエリア ---- */
+.roulette-main {
+    flex: 1;
+    width: 100%;
+    max-width: 700px;
+    padding: 100px 24px 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.roulette-title {
+    font-size: clamp(1.4rem, 3vw, 2rem);
+    font-weight: 900;
+    letter-spacing: 0.1em;
+    text-align: center;
+    margin-bottom: 40px;
+    background: linear-gradient(135deg, var(--color-yellow), var(--color-red));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: slideUp 0.6s ease forwards;
+}
+
+
+/* ============================================================
+   スロット表示ステージ
+   ============================================================ */
+.roulette-stage {
+    position: relative;
+    width: 100%;
+    max-width: 420px;
+    aspect-ratio: 1 / 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.slot-frame {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:
+        linear-gradient(145deg, #1e1e1e, #111111);
+    border-radius: var(--radius-lg);
+    border: 3px solid rgba(255, 255, 255, 0.08);
+    box-shadow:
+        0 0 30px rgba(0, 0, 0, 0.5),
+        inset 0 0 60px rgba(0, 0, 0, 0.3);
+    position: relative;
+    overflow: hidden;
+    transition: border-color 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* 回転中のスタイル */
+.slot-frame.is-spinning {
+    border-color: var(--color-red);
+    box-shadow:
+        0 0 30px var(--color-red-glow),
+        inset 0 0 40px rgba(255, 23, 68, 0.05);
+}
+
+/* 当選時のスタイル */
+.slot-frame.is-winner {
+    border-color: var(--color-gold);
+    box-shadow:
+        0 0 40px var(--color-yellow-glow),
+        0 0 80px rgba(255, 214, 0, 0.3),
+        inset 0 0 40px rgba(255, 214, 0, 0.05);
+    animation: winnerGlow 1s ease-in-out infinite alternate;
+}
+
+@keyframes winnerGlow {
+    from {
+        box-shadow: 0 0 40px var(--color-yellow-glow), 0 0 80px rgba(255, 214, 0, 0.2);
+    }
+
+    to {
+        box-shadow: 0 0 60px var(--color-yellow-glow), 0 0 120px rgba(255, 214, 0, 0.4);
+    }
+}
+
+/* スロットの上下グラデーション（奥行き感） */
+.slot-frame::before,
+.slot-frame::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 60px;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.slot-frame::before {
+    top: 0;
+    background: linear-gradient(180deg, #111 0%, transparent 100%);
+}
+
+.slot-frame::after {
+    bottom: 0;
+    background: linear-gradient(0deg, #111 0%, transparent 100%);
+}
+
+
+/* ---- シンボルアイコン装飾（スロット枠内の透かし） ---- */
+.slot-symbol {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    height: 70%;
+    object-fit: contain;
+    opacity: 0.04;
+    pointer-events: none;
+    z-index: 0;
+    filter: grayscale(1) brightness(2);
+}
+
+
+/* ---- メンバー表示カード ---- */
+.slot-member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    z-index: 1;
+    transition: transform 0.1s ease;
+}
+
+.member-image-wrap {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+.slot-frame.is-winner .member-image-wrap {
+    border-color: var(--color-gold);
+    transform: scale(1.1);
+}
+
+.member-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.member-name {
+    font-size: 1.8rem;
+    font-weight: 900;
+    letter-spacing: 0.08em;
+    text-align: center;
+    color: var(--color-text);
+    transition: all 0.3s ease;
+}
+
+.slot-frame.is-spinning .member-name {
+    color: var(--color-red);
+}
+
+.slot-frame.is-winner .member-name {
+    font-size: 2.4rem;
+    color: var(--color-yellow);
+    text-shadow: 0 0 20px var(--color-yellow-glow);
+    animation: winnerNamePulse 0.6s ease-in-out infinite alternate;
+}
+
+@keyframes winnerNamePulse {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.08);
+    }
+}
+
+
+/* ============================================================
+   当選演出オーバーレイ
+   ============================================================ */
+.winner-overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 20px;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    z-index: 10;
+}
+
+.winner-overlay.is-visible {
+    opacity: 1;
+}
+
+.winner-label {
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    font-weight: 900;
+    color: var(--color-yellow);
+    text-shadow:
+        0 0 10px var(--color-yellow-glow),
+        0 0 30px var(--color-yellow-glow),
+        2px 2px 0 #000;
+    letter-spacing: 0.15em;
+    animation: winnerLabelBounce 0.8s ease;
+}
+
+@keyframes winnerLabelBounce {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    50% {
+        transform: scale(1.3);
+    }
+
+    70% {
+        transform: scale(0.9);
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+
+/* ---- 紙吹雪 ---- */
+.confetti-container {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.confetti {
+    position: absolute;
+    top: -10px;
+    width: 10px;
+    height: 10px;
+    opacity: 0;
+    animation: confettiFall linear forwards;
+}
+
+@keyframes confettiFall {
+    0% {
+        opacity: 1;
+        transform: translateY(0) rotate(0deg);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(500px) rotate(720deg);
+    }
+}
+
+
+/* ============================================================
+   コントロールボタン
+   ============================================================ */
+.roulette-controls {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    justify-content: center;
+    animation: slideUp 0.6s ease 0.2s forwards;
+    opacity: 0;
+}
+
+.ctrl-btn {
+    min-width: 160px;
+    padding: 16px 36px;
+    font-size: 1.2rem;
+    letter-spacing: 0.1em;
+}
+
+.ctrl-btn:disabled {
+    opacity: 0.35;
+    cursor: not-allowed;
+    transform: none !important;
+}
+
+.ctrl-btn:disabled:hover {
+    transform: none !important;
+    box-shadow: none !important;
+}
+
+.btn-reset {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-text-dim);
+    background: rgba(255, 255, 255, 0.06);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: var(--radius);
+    transition: all 0.25s ease;
+}
+
+.btn-reset:hover {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+
+/* ============================================================
+   背景フラッシュ（当選時）
+   ============================================================ */
+.roulette-page.flash {
+    animation: bgFlash 0.3s ease;
+}
+
+@keyframes bgFlash {
+    0% {
+        background-color: rgba(255, 214, 0, 0.3);
+    }
+
+    100% {
+        background-color: transparent;
+    }
+}
+
+
+/* ---- レスポンシブ ---- */
+@media (max-width: 500px) {
+    .roulette-stage {
+        max-width: 300px;
+    }
+
+    .member-image-wrap {
+        width: 120px;
+        height: 120px;
+    }
+
+    .member-name {
+        font-size: 1.4rem;
+    }
+
+    .ctrl-btn {
+        min-width: 120px;
+        padding: 14px 24px;
+        font-size: 1rem;
+    }
+}

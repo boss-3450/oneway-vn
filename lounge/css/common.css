@@ -1,0 +1,241 @@
+/* ============================================================
+   REPLAY LIVE LOUNGE - 共通デザインシステム (common.css)
+   ============================================================
+   
+   【栂本さんへ】
+   このファイルはプロジェクト全体の見た目（色・フォント・アニメーション）を
+   一括で管理しています。ここを変えると全画面に反映されます。
+   
+   ============================================================ */
+
+/* ---- Google Fonts 読み込み ---- */
+/* 日本語ゴシック体（太字）を使用 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap');
+
+/* ============================================================
+   カラーパレット（色の設定）
+   ============================================================
+   
+   【色を変えたいとき】
+   下の「--color-〇〇」の値（#の後の6桁）を変更してください。
+   例: 赤を変えたい → --color-red の値を変える
+   
+   ============================================================ */
+:root {
+  /* --- ベースカラー --- */
+  --color-bg:        #0a0a0a;   /* 背景色（ほぼ黒） */
+  --color-bg-light:  #1a1a1a;   /* 少し明るい背景色 */
+  --color-bg-card:   #1e1e1e;   /* カードの背景色 */
+  --color-text:      #ffffff;   /* 文字色（白） */
+  --color-text-dim:  #888888;   /* 薄い文字色 */
+
+  /* --- アクセントカラー --- */
+  --color-red:       #ff1744;   /* 赤（メインアクセント） */
+  --color-red-glow:  rgba(255, 23, 68, 0.6);  /* 赤の光彩 */
+  --color-blue:      #2979ff;   /* 青 */
+  --color-blue-glow: rgba(41, 121, 255, 0.6);  /* 青の光彩 */
+  --color-yellow:    #ffd600;   /* 黄色（強調・当選演出） */
+  --color-yellow-glow: rgba(255, 214, 0, 0.6); /* 黄色の光彩 */
+  --color-gold:      #ffab00;   /* ゴールド（当選枠） */
+
+  /* --- フォント --- */
+  --font-main: 'Noto Sans JP', sans-serif;
+
+  /* --- サイズ --- */
+  --radius:    12px;   /* 角丸の大きさ */
+  --radius-lg: 20px;   /* 大きい角丸 */
+}
+
+
+/* ============================================================
+   グローバルリセット・ベーススタイル
+   ============================================================ */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-main);
+  font-weight: 700;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: var(--font-main);
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+
+/* ============================================================
+   共通ボタンスタイル
+   ============================================================ */
+
+/* メインボタン（赤） */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 18px 48px;
+  font-size: 1.4rem;
+  color: #fff;
+  background: linear-gradient(135deg, var(--color-red), #d50000);
+  border-radius: var(--radius);
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  box-shadow:
+    0 4px 15px var(--color-red-glow),
+    inset 0 1px 0 rgba(255,255,255,0.15);
+  transition: all 0.25s ease;
+  position: relative;
+  overflow: hidden;
+}
+.btn-primary::before {
+  content: '';
+  position: absolute;
+  top: 0; left: -100%;
+  width: 100%; height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+  transition: left 0.5s ease;
+}
+.btn-primary:hover {
+  transform: translateY(-3px) scale(1.03);
+  box-shadow:
+    0 8px 30px var(--color-red-glow),
+    inset 0 1px 0 rgba(255,255,255,0.2);
+}
+.btn-primary:hover::before {
+  left: 100%;
+}
+.btn-primary:active {
+  transform: translateY(0) scale(0.98);
+}
+
+/* 青ボタン */
+.btn-blue {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 18px 48px;
+  font-size: 1.4rem;
+  color: #fff;
+  background: linear-gradient(135deg, var(--color-blue), #0d47a1);
+  border-radius: var(--radius);
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  box-shadow:
+    0 4px 15px var(--color-blue-glow),
+    inset 0 1px 0 rgba(255,255,255,0.15);
+  transition: all 0.25s ease;
+}
+.btn-blue:hover {
+  transform: translateY(-3px) scale(1.03);
+  box-shadow:
+    0 8px 30px var(--color-blue-glow),
+    inset 0 1px 0 rgba(255,255,255,0.2);
+}
+.btn-blue:active {
+  transform: translateY(0) scale(0.98);
+}
+
+
+/* ============================================================
+   共通アニメーション
+   ============================================================ */
+
+/* フェードイン */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* フェードアウト */
+@keyframes fadeOut {
+  from { opacity: 1; }
+  to   { opacity: 0; }
+}
+
+/* ネオンの点滅（光が強まったり弱まったりする） */
+@keyframes neonPulse {
+  0%, 100% { text-shadow: 0 0 10px var(--color-red-glow), 0 0 40px var(--color-red-glow), 0 0 80px var(--color-red-glow); }
+  50%      { text-shadow: 0 0 5px var(--color-red-glow), 0 0 20px var(--color-red-glow), 0 0 40px var(--color-red-glow); }
+}
+
+/* パルス（拡大縮小の繰り返し） */
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50%      { transform: scale(1.05); }
+}
+
+/* スライドアップ＋フェードイン */
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* 画面全体のフェードアウト */
+.page-fade-out {
+  animation: fadeOut 0.6s ease forwards;
+}
+
+/* 画面全体のフェードイン */
+.page-fade-in {
+  animation: fadeIn 0.6s ease forwards;
+}
+
+
+/* ============================================================
+   共通ヘッダー（サブページ用）
+   ============================================================ */
+.page-header {
+  width: 100%;
+  padding: 16px 32px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: linear-gradient(180deg, rgba(26,26,26,0.95) 0%, transparent 100%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.page-header .logo-mini {
+  font-size: 1.1rem;
+  font-weight: 900;
+  color: var(--color-red);
+  letter-spacing: 0.08em;
+  text-shadow: 0 0 10px var(--color-red-glow);
+}
+
+.page-header .back-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  font-size: 0.85rem;
+  color: var(--color-text-dim);
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+.page-header .back-btn:hover {
+  color: #fff;
+  background: rgba(255,255,255,0.1);
+  border-color: rgba(255,255,255,0.2);
+}

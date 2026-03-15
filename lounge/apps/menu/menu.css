@@ -1,0 +1,274 @@
+/* ============================================================
+   メインメニュー画面専用スタイル (menu.css)
+   ============================================================ */
+
+.menu-page {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background:
+        radial-gradient(ellipse at 20% 50%, rgba(255, 23, 68, 0.05) 0%, transparent 50%),
+        radial-gradient(ellipse at 80% 50%, rgba(41, 121, 255, 0.05) 0%, transparent 50%),
+        var(--color-bg);
+}
+
+
+/* ---- ヘッダー ---- */
+.menu-header {
+    width: 100%;
+    padding: 24px 40px;
+    display: flex;
+    align-items: center;
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 1.2rem;
+    font-weight: 900;
+    letter-spacing: 0.1em;
+    color: var(--color-text);
+    transition: opacity 0.2s;
+}
+
+.header-logo:hover {
+    opacity: 0.7;
+}
+
+/* シンボルアイコン画像 */
+.header-logo-icon {
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+    filter: drop-shadow(0 0 6px var(--color-red-glow));
+}
+
+.header-logo-accent {
+    color: var(--color-red);
+    text-shadow: 0 0 10px var(--color-red-glow);
+}
+
+
+/* ---- メインエリア ---- */
+.menu-main {
+    flex: 1;
+    width: 100%;
+    max-width: 1200px;
+    padding: 40px 32px 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-title {
+    font-size: clamp(1.5rem, 3vw, 2.2rem);
+    font-weight: 900;
+    letter-spacing: 0.15em;
+    text-align: center;
+    background: linear-gradient(135deg, var(--color-red), var(--color-yellow));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: slideUp 0.8s ease forwards;
+}
+
+.menu-subtitle {
+    margin-top: 8px;
+    font-size: 0.95rem;
+    font-weight: 400;
+    color: var(--color-text-dim);
+    animation: slideUp 0.8s ease 0.15s forwards;
+    opacity: 0;
+}
+
+
+/* ---- カードグリッド ---- */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 28px;
+    width: 100%;
+    margin-top: 48px;
+}
+
+
+/* ---- カード共通 ---- */
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 40px 28px 36px;
+    background: var(--color-bg-card);
+    border-radius: var(--radius-lg);
+    border: 2px solid rgba(255, 255, 255, 0.06);
+    transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: 0;
+    animation: slideUp 0.7s ease forwards;
+}
+
+.card:nth-child(1) {
+    animation-delay: 0.3s;
+}
+
+.card:nth-child(2) {
+    animation-delay: 0.45s;
+}
+
+.card:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+/* アクティブカード（クリック可能） */
+.card--active {
+    cursor: pointer;
+}
+
+.card--active:hover {
+    transform: translateY(-8px) scale(1.02);
+    border-color: var(--color-red);
+    box-shadow:
+        0 12px 40px rgba(255, 23, 68, 0.2),
+        0 0 0 1px var(--color-red),
+        inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+.card--active:hover .card-icon {
+    transform: scale(1.15);
+}
+
+.card--active:hover .card-arrow {
+    opacity: 1;
+    transform: translateX(4px);
+}
+
+/* 無効カード（Coming Soon） */
+.card--disabled {
+    cursor: not-allowed;
+    opacity: 0.45;
+    filter: grayscale(0.5);
+}
+
+.card--disabled:hover {
+    transform: none;
+}
+
+
+/* ---- カード内部要素 ---- */
+.card-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+    min-height: 72px;
+    transition: transform 0.3s ease;
+}
+
+/* 画像アイコン（PNG / SVG / 将来 Lottie 等にも対応可能） */
+.card-icon img {
+    width: 64px;
+    height: 64px;
+    object-fit: contain;
+    display: block;
+    filter: drop-shadow(0 0 10px rgba(255, 23, 68, 0.25));
+    transition: transform 0.3s ease;
+}
+
+.card--active:hover .card-icon img {
+    transform: scale(1.08);
+}
+
+.card-body {
+    flex: 1;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: 900;
+    margin-bottom: 10px;
+    letter-spacing: 0.05em;
+}
+
+.card-desc {
+    font-size: 0.85rem;
+    font-weight: 400;
+    color: var(--color-text-dim);
+    line-height: 1.6;
+}
+
+.card-arrow {
+    margin-top: 20px;
+    font-size: 1.4rem;
+    color: var(--color-red);
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+/* Coming Soonバッジ */
+.card-badge {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    padding: 4px 14px;
+    font-size: 0.65rem;
+    font-weight: 900;
+    letter-spacing: 0.1em;
+    color: #000;
+    background: var(--color-yellow);
+    border-radius: 20px;
+}
+
+
+/* ---- フッター ---- */
+.menu-footer {
+    padding: 24px;
+    font-size: 0.75rem;
+    color: var(--color-text-dim);
+    position: relative;
+    z-index: 2;
+}
+
+
+/* ---- キャラクター装飾（右下に配置、背景として馴染ませる） ---- */
+.menu-chara {
+    position: fixed;
+    right: -20px;
+    bottom: -30px;
+    width: clamp(200px, 20vw, 320px);
+    height: auto;
+    opacity: 0.12;
+    pointer-events: none;
+    z-index: 0;
+    transform: rotate(-5deg);
+    filter: drop-shadow(0 0 30px rgba(255, 23, 68, 0.15));
+    /* 下から溶け込むグラデーションマスク */
+    -webkit-mask-image: linear-gradient(to top, transparent 5%, black 40%);
+    mask-image: linear-gradient(to top, transparent 5%, black 40%);
+}
+
+
+/* ---- レスポンシブ（PC優先だが最低限のモバイル調整） ---- */
+@media (max-width: 768px) {
+    .card-grid {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+    }
+
+    .menu-main {
+        padding: 24px 16px 40px;
+    }
+
+    .menu-chara {
+        display: none;
+        /* モバイルではキャラ非表示 */
+    }
+
+    .card-icon img {
+        width: 52px;
+        height: 52px;
+    }
+}

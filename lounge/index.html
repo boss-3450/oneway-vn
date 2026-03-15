@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="REPLAY LIVE LOUNGE - 配信企画用ブラウザベースツール群">
+  <title>REPLAY LIVE LOUNGE</title>
+  <link rel="stylesheet" href="css/common.css">
+  <style>
+    /* ============================================================
+       エントランス画面専用スタイル
+       ============================================================ */
+
+    .entrance {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: radial-gradient(ellipse at center, #1a1a2e 0%, #0a0a0a 70%);
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* --- 背景のパーティクル演出 --- */
+    .particles {
+      position: absolute;
+      inset: 0;
+      overflow: hidden;
+      pointer-events: none;
+    }
+
+    .particles span {
+      position: absolute;
+      width: 4px;
+      height: 4px;
+      background: var(--color-red);
+      border-radius: 50%;
+      opacity: 0;
+      animation: particleFloat linear infinite;
+    }
+
+    @keyframes particleFloat {
+      0% {
+        opacity: 0;
+        transform: translateY(100vh) scale(0);
+      }
+
+      10% {
+        opacity: 1;
+      }
+
+      90% {
+        opacity: 1;
+      }
+
+      100% {
+        opacity: 0;
+        transform: translateY(-10vh) scale(1);
+      }
+    }
+
+    /* --- ロゴエリア --- */
+    .logo-wrapper {
+      text-align: center;
+      margin-bottom: 50px;
+      animation: fadeIn 1.2s ease forwards;
+      z-index: 2;
+    }
+
+    /* シンボルマーク（テキストタイトルの真上に紋章として配置） */
+    .logo-symbol {
+      display: block;
+      width: 70px;
+      height: 70px;
+      margin: 0 auto 16px;
+      object-fit: contain;
+      filter: drop-shadow(0 0 8px var(--color-red-glow)) drop-shadow(0 0 20px rgba(255, 23, 68, 0.3));
+      animation: pulse 3s ease-in-out infinite;
+    }
+
+    .logo-sub {
+      display: block;
+      font-size: 1rem;
+      font-weight: 700;
+      letter-spacing: 0.5em;
+      color: var(--color-text-dim);
+      margin-bottom: 12px;
+      text-transform: uppercase;
+    }
+
+    /* メインタイトル（CSSネオンテキスト） */
+    .logo-main {
+      font-size: clamp(2.5rem, 6vw, 4.5rem);
+      font-weight: 900;
+      letter-spacing: 0.08em;
+      color: #fff;
+      text-shadow:
+        0 0 10px var(--color-red-glow),
+        0 0 40px var(--color-red-glow),
+        0 0 80px var(--color-red-glow),
+        0 0 120px rgba(255, 23, 68, 0.3);
+      animation: neonPulse 3s ease-in-out infinite;
+    }
+
+    .logo-accent {
+      color: var(--color-red);
+    }
+
+    .logo-divider {
+      width: 120px;
+      height: 3px;
+      margin: 20px auto 0;
+      background: linear-gradient(90deg, transparent, var(--color-red), transparent);
+      border-radius: 2px;
+    }
+
+    /* --- ENTERボタン --- */
+    .enter-btn-wrapper {
+      animation: fadeIn 1.5s ease 0.5s forwards;
+      opacity: 0;
+      z-index: 2;
+    }
+
+    .enter-btn {
+      padding: 20px 72px;
+      font-size: 1.6rem;
+      letter-spacing: 0.3em;
+    }
+
+    /* --- フッターテキスト --- */
+    .entrance-footer {
+      position: absolute;
+      bottom: 32px;
+      font-size: 0.75rem;
+      color: var(--color-text-dim);
+      letter-spacing: 0.1em;
+      opacity: 0;
+      animation: fadeIn 1s ease 1.5s forwards;
+      z-index: 2;
+    }
+
+    /* --- レスポンシブ --- */
+    @media (max-width: 768px) {
+      .logo-symbol {
+        width: 50px;
+        height: 50px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="entrance" id="entrance">
+    <!-- 背景パーティクル -->
+    <div class="particles" id="particles"></div>
+
+    <!-- ロゴ -->
+    <div class="logo-wrapper">
+      <!-- シンボルマーク（紋章） -->
+      <img class="logo-symbol" src="assets/images/logo/logo_symbol.png" alt="">
+      <span class="logo-sub">Welcome to</span>
+      <h1 class="logo-main">
+        <span class="logo-accent">REPLAY</span> LIVE LOUNGE
+      </h1>
+      <div class="logo-divider"></div>
+    </div>
+
+    <!-- ENTERボタン -->
+    <div class="enter-btn-wrapper">
+      <button class="btn-primary enter-btn" id="enterBtn">ENTER</button>
+    </div>
+
+    <!-- フッター -->
+    <p class="entrance-footer">© REPLAY LIVE</p>
+  </div>
+
+  <script>
+    // ============================================================
+    // パーティクル（背景の光の粒）を生成
+    // ============================================================
+    (function createParticles() {
+      const container = document.getElementById('particles');
+      const colors = ['#ff1744', '#2979ff', '#ffd600', '#ffffff'];
+      for (let i = 0; i < 30; i++) {
+        const span = document.createElement('span');
+        span.style.left = Math.random() * 100 + '%';
+        span.style.width = span.style.height = (Math.random() * 4 + 2) + 'px';
+        span.style.background = colors[Math.floor(Math.random() * colors.length)];
+        span.style.animationDuration = (Math.random() * 6 + 4) + 's';
+        span.style.animationDelay = (Math.random() * 6) + 's';
+        container.appendChild(span);
+      }
+    })();
+
+    // ============================================================
+    // ENTERボタン → メインメニューへ遷移
+    // ============================================================
+    document.getElementById('enterBtn').addEventListener('click', function () {
+      const entrance = document.getElementById('entrance');
+      entrance.classList.add('page-fade-out');
+      setTimeout(function () {
+        window.location.href = 'apps/menu/index.html';
+      }, 600);
+    });
+  </script>
+</body>
+
+</html>

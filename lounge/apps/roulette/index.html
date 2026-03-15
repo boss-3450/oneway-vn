@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="REPLAY LIVE LOUNGE - メンバー抽選スロットマシン">
+    <title>メンバー・スロット | REPLAY LIVE LOUNGE</title>
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="./slot.css">
+</head>
+
+<body>
+    <!-- ============================================================
+         画面A: 設定画面
+         ============================================================ -->
+    <div class="screen settings-screen" id="settingsScreen">
+        <header class="page-header">
+            <a href="../menu/index.html" class="back-btn">← メニューに戻る</a>
+            <span class="logo-mini">
+                <img class="header-symbol" src="../../assets/images/logo/logo_symbol.png" alt="">
+                <span style="color:var(--color-red)">REPLAY</span> LIVE LOUNGE
+            </span>
+        </header>
+
+        <main class="settings-main">
+            <h2 class="settings-title">🎰 SLOT MACHINE SETUP</h2>
+            <p class="settings-subtitle">抽選の設定をしてください</p>
+
+            <div class="settings-card">
+                <div class="setting-group">
+                    <label class="setting-label">モード選択</label>
+                    <div class="mode-toggle">
+                        <button class="mode-btn mode-btn--active" data-mode="winner" id="modeWinner">
+                            🏆 WINNER<span class="mode-desc">勝者決定</span>
+                        </button>
+                        <button class="mode-btn" data-mode="punishment" id="modePunishment">
+                            💀 PUNISHMENT<span class="mode-desc">罰ゲーム</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="setting-group">
+                    <label class="setting-label">参加メンバー（1行に1名）</label>
+                    <textarea class="member-input" id="memberInput" rows="8" placeholder="例:&#10;たろう&#10;はなこ&#10;ゆうき">メンバー1
+メンバー2
+メンバー3
+メンバー4
+メンバー5
+メンバー6</textarea>
+                    <p class="input-hint" id="memberCount">現在: 6名（2〜20名で設定してください）</p>
+                </div>
+
+                <button class="btn-primary start-btn" id="goSlotBtn">🎰 SLOT START</button>
+            </div>
+        </main>
+    </div>
+
+    <!-- ============================================================
+         画面B: スロットマシン画面
+
+         構造:
+           .slot-screen         — 画面全体（黒背景、中央寄せ）
+             .cabinet-container — 筐体基準コンテナ（aspect-ratio: 1476/2048）
+               img.casing-layer — 筐体PNG（z-index:1、pointer-events:none）
+               .reel-layer      — リール（z-index:2、筐体内部座標で配置）
+               .controls-overlay— 操作UI（z-index:3）
+             .result-overlay    — 結果演出（z-index:100）
+         ============================================================ -->
+    <div class="screen slot-screen is-hidden" id="slotScreen">
+
+        <!-- 筐体基準コンテナ -->
+        <div class="cabinet-container" id="cabinetContainer">
+
+            <!-- 筐体PNG画像（背景フレーム） -->
+            <img class="casing-layer" src="../../assets/images/slot_casing.png" alt="スロットマシン筐体" draggable="false">
+
+            <!-- リール（筐体内部の黒い液晶部分に配置） -->
+            <div class="reel-layer" id="reelLayer">
+                <div class="reel-mode-display">
+                    <span class="reel-mode-text" id="reelModeText">🏆 WINNER MODE</span>
+                </div>
+                <div class="pay-line"></div>
+                <div class="pay-line-arrow pay-line-arrow--left">▶</div>
+                <div class="pay-line-arrow pay-line-arrow--right">◀</div>
+                <div class="reel-strip" id="reelStrip"></div>
+            </div>
+
+            <!-- 操作UI -->
+            <div class="controls-overlay">
+                <button class="slot-back-btn" id="slotBackBtn" type="button">← MENU</button>
+                <button class="slot-reset-btn" id="resetBtn" type="button" disabled>↺ もう一度</button>
+
+                <div class="slot-buttons-area">
+                    <button class="neon-btn neon-btn--start" id="leverHit" type="button">
+                        <span class="neon-btn__text">START</span>
+                    </button>
+                    <button class="neon-btn neon-btn--stop" id="stopHit" type="button" disabled>
+                        <span class="neon-btn__text">STOP</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 結果演出オーバーレイ -->
+        <div class="result-overlay is-hidden" id="resultOverlay">
+            <div class="result-content">
+                <p class="result-label" id="resultLabel"></p>
+                <p class="result-name" id="resultName"></p>
+            </div>
+            <div class="confetti-container" id="confettiContainer"></div>
+            <div class="lightning-container" id="lightningContainer"></div>
+        </div>
+    </div>
+
+    <script src="./slot.js"></script>
+</body>
+
+</html>

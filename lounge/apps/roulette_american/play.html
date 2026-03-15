@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="REPLAY LIVE LOUNGE - アメリカンルーレット 演出">
+    <title>アメリカンルーレット - SPIN</title>
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="./roulette_american.css">
+</head>
+
+<body>
+    <div class="play-page" id="playPage">
+
+
+        <!-- 戻るリンク -->
+        <div class="play-back-link">
+            <a href="./index.html" class="rl-header__back">← 設定に戻る</a>
+        </div>
+
+        <!-- ホイールコンテナ -->
+        <div class="wheel-container" id="wheelContainer">
+            <!-- ネオン筐体リング -->
+            <div class="neon-ring" id="neonRing"></div>
+
+            <!-- ポインター（固定矢印） -->
+            <div class="wheel-pointer" id="wheelPointer"></div>
+
+            <!-- ティックフラッシュ（通過発光） -->
+            <div class="tick-flash" id="tickFlash"></div>
+
+            <!-- Canvas -->
+            <canvas id="wheelCanvas"></canvas>
+        </div>
+
+        <!-- スピンボタン -->
+        <button class="spin-btn" id="spinBtn">🎰 SPIN</button>
+
+        <!-- 画面フラッシュ -->
+        <div class="screen-flash" id="screenFlash"></div>
+
+        <!-- 紙吹雪 -->
+        <div class="confetti-layer" id="confettiLayer"></div>
+
+        <!-- 結果オーバーレイ -->
+        <div class="result-overlay" id="resultOverlay">
+            <div class="result-card" id="resultCard">
+                <div class="result-card__title">🎯 RESULT</div>
+                <div class="result-card__category" id="resultCategory"></div>
+                <div class="result-card__name" id="resultName"></div>
+                <div class="result-card__actions">
+                    <button class="result-btn result-btn--spin" id="resultSpinBtn">🔄 もう一度回す</button>
+                    <button class="result-btn result-btn--back" id="resultBackBtn">⚙ 設定に戻る</button>
+                </div>
+                <p class="result-hint">画面をクリックで閉じる</p>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="./roulette_american.js"></script>
+</body>
+
+</html>

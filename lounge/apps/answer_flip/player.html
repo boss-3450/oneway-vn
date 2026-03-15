@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="回答フリップボード - 回答者画面">
+    <title>回答画面 - 回答フリップボード</title>
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="./css/answer_flip.css">
+</head>
+
+<body>
+    <div class="af-page page-fade-in" id="playerPage">
+
+        <!-- ヘッダー -->
+        <header class="af-header">
+            <div class="af-header-left">
+                <span class="logo-mini">📝 回答フリップボード</span>
+            </div>
+            <div class="af-header-right">
+                <span id="playerNameBadge" style="font-size:0.85rem;font-weight:900;color:var(--color-yellow);"></span>
+            </div>
+        </header>
+
+        <div class="af-page-inner">
+
+            <!-- 待機画面 -->
+            <div id="waitScreen" class="af-wait-screen">
+                <div class="wait-icon">📝</div>
+                <div class="wait-text">待機中...</div>
+                <div class="wait-sub" id="waitMessage">ホストが回答をスタートするまでお待ちください</div>
+                <button class="af-btn af-btn--blue mt-16" id="readyBtn">✅ 準備完了</button>
+            </div>
+
+            <!-- 回答画面 -->
+            <div id="answerScreen" class="hidden">
+                <!-- 問題表示 -->
+                <div class="af-question-display af-panel">
+                    <div class="question-label">QUESTION <span id="pQNum">1</span></div>
+                    <div class="question-text" id="pQuestionText"></div>
+                    <div class="af-question-images" id="pQuestionImages"></div>
+                </div>
+
+                <!-- タイマー -->
+                <div class="af-timer hidden" id="pTimerDisplay">
+                    <span>⏱️</span>
+                    <span id="pTimerValue">60</span>
+                </div>
+
+                <!-- キャンバス -->
+                <div class="af-canvas-wrapper" id="canvasWrapper">
+                    <canvas id="drawCanvas"></canvas>
+                </div>
+
+                <!-- ツールバー -->
+                <div class="af-toolbar" id="drawToolbar">
+                    <!-- 色ボタン -->
+                    <button class="af-color-btn af-color-btn--black active" data-color="#222222"></button>
+                    <button class="af-color-btn af-color-btn--red" data-color="#ff1744"></button>
+                    <button class="af-color-btn af-color-btn--blue" data-color="#2979ff"></button>
+                    <button class="af-color-btn af-color-btn--yellow" data-color="#ffd600"></button>
+                    <button class="af-color-btn af-color-btn--green" data-color="#4caf50"></button>
+
+                    <div class="separator"></div>
+
+                    <!-- サイズ -->
+                    <button class="af-size-btn" data-size="3" title="細">
+                        <span class="dot" style="width:4px;height:4px;"></span>
+                    </button>
+                    <button class="af-size-btn active" data-size="6" title="中">
+                        <span class="dot" style="width:8px;height:8px;"></span>
+                    </button>
+                    <button class="af-size-btn" data-size="12" title="太">
+                        <span class="dot" style="width:14px;height:14px;"></span>
+                    </button>
+
+                    <div class="separator"></div>
+
+                    <!-- ツール -->
+                    <button class="af-tool-btn" id="eraserBtn" title="消しゴム">🧹</button>
+                    <button class="af-tool-btn" id="undoBtn" title="Undo">↩️</button>
+                    <button class="af-tool-btn" id="clearBtn" title="Clear">🗑️</button>
+                </div>
+
+                <!-- 送信ボタン -->
+                <div class="mt-24 text-center">
+                    <button class="af-btn af-btn--full af-btn--yellow" id="submitBtn">📤 回答を送信</button>
+                </div>
+            </div>
+
+            <!-- 送信済み待機画面 -->
+            <div id="submittedScreen" class="af-wait-screen hidden">
+                <div class="wait-icon">✅</div>
+                <div class="wait-text">回答送信済み</div>
+                <div class="wait-sub">ホストが公開するまでお待ちください</div>
+            </div>
+
+            <!-- 終了画面 -->
+            <div id="finishedScreen" class="af-wait-screen hidden">
+                <div class="wait-icon">🎉</div>
+                <div class="wait-text">お疲れさまでした！</div>
+                <div class="wait-sub">ルームは終了しました</div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="./js/answer_flip_common.js"></script>
+    <script src="./js/player.js"></script>
+</body>
+
+</html>
