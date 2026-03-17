@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="回答フリップボード - 表示専用（OBS用）">
+    <title>回答フリップボード - Display</title>
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="./css/answer_flip.css">
+    <style>
+        /* OBS用: 透過背景対応 */
+        html, body {
+            background: transparent !important;
+        }
+        .af-display-page {
+            background: transparent;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="af-display-page page-fade-in" id="displayPage">
+
+        <!-- 問題表示 -->
+        <div class="af-question-display hidden" id="dQuestionArea">
+            <div class="question-label">QUESTION <span id="dQNum">1</span></div>
+            <div class="question-text" id="dQuestionText"></div>
+            <div class="af-question-images" id="dQuestionImages"></div>
+        </div>
+
+        <!-- フリップボード（横並び） -->
+        <div class="af-flip-board" id="dFlipBoard"></div>
+
+        <!-- 待機中 -->
+        <div class="af-wait-screen" id="dWaitScreen">
+            <div class="wait-icon">📝</div>
+            <div class="wait-text">回答フリップボード</div>
+            <div class="wait-sub">ゲーム開始を待っています...</div>
+        </div>
+
+        <!-- 終了 -->
+        <div class="af-wait-screen hidden" id="dFinishedScreen">
+            <div class="wait-icon">✅</div>
+            <div class="wait-text">終了しました</div>
+        </div>
+
+    </div>
+
+    <script src="./js/answer_flip_common.js"></script>
+    <script src="./js/display.js"></script>
+</body>
+
+</html>
