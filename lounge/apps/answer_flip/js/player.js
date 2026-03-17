@@ -1,29 +1,37 @@
 // ============================================================
 // 回答フリップボード — 回答者画面 (player.js)
 // ============================================================
+// RoomStore の dispatch 経由でのみ状態を更新する。
+// localContext で自分の slotIndex を保持。
+// ============================================================
 (function () {
   'use strict';
+  console.log('[BOOT] player.js loaded');
 
   // ---- URLパラメータ取得 ----
   var params = new URLSearchParams(window.location.search);
   var roomId = params.get('room');
   var slotIndex = parseInt(params.get('slot'), 10);
+  console.log('[BOOT] player.js roomId=' + roomId + ' slotIndex=' + slotIndex);
 
   if (!roomId || isNaN(slotIndex)) {
     alert('無効なURLです。ホストから共有されたURLを使用してください。');
     return;
   }
 
-  // ---- RoomStore 初期化 ----
-  var adapter = new AnswerFlip.LocalSyncAdapter(roomId);
+  // ---- RoomStore 初期化（SyncAdapter はファクトリ経由） ----
+  console.log('[BOOT] player.js → createSyncAdapter start');
+  var adapter = AnswerFlip.createSyncAdapter(roomId);
+  console.log('[BOOT] player.js → adapter created:', adapter.constructor.name || typeof adapter);
   var store = new AnswerFlip.RoomStore({
     syncAdapter: adapter,
     role: 'player',
     roomId: roomId,
     slotIndex: slotIndex
   });
+  console.log('[BOOT] player.js → RoomStore ready');
 
-  // 入室通知
+  // 入室通知（dispatch 経由）
   store.dispatch({
     type: 'PLAYER_JOIN',
     payload: { slotIndex: slotIndex }
@@ -183,7 +191,7 @@
     saveUndoState();
   });
 
-  // ---- 回答送信 ----
+  // ---- 回答送信（dispatch 経由） ----
   document.getElementById('submitBtn').addEventListener('click', function () {
     var dataUrl = canvas.toDataURL('image/png');
     store.dispatch({
@@ -192,7 +200,7 @@
     });
   });
 
-  // ---- 準備完了 ----
+  // ---- 準備完了（dispatch 経由） ----
   document.getElementById('readyBtn').addEventListener('click', function () {
     store.dispatch({
       type: 'PLAYER_READY',
@@ -204,7 +212,7 @@
   });
 
   // ============================================================
-  // UI 更新（subscribe）
+  // UI 更新（subscribe）— room state の変更に応じて描画
   // ============================================================
   var prevPhase = null;
   var canvasInitialized = false;
@@ -264,7 +272,7 @@
       pTimerEl.classList.add('hidden');
     }
 
-    // タイマー切れで未送信なら自動送信
+    // タイマー切れで未送信なら自動送信（dispatch 経由）
     if (state.timer.remaining <= 0 && state.timer.duration > 0 &&
         state.phase === 'revealing' && me && me.status === 'answering') {
       var dataUrl = canvas.toDataURL('image/png');

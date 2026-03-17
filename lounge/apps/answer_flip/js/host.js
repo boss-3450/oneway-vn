@@ -1,25 +1,33 @@
 // ============================================================
 // 回答フリップボード — ホスト操作画面 (host.js)
 // ============================================================
+// RoomStore の dispatch 経由でのみ状態を更新する。
+// UI は subscribe で room state の変更を受け取り描画する。
+// ============================================================
 (function () {
   'use strict';
+  console.log('[BOOT] host.js loaded');
 
   // ---- URLパラメータ取得 ----
   var params = new URLSearchParams(window.location.search);
   var roomId = params.get('room');
+  console.log('[BOOT] host.js roomId=' + roomId);
   if (!roomId) {
     alert('ルームIDが指定されていません。');
     window.location.href = 'index.html';
     return;
   }
 
-  // ---- RoomStore 初期化 ----
-  var adapter = new AnswerFlip.LocalSyncAdapter(roomId);
+  // ---- RoomStore 初期化（SyncAdapter はファクトリ経由） ----
+  console.log('[BOOT] host.js → createSyncAdapter start');
+  var adapter = AnswerFlip.createSyncAdapter(roomId);
+  console.log('[BOOT] host.js → adapter created:', adapter.constructor.name || typeof adapter);
   var store = new AnswerFlip.RoomStore({
     syncAdapter: adapter,
     role: 'host',
     roomId: roomId
   });
+  console.log('[BOOT] host.js → RoomStore ready');
 
   document.getElementById('roomIdBadge').textContent = 'Room: ' + roomId;
 
@@ -147,9 +155,6 @@
 
   // ---- PNG保存 ----
   document.getElementById('savePngBtn').addEventListener('click', function () {
-    var board = document.getElementById('flipBoard');
-    // html2canvas がない場合はシンプルスクリーンショットの代替
-    // ここではCanvasに手動描画
     saveFlipBoardAsPng();
   });
 
@@ -226,7 +231,7 @@
   }
 
   // ============================================================
-  // UI 更新（subscribe）
+  // UI 更新（subscribe）— room state の変更に応じて描画
   // ============================================================
   store.subscribe(function (state) {
     // ---- フェーズ別パネル切替 ----
@@ -290,76 +295,21 @@
       document.getElementById('nextQuestionBtn').classList.toggle('hidden', !allRevealed);
       document.getElementById('savePngBtn').classList.toggle('hidden', state.phase !== 'revealing');
 
-      // フリップボード描画
-      renderFlipBoard(state);
+      // フリップボード描画（共通関数を使用）
+      AnswerFlip.renderFlipBoard(
+        document.getElementById('flipBoard'),
+        state,
+        {
+          revealMode: revealMode,
+          onReveal: function (slotIndex) {
+            store.dispatch({ type: 'REVEAL_CARD', payload: { slotIndex: slotIndex } });
+          }
+        }
+      );
     }
   });
 
-  // ---- フリップボード描画 ----
-  function renderFlipBoard(state) {
-    var board = document.getElementById('flipBoard');
-    board.innerHTML = '';
-
-    // 名前入力順（slotIndex順）に左から横並び
-    var sorted = state.participants.slice().sort(function (a, b) {
-      return a.slotIndex - b.slotIndex;
-    });
-
-    sorted.forEach(function (pt) {
-      var isRevealed = state.revealedSlots.indexOf(pt.slotIndex) >= 0;
-      var hasAnswer = state.answers[pt.slotIndex] != null;
-      var isRevealing = state.phase === 'revealing';
-
-      var card = document.createElement('div');
-      card.className = 'af-flip-card';
-      if (isRevealed) card.className += ' revealed';
-      if (isRevealing && !isRevealed && revealMode === 'individual') {
-        card.className += ' clickable';
-      }
-
-      // 名前ラベル
-      var nameEl = document.createElement('div');
-      nameEl.className = 'player-name' + (isRevealed ? ' revealed' : '');
-      nameEl.textContent = pt.name;
-      card.appendChild(nameEl);
-
-      // フリップ面
-      var surface = document.createElement('div');
-      surface.className = 'flip-surface';
-
-      var inner = document.createElement('div');
-      inner.className = 'flip-inner';
-
-      // フロント（伏せ）
-      var front = document.createElement('div');
-      front.className = 'flip-front';
-      front.innerHTML = '<span class="hidden-mark">?</span><span class="hidden-text">HIDDEN</span>';
-
-      // バック（回答）
-      var back = document.createElement('div');
-      back.className = 'flip-back';
-      if (hasAnswer) {
-        back.innerHTML = '<img src="' + state.answers[pt.slotIndex] + '" alt="回答">';
-      } else {
-        back.innerHTML = '<span class="no-answer">未回答</span>';
-      }
-
-      inner.appendChild(front);
-      inner.appendChild(back);
-      surface.appendChild(inner);
-      card.appendChild(surface);
-
-      // クリックで公開
-      if (isRevealing && !isRevealed && revealMode === 'individual') {
-        card.addEventListener('click', function () {
-          store.dispatch({ type: 'REVEAL_CARD', payload: { slotIndex: pt.slotIndex } });
-        });
-      }
-
-      board.appendChild(card);
-    });
-  }
-
+  // ---- ステータスラベル ----
   function statusLabel(status) {
     var labels = {
       disconnected: '未接続',
