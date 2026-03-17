@@ -96,6 +96,16 @@
                 <div class="wait-sub">ホストが公開するまでお待ちください</div>
             </div>
 
+            <!-- 発表画面（revealing フェーズ） -->
+            <div id="revealScreen" class="hidden">
+                <div class="af-question-display af-panel">
+                    <div class="question-label">QUESTION <span id="pRevealQNum">1</span></div>
+                    <div class="question-text" id="pRevealQuestionText"></div>
+                    <div class="af-question-images" id="pRevealQuestionImages"></div>
+                </div>
+                <div class="af-flip-board" id="pFlipBoard"></div>
+            </div>
+
             <!-- 終了画面 -->
             <div id="finishedScreen" class="af-wait-screen hidden">
                 <div class="wait-icon">🎉</div>

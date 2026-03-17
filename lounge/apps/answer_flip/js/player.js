@@ -215,40 +215,52 @@
   // UI 更新（subscribe）— room state の変更に応じて描画
   // ============================================================
   var prevPhase = null;
+  var prevQuestionIndex = -1;
   var canvasInitialized = false;
 
   store.subscribe(function (state) {
     var me = state.participants.find(function (pt) { return pt.slotIndex === slotIndex; });
 
-    // 画面切替
+    // ---- 画面切替（すべて state.phase に依存） ----
     var showWait = (state.phase === 'setup' || state.phase === 'waiting' || state.phase === 'ready');
     var showAnswer = (state.phase === 'answering' && me && me.status !== 'submitted');
-    var showSubmitted = (state.phase === 'answering' && me && me.status === 'submitted') ||
-                        (state.phase === 'revealing');
+    var showSubmitted = (state.phase === 'answering' && me && me.status === 'submitted');
+    var showReveal = (state.phase === 'revealing');
     var showFinished = (state.phase === 'finished');
 
     document.getElementById('waitScreen').classList.toggle('hidden', !showWait);
     document.getElementById('answerScreen').classList.toggle('hidden', !showAnswer);
     document.getElementById('submittedScreen').classList.toggle('hidden', !showSubmitted);
+    document.getElementById('revealScreen').classList.toggle('hidden', !showReveal);
     document.getElementById('finishedScreen').classList.toggle('hidden', !showFinished);
 
-    // 回答画面に入った時にキャンバス初期化
+    // ---- answering フェーズ遷移時：キャンバスリセット ----
+    if (state.phase === 'answering' && prevPhase !== 'answering') {
+      canvasInitialized = false;
+    }
+
+    // ---- waiting フェーズ遷移時：readyボタンリセット ----
+    if (state.phase === 'waiting' && prevPhase !== 'waiting') {
+      canvasInitialized = false;
+      document.getElementById('readyBtn').disabled = false;
+      document.getElementById('readyBtn').textContent = '✅ 準備完了';
+      document.getElementById('waitMessage').textContent = 'ホストが回答をスタートするまでお待ちください';
+    }
+
+    // ---- 回答画面に入った時にキャンバス初期化 ----
     if (showAnswer && !canvasInitialized) {
       setTimeout(function () { initCanvas(); }, 100);
       canvasInitialized = true;
     }
 
-    // フェーズが変わったら再初期化フラグリセット
-    if (state.phase !== prevPhase) {
-      if (state.phase === 'waiting') {
-        canvasInitialized = false;
-        document.getElementById('readyBtn').disabled = false;
-        document.getElementById('readyBtn').textContent = '✅ 準備完了';
-      }
-      prevPhase = state.phase;
+    // ---- 問題が変わったらリセット（questionIndex ベース）----
+    if (state.questionIndex !== prevQuestionIndex && prevQuestionIndex >= 0) {
+      canvasInitialized = false;
     }
+    prevQuestionIndex = state.questionIndex;
+    prevPhase = state.phase;
 
-    // 問題表示
+    // ---- 問題表示（回答画面用）----
     if (state.question.text) {
       document.getElementById('pQNum').textContent = state.questionIndex + 1;
       document.getElementById('pQuestionText').textContent = state.question.text;
@@ -261,7 +273,7 @@
       });
     }
 
-    // タイマー
+    // ---- タイマー ----
     var pTimerEl = document.getElementById('pTimerDisplay');
     if (state.timer.duration > 0 && state.phase === 'answering') {
       pTimerEl.classList.remove('hidden');
@@ -272,7 +284,26 @@
       pTimerEl.classList.add('hidden');
     }
 
-    // タイマー切れで未送信なら自動送信（dispatch 経由）
+    // ---- 発表画面描画（revealing フェーズ）----
+    if (showReveal) {
+      document.getElementById('pRevealQNum').textContent = state.questionIndex + 1;
+      document.getElementById('pRevealQuestionText').textContent = state.question.text;
+      var revImgC = document.getElementById('pRevealQuestionImages');
+      revImgC.innerHTML = '';
+      (state.question.images || []).forEach(function (src) {
+        var img = document.createElement('img');
+        img.src = src;
+        revImgC.appendChild(img);
+      });
+      // フリップボード描画（共通関数 — クリックなし、表示のみ）
+      AnswerFlip.renderFlipBoard(
+        document.getElementById('pFlipBoard'),
+        state,
+        {} // onReveal なし = クリック不可
+      );
+    }
+
+    // ---- タイマー切れで未送信なら自動送信（dispatch 経由）----
     if (state.timer.remaining <= 0 && state.timer.duration > 0 &&
         state.phase === 'revealing' && me && me.status === 'answering') {
       var dataUrl = canvas.toDataURL('image/png');
