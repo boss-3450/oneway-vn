@@ -1,0 +1,13 @@
+{
+  "name": "lounge-worker",
+  "private": true,
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "cf-typegen": "wrangler types",
+    "generate:albums": "node scripts/generate-albums.js"
+  },
+  "devDependencies": {
+    "wrangler": "^4"
+  }
+}
