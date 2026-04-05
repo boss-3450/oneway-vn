@@ -5,11 +5,11 @@
 // URLパラメータ ?id=xxx でメンバーを特定し、画像を表示する。
 //
 // ■ 操作:
-//   - 画像クリック / 「▶」ボタン → 次の画像
-//   - 「◀」ボタン → 前の画像
+//   - 画像クリック / 「▶」ボタン → 次のページ
+//   - 「◀」ボタン → 前のページ
 //   - スワイプ（モバイル） → 左=次 / 右=前
-//   - キーボード矢印キー
-//   - 最後の画像の次 → 最初に戻る（ループ）
+//   - キーボード矢印キー / スペースキー
+//   - 最後のページの次 → 最初に戻る（ループ）
 //
 // ============================================================
 
@@ -37,9 +37,10 @@
 
   // ---- DOM要素 ----
   var memberNameEl = document.getElementById('memberName');
-  var viewerStage = document.getElementById('viewerStage');
-  var imageWrapper = document.getElementById('imageWrapper');
+  var bookViewer = document.getElementById('bookViewer');
+  var bookPage = document.getElementById('bookPage');
   var viewerImage = document.getElementById('viewerImage');
+  var viewerCaption = document.getElementById('viewerCaption');
   var imageTitle = document.getElementById('imageTitle');
   var viewerNav = document.getElementById('viewerNav');
   var viewerHint = document.getElementById('viewerHint');
@@ -56,15 +57,14 @@
   var images = ALBUMS[memberId] || [];
   var currentIndex = 0;
   var isAnimating = false;
+  var ANIM_DURATION = 550; // ms — CSSのアニメーション時間と合わせる
 
   // ---- 表示初期化 ----
   if (images.length === 0) {
-    // 画像が0件の場合 → 「準備中」表示
     viewerEmpty.style.display = 'flex';
   } else {
-    // 画像がある場合 → ビューア表示
-    viewerStage.style.display = 'flex';
-    imageTitle.style.display = 'block';
+    bookViewer.style.display = 'block';
+    viewerCaption.style.display = 'flex';
     viewerNav.style.display = 'flex';
     viewerHint.style.display = 'block';
     showImage(currentIndex);
@@ -88,37 +88,37 @@
     if (isAnimating || images.length <= 1) return;
     isAnimating = true;
 
-    // アニメーション開始
-    imageWrapper.classList.add('flip-next');
+    // ページめくりアニメーション開始
+    bookPage.classList.add('turn-next');
 
-    // 中間点で画像を切り替え
+    // アニメーション中間点で画像を切り替え
     setTimeout(function () {
       currentIndex = (currentIndex + 1) % images.length;
       showImage(currentIndex);
-    }, 250);
+    }, ANIM_DURATION * 0.5);
 
     // アニメーション完了
     setTimeout(function () {
-      imageWrapper.classList.remove('flip-next');
+      bookPage.classList.remove('turn-next');
       isAnimating = false;
-    }, 500);
+    }, ANIM_DURATION);
   }
 
   function goPrev() {
     if (isAnimating || images.length <= 1) return;
     isAnimating = true;
 
-    imageWrapper.classList.add('flip-prev');
+    bookPage.classList.add('turn-prev');
 
     setTimeout(function () {
       currentIndex = (currentIndex - 1 + images.length) % images.length;
       showImage(currentIndex);
-    }, 250);
+    }, ANIM_DURATION * 0.5);
 
     setTimeout(function () {
-      imageWrapper.classList.remove('flip-prev');
+      bookPage.classList.remove('turn-prev');
       isAnimating = false;
-    }, 500);
+    }, ANIM_DURATION);
   }
 
   // ============================================================
@@ -126,8 +126,8 @@
   // ============================================================
 
   // 画像クリック → 次へ
-  if (imageWrapper) {
-    imageWrapper.addEventListener('click', function () {
+  if (bookPage) {
+    bookPage.addEventListener('click', function () {
       goNext();
     });
   }
@@ -173,12 +173,11 @@
     var dx = e.changedTouches[0].clientX - touchStartX;
     var dy = e.changedTouches[0].clientY - touchStartY;
 
-    // 縦スクロールより横スワイプが大きい場合のみ反応
     if (Math.abs(dx) > Math.abs(dy) && Math.abs(dx) > touchThreshold) {
       if (dx < 0) {
-        goNext();  // 左スワイプ → 次
+        goNext();
       } else {
-        goPrev();  // 右スワイプ → 前
+        goPrev();
       }
     }
   }, { passive: true });

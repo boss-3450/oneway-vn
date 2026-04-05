@@ -2,7 +2,7 @@
    りぷらい！アルバム — 共通スタイル (album.css)
    ============================================================
    REPLAY LIVE LOUNGE の世界観を維持しつつ、
-   画像が主役になる上品なデザイン。
+   「デジタル写真集・イラスト本」をめくる体験を提供する。
    ============================================================ */
 
 /* ---- レイアウト ---- */
@@ -23,11 +23,11 @@
    ============================================================ */
 .album-header {
   width: 100%;
-  padding: 20px 32px;
+  padding: 16px 28px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: linear-gradient(180deg, rgba(10, 10, 10, 0.95) 0%, rgba(10, 10, 10, 0.6) 70%, transparent 100%);
+  background: linear-gradient(180deg, rgba(10, 10, 10, 0.92) 0%, rgba(10, 10, 10, 0.5) 80%, transparent 100%);
   position: sticky;
   top: 0;
   z-index: 100;
@@ -45,12 +45,12 @@
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  padding: 8px 18px;
-  font-size: 0.85rem;
+  padding: 7px 16px;
+  font-size: 0.8rem;
   color: var(--color-text-dim);
-  background: rgba(255, 255, 255, 0.06);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 6px;
   cursor: pointer;
   transition: all 0.2s ease;
   text-decoration: none;
@@ -58,39 +58,40 @@
 
 .album-back-btn:hover {
   color: #fff;
-  background: rgba(255, 255, 255, 0.12);
-  border-color: rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.2);
 }
 
 .album-header-logo {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
   text-decoration: none;
   color: var(--color-text);
   transition: opacity 0.2s;
+  opacity: 0.5;
 }
 
 .album-header-logo:hover {
-  opacity: 0.7;
+  opacity: 0.8;
 }
 
 .album-header-logo-icon {
-  width: 30px;
-  height: 30px;
+  width: 22px;
+  height: 22px;
   object-fit: contain;
-  filter: drop-shadow(0 0 4px var(--color-red-glow));
+  filter: drop-shadow(0 0 3px var(--color-red-glow));
 }
 
 .album-header-logo-text {
-  font-size: 0.95rem;
-  font-weight: 900;
-  letter-spacing: 0.08em;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
 }
 
 .album-header-accent {
   color: var(--color-red);
-  text-shadow: 0 0 8px var(--color-red-glow);
+  text-shadow: 0 0 6px var(--color-red-glow);
 }
 
 
@@ -156,7 +157,6 @@
   overflow: hidden;
 }
 
-/* カードの光沢オーバーレイ */
 .member-card::before {
   content: '';
   position: absolute;
@@ -177,9 +177,6 @@
 .member-card:active {
   transform: translateY(-2px) scale(0.99);
 }
-
-/* アニメーション遅延を段階的に設定（JSで動的設定） */
-
 
 /* ---- メンバーアイコン ---- */
 .member-icon-wrapper {
@@ -208,7 +205,6 @@
   display: block;
 }
 
-/* アイコン未設定時のフォールバック */
 .member-icon-fallback {
   width: 100%;
   height: 100%;
@@ -236,7 +232,7 @@
 
 
 /* ============================================================
-   アルバム閲覧ページ (member.html)
+   アルバム閲覧ページ — 本風デザイン (member.html)
    ============================================================ */
 
 .viewer-container {
@@ -245,7 +241,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 16px;
+  padding: 12px 16px;
   position: relative;
   overflow: hidden;
 }
@@ -253,158 +249,239 @@
 /* ---- メンバー名バー ---- */
 .viewer-member-bar {
   text-align: center;
-  padding: 12px 0 4px;
+  padding: 8px 0 2px;
 }
 
 .viewer-member-name {
-  font-size: 1.1rem;
-  font-weight: 900;
-  letter-spacing: 0.08em;
-  color: var(--color-text);
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: rgba(255, 255, 255, 0.5);
+  text-transform: uppercase;
 }
 
-/* ---- 画像表示エリア ---- */
-.viewer-stage {
+
+/* ---- 本体：ブック ---- */
+.book {
   position: relative;
   width: 100%;
-  max-width: 800px;
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  perspective: 1200px;
+  max-width: 720px;
   margin: 0 auto;
+  perspective: 1800px;
 }
 
-.viewer-image-wrapper {
+/* 4:3 アスペクト比のフレーム */
+.book-frame {
   position: relative;
   width: 100%;
-  max-height: 70vh;
+  padding-bottom: 75%; /* 4:3 */
+  background: #111;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow:
+    /* 本の影 — 外側 */
+    0 14px 50px rgba(0, 0, 0, 0.7),
+    0 4px 20px rgba(0, 0, 0, 0.4),
+    /* ページの縁 — 下側に紙が重なっている感じ */
+    0 2px 0 0 #1a1a1a,
+    0 4px 0 0 #151515,
+    0 6px 0 0 #111;
+}
+
+/* 綴じ側の影（左端にスパイン） */
+.book-frame::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 100%;
+  background: linear-gradient(90deg,
+    rgba(0, 0, 0, 0.5) 0%,
+    rgba(0, 0, 0, 0.15) 40%,
+    rgba(255, 255, 255, 0.02) 70%,
+    transparent 100%);
+  z-index: 5;
+  pointer-events: none;
+}
+
+/* ページ上端の微かなハイライト（紙の質感） */
+.book-frame::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.06) 20%,
+    rgba(255, 255, 255, 0.04) 80%,
+    transparent 100%);
+  z-index: 5;
+  pointer-events: none;
+}
+
+/* ---- ページ（画像表示面） ---- */
+.book-page {
+  position: absolute;
+  inset: 0;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
   user-select: none;
   -webkit-user-select: none;
+  /* 紙の背景色 */
+  background: linear-gradient(135deg, #141418 0%, #0f0f12 100%);
+  transform-origin: left center;
 }
 
-.viewer-image {
+.book-page img {
   max-width: 100%;
-  max-height: 70vh;
+  max-height: 100%;
   object-fit: contain;
-  border-radius: var(--radius);
-  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.6);
-  transition: opacity 0.15s ease;
   display: block;
+  transition: opacity 0.1s ease;
 }
+
 
 /* ---- ページめくりアニメーション ---- */
-.viewer-image-wrapper.flip-next {
-  animation: flipNext 0.5s ease forwards;
+
+/* 次へ：右→左にめくる（本のページをめくる） */
+.book-page.turn-next {
+  animation: turnPageNext 0.55s cubic-bezier(0.4, 0, 0.2, 1) forwards;
 }
 
-.viewer-image-wrapper.flip-prev {
-  animation: flipPrev 0.5s ease forwards;
-}
-
-@keyframes flipNext {
+@keyframes turnPageNext {
   0% {
-    transform: rotateY(0deg) scale(1);
+    transform: rotateY(0deg);
     opacity: 1;
   }
-  40% {
-    transform: rotateY(-12deg) scale(0.95) translateX(-30px);
-    opacity: 0.6;
+  35% {
+    transform: rotateY(-60deg);
+    opacity: 0.7;
+    box-shadow: inset -8px 0 20px rgba(0,0,0,0.3);
   }
   50% {
     opacity: 0;
   }
-  60% {
-    transform: rotateY(12deg) scale(0.95) translateX(30px);
+  51% {
+    transform: rotateY(40deg);
     opacity: 0;
   }
+  70% {
+    opacity: 0.8;
+  }
   100% {
-    transform: rotateY(0deg) scale(1);
+    transform: rotateY(0deg);
     opacity: 1;
   }
 }
 
-@keyframes flipPrev {
+/* 前へ：左→右にめくる（ページを戻す） */
+.book-page.turn-prev {
+  animation: turnPagePrev 0.55s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+@keyframes turnPagePrev {
   0% {
-    transform: rotateY(0deg) scale(1);
+    transform: rotateY(0deg);
     opacity: 1;
   }
-  40% {
-    transform: rotateY(12deg) scale(0.95) translateX(30px);
-    opacity: 0.6;
+  35% {
+    transform: rotateY(60deg);
+    opacity: 0.7;
+    box-shadow: inset 8px 0 20px rgba(0,0,0,0.3);
   }
   50% {
     opacity: 0;
   }
-  60% {
-    transform: rotateY(-12deg) scale(0.95) translateX(-30px);
+  51% {
+    transform: rotateY(-40deg);
     opacity: 0;
   }
+  70% {
+    opacity: 0.8;
+  }
   100% {
-    transform: rotateY(0deg) scale(1);
+    transform: rotateY(0deg);
     opacity: 1;
   }
 }
 
-/* ---- 画像タイトル ---- */
+
+/* ---- 画像タイトル（ページ下のキャプション） ---- */
+.viewer-caption {
+  width: 100%;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 10px 8px 0;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
 .viewer-image-title {
-  text-align: center;
-  margin-top: 12px;
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   font-weight: 400;
-  color: var(--color-text-dim);
+  color: rgba(255, 255, 255, 0.35);
+  font-style: italic;
+  letter-spacing: 0.03em;
   min-height: 1.2em;
 }
 
+.viewer-indicator {
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.25);
+  letter-spacing: 0.08em;
+  white-space: nowrap;
+}
 
-/* ---- ナビゲーションボタン ---- */
+
+/* ---- ナビゲーション ---- */
 .viewer-nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 24px;
-  padding: 16px 0 8px;
+  gap: 32px;
+  padding: 14px 0 4px;
 }
 
 .viewer-nav-btn {
-  width: 48px;
-  height: 48px;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  color: var(--color-text);
-  font-size: 1.2rem;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  transition: all 0.2s ease;
+  transition: all 0.25s ease;
 }
 
 .viewer-nav-btn:hover {
-  background: rgba(255, 23, 68, 0.2);
-  border-color: var(--color-red);
+  background: rgba(255, 23, 68, 0.12);
+  border-color: rgba(255, 23, 68, 0.4);
   color: var(--color-red);
-  box-shadow: 0 0 12px rgba(255, 23, 68, 0.2);
+  box-shadow: 0 0 12px rgba(255, 23, 68, 0.1);
 }
 
 .viewer-nav-btn:active {
-  transform: scale(0.92);
+  transform: scale(0.9);
 }
 
-/* ---- インジケーター ---- */
-.viewer-indicator {
-  font-size: 0.85rem;
-  font-weight: 700;
-  color: var(--color-text-dim);
-  letter-spacing: 0.1em;
-  min-width: 60px;
+/* ページめくりヒント */
+.viewer-hint {
   text-align: center;
+  padding: 4px 0 8px;
+  font-size: 0.7rem;
+  color: rgba(255, 255, 255, 0.15);
+  letter-spacing: 0.04em;
 }
 
 
@@ -420,33 +497,23 @@
 }
 
 .viewer-empty-icon {
-  font-size: 4rem;
+  font-size: 3.5rem;
   margin-bottom: 20px;
-  opacity: 0.3;
+  opacity: 0.25;
 }
 
 .viewer-empty-title {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 700;
   color: var(--color-text);
   margin-bottom: 8px;
 }
 
 .viewer-empty-desc {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   font-weight: 400;
   color: var(--color-text-dim);
-  line-height: 1.6;
-}
-
-
-/* ---- ページめくりヒント ---- */
-.viewer-hint {
-  text-align: center;
-  padding: 4px 0 16px;
-  font-size: 0.75rem;
-  color: rgba(255, 255, 255, 0.25);
-  letter-spacing: 0.05em;
+  line-height: 1.7;
 }
 
 
@@ -454,9 +521,9 @@
    フッター
    ============================================================ */
 .album-footer {
-  padding: 20px;
-  font-size: 0.75rem;
-  color: var(--color-text-dim);
+  padding: 16px;
+  font-size: 0.7rem;
+  color: rgba(255, 255, 255, 0.2);
   text-align: center;
 }
 
@@ -466,11 +533,16 @@
    ============================================================ */
 @media (max-width: 768px) {
   .album-header {
-    padding: 14px 16px;
+    padding: 12px 14px;
   }
 
   .album-header-logo-text {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
+  }
+
+  .album-header-logo-icon {
+    width: 18px;
+    height: 18px;
   }
 
   .album-main {
@@ -495,14 +567,27 @@
     font-size: 0.82rem;
   }
 
-  .viewer-image {
-    max-height: 60vh;
+  /* ブック */
+  .book {
+    max-width: 100%;
+  }
+
+  .book-frame::before {
+    width: 14px;
   }
 
   .viewer-nav-btn {
-    width: 42px;
-    height: 42px;
-    font-size: 1rem;
+    width: 38px;
+    height: 38px;
+    font-size: 0.9rem;
+  }
+
+  .viewer-nav {
+    gap: 24px;
+  }
+
+  .viewer-caption {
+    padding: 8px 4px 0;
   }
 }
 
@@ -515,5 +600,9 @@
   .member-icon-wrapper {
     width: 52px;
     height: 52px;
+  }
+
+  .viewer-member-name {
+    font-size: 0.8rem;
   }
 }
