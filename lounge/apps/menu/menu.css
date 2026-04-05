@@ -123,6 +123,10 @@
     animation-delay: 0.6s;
 }
 
+.card:nth-child(4) {
+    animation-delay: 0.75s;
+}
+
 /* アクティブカード（クリック可能） */
 .card--active {
     cursor: pointer;

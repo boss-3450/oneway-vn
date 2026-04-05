@@ -1,0 +1,519 @@
+/* ============================================================
+   りぷらい！アルバム — 共通スタイル (album.css)
+   ============================================================
+   REPLAY LIVE LOUNGE の世界観を維持しつつ、
+   画像が主役になる上品なデザイン。
+   ============================================================ */
+
+/* ---- レイアウト ---- */
+.album-page {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background:
+    radial-gradient(ellipse at 20% 30%, rgba(255, 23, 68, 0.04) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 70%, rgba(41, 121, 255, 0.04) 0%, transparent 50%),
+    var(--color-bg);
+}
+
+
+/* ============================================================
+   ヘッダー
+   ============================================================ */
+.album-header {
+  width: 100%;
+  padding: 20px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(180deg, rgba(10, 10, 10, 0.95) 0%, rgba(10, 10, 10, 0.6) 70%, transparent 100%);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.album-header-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.album-back-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 18px;
+  font-size: 0.85rem;
+  color: var(--color-text-dim);
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-decoration: none;
+}
+
+.album-back-btn:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.25);
+}
+
+.album-header-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: var(--color-text);
+  transition: opacity 0.2s;
+}
+
+.album-header-logo:hover {
+  opacity: 0.7;
+}
+
+.album-header-logo-icon {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  filter: drop-shadow(0 0 4px var(--color-red-glow));
+}
+
+.album-header-logo-text {
+  font-size: 0.95rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+}
+
+.album-header-accent {
+  color: var(--color-red);
+  text-shadow: 0 0 8px var(--color-red-glow);
+}
+
+
+/* ============================================================
+   メンバー一覧ページ (index.html)
+   ============================================================ */
+
+.album-main {
+  flex: 1;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 32px 24px 60px;
+}
+
+.album-page-title {
+  text-align: center;
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  background: linear-gradient(135deg, var(--color-red), #ff6090);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 8px;
+  animation: slideUp 0.7s ease forwards;
+}
+
+.album-page-subtitle {
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: var(--color-text-dim);
+  margin-bottom: 40px;
+  opacity: 0;
+  animation: slideUp 0.7s ease 0.15s forwards;
+}
+
+
+/* ---- メンバーカードグリッド ---- */
+.member-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.member-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 28px 16px 24px;
+  background: var(--color-bg-card);
+  border-radius: var(--radius-lg);
+  border: 2px solid rgba(255, 255, 255, 0.06);
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--color-text);
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 0;
+  animation: slideUp 0.6s ease forwards;
+  position: relative;
+  overflow: hidden;
+}
+
+/* カードの光沢オーバーレイ */
+.member-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.03) 0%, transparent 60%);
+  pointer-events: none;
+}
+
+.member-card:hover {
+  transform: translateY(-6px) scale(1.02);
+  border-color: var(--color-red);
+  box-shadow:
+    0 8px 32px rgba(255, 23, 68, 0.15),
+    0 0 0 1px rgba(255, 23, 68, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+.member-card:active {
+  transform: translateY(-2px) scale(0.99);
+}
+
+/* アニメーション遅延を段階的に設定（JSで動的設定） */
+
+
+/* ---- メンバーアイコン ---- */
+.member-icon-wrapper {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 14px;
+  overflow: hidden;
+  position: relative;
+  background: linear-gradient(135deg, #2a2a3e, #1a1a2e);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+}
+
+.member-card:hover .member-icon-wrapper {
+  border-color: var(--color-red);
+  box-shadow: 0 0 16px rgba(255, 23, 68, 0.3);
+  transform: scale(1.08);
+}
+
+.member-icon-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* アイコン未設定時のフォールバック */
+.member-icon-fallback {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: rgba(255, 255, 255, 0.3);
+  background: linear-gradient(135deg, #2a2a3e, #1a1a2e);
+}
+
+.member-name {
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  line-height: 1.4;
+}
+
+.member-work-count {
+  margin-top: 6px;
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: var(--color-text-dim);
+}
+
+
+/* ============================================================
+   アルバム閲覧ページ (member.html)
+   ============================================================ */
+
+.viewer-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* ---- メンバー名バー ---- */
+.viewer-member-bar {
+  text-align: center;
+  padding: 12px 0 4px;
+}
+
+.viewer-member-name {
+  font-size: 1.1rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  color: var(--color-text);
+}
+
+/* ---- 画像表示エリア ---- */
+.viewer-stage {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  perspective: 1200px;
+  margin: 0 auto;
+}
+
+.viewer-image-wrapper {
+  position: relative;
+  width: 100%;
+  max-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.viewer-image {
+  max-width: 100%;
+  max-height: 70vh;
+  object-fit: contain;
+  border-radius: var(--radius);
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.6);
+  transition: opacity 0.15s ease;
+  display: block;
+}
+
+/* ---- ページめくりアニメーション ---- */
+.viewer-image-wrapper.flip-next {
+  animation: flipNext 0.5s ease forwards;
+}
+
+.viewer-image-wrapper.flip-prev {
+  animation: flipPrev 0.5s ease forwards;
+}
+
+@keyframes flipNext {
+  0% {
+    transform: rotateY(0deg) scale(1);
+    opacity: 1;
+  }
+  40% {
+    transform: rotateY(-12deg) scale(0.95) translateX(-30px);
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 0;
+  }
+  60% {
+    transform: rotateY(12deg) scale(0.95) translateX(30px);
+    opacity: 0;
+  }
+  100% {
+    transform: rotateY(0deg) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes flipPrev {
+  0% {
+    transform: rotateY(0deg) scale(1);
+    opacity: 1;
+  }
+  40% {
+    transform: rotateY(12deg) scale(0.95) translateX(30px);
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 0;
+  }
+  60% {
+    transform: rotateY(-12deg) scale(0.95) translateX(-30px);
+    opacity: 0;
+  }
+  100% {
+    transform: rotateY(0deg) scale(1);
+    opacity: 1;
+  }
+}
+
+/* ---- 画像タイトル ---- */
+.viewer-image-title {
+  text-align: center;
+  margin-top: 12px;
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: var(--color-text-dim);
+  min-height: 1.2em;
+}
+
+
+/* ---- ナビゲーションボタン ---- */
+.viewer-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  padding: 16px 0 8px;
+}
+
+.viewer-nav-btn {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: var(--color-text);
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.viewer-nav-btn:hover {
+  background: rgba(255, 23, 68, 0.2);
+  border-color: var(--color-red);
+  color: var(--color-red);
+  box-shadow: 0 0 12px rgba(255, 23, 68, 0.2);
+}
+
+.viewer-nav-btn:active {
+  transform: scale(0.92);
+}
+
+/* ---- インジケーター ---- */
+.viewer-indicator {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--color-text-dim);
+  letter-spacing: 0.1em;
+  min-width: 60px;
+  text-align: center;
+}
+
+
+/* ---- 画像0件時の「準備中」表示 ---- */
+.viewer-empty {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 60px 24px;
+}
+
+.viewer-empty-icon {
+  font-size: 4rem;
+  margin-bottom: 20px;
+  opacity: 0.3;
+}
+
+.viewer-empty-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--color-text);
+  margin-bottom: 8px;
+}
+
+.viewer-empty-desc {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: var(--color-text-dim);
+  line-height: 1.6;
+}
+
+
+/* ---- ページめくりヒント ---- */
+.viewer-hint {
+  text-align: center;
+  padding: 4px 0 16px;
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.25);
+  letter-spacing: 0.05em;
+}
+
+
+/* ============================================================
+   フッター
+   ============================================================ */
+.album-footer {
+  padding: 20px;
+  font-size: 0.75rem;
+  color: var(--color-text-dim);
+  text-align: center;
+}
+
+
+/* ============================================================
+   レスポンシブ
+   ============================================================ */
+@media (max-width: 768px) {
+  .album-header {
+    padding: 14px 16px;
+  }
+
+  .album-header-logo-text {
+    font-size: 0.8rem;
+  }
+
+  .album-main {
+    padding: 20px 12px 40px;
+  }
+
+  .member-grid {
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 12px;
+  }
+
+  .member-card {
+    padding: 20px 10px 18px;
+  }
+
+  .member-icon-wrapper {
+    width: 60px;
+    height: 60px;
+  }
+
+  .member-name {
+    font-size: 0.82rem;
+  }
+
+  .viewer-image {
+    max-height: 60vh;
+  }
+
+  .viewer-nav-btn {
+    width: 42px;
+    height: 42px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .member-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .member-icon-wrapper {
+    width: 52px;
+    height: 52px;
+  }
+}

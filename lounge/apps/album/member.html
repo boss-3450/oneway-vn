@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="りぷらい！アルバム — メンバー別閲覧">
+  <title>アルバム — REPLAY LIVE LOUNGE</title>
+  <link rel="stylesheet" href="../../css/common.css">
+  <link rel="stylesheet" href="./css/album.css">
+</head>
+
+<body>
+  <div class="album-page page-fade-in" id="memberPage">
+
+    <!-- ヘッダー -->
+    <header class="album-header">
+      <div class="album-header-left">
+        <a href="./index.html" class="album-back-btn" id="backBtn">← メンバー一覧</a>
+      </div>
+      <a href="../../index.html" class="album-header-logo">
+        <img class="album-header-logo-icon" src="../../assets/images/logo/logo_symbol.png" alt="">
+        <span class="album-header-logo-text">
+          <span class="album-header-accent">REPLAY</span> LIVE LOUNGE
+        </span>
+      </a>
+    </header>
+
+    <!-- メンバー名バー -->
+    <div class="viewer-member-bar">
+      <h1 class="viewer-member-name" id="memberName">—</h1>
+    </div>
+
+    <!-- ビューア本体（JSで切り替え） -->
+    <div class="viewer-container" id="viewerContainer">
+      <!-- 画像がある場合 -->
+      <div class="viewer-stage" id="viewerStage" style="display:none;">
+        <div class="viewer-image-wrapper" id="imageWrapper">
+          <img class="viewer-image" id="viewerImage" src="" alt="作品画像">
+        </div>
+      </div>
+      <div class="viewer-image-title" id="imageTitle" style="display:none;"></div>
+
+      <!-- ナビゲーション -->
+      <nav class="viewer-nav" id="viewerNav" style="display:none;">
+        <button class="viewer-nav-btn" id="prevBtn" aria-label="前の画像">◀</button>
+        <span class="viewer-indicator" id="indicator">— / —</span>
+        <button class="viewer-nav-btn" id="nextBtn" aria-label="次の画像">▶</button>
+      </nav>
+      <p class="viewer-hint" id="viewerHint" style="display:none;">画像をクリックで次へ / スワイプで操作</p>
+
+      <!-- 画像0件の場合 -->
+      <div class="viewer-empty" id="viewerEmpty" style="display:none;">
+        <div class="viewer-empty-icon">🎨</div>
+        <p class="viewer-empty-title">準備中です</p>
+        <p class="viewer-empty-desc">このメンバーのアルバムは<br>まもなく公開予定です。<br>お楽しみに！</p>
+      </div>
+    </div>
+
+    <!-- フッター -->
+    <footer class="album-footer">
+      <p>© REPLAY LIVE</p>
+    </footer>
+
+  </div>
+
+  <script src="./data/members.js"></script>
+  <script src="./data/albums.js"></script>
+  <script src="./js/member.js"></script>
+</body>
+
+</html>

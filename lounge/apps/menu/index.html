@@ -31,8 +31,12 @@
 
             <div class="card-grid">
 
-                <!-- カード1: メンバー・ルーレット -->
-                <a href="../slot/index.html" class="card card--active" id="cardRoulette">
+                <!-- ============================================================
+                     以下2件はメニュー導線から非表示
+                     （ファイル・URLは維持。直リンクでアクセス可能）
+                     ============================================================ -->
+                <!-- [非表示] カード: メンバー・スロット
+                <a href="../slot/index.html" class="card card--active" id="cardSlot">
                     <div class="card-icon">
                         <img src="../../assets/images/menu_icons/roulette.png" alt="メンバー・ルーレット">
                     </div>
@@ -42,9 +46,10 @@
                     </div>
                     <div class="card-arrow">→</div>
                 </a>
+                -->
 
-                <!-- カード2: アメリカンルーレット -->
-                <a href="../roulette_american/index.html" class="card card--active" id="cardRoulette">
+                <!-- [非表示] カード: ルーレット
+                <a href="../roulette_american/index.html" class="card card--active" id="cardRouletteAmerican">
                     <div class="card-icon">
                         <img src="../../assets/images/menu_icons/american_roulette.png" alt="アメリカンルーレット">
                     </div>
@@ -54,8 +59,9 @@
                     </div>
                     <div class="card-arrow">→</div>
                 </a>
+                -->
 
-                <!-- カード3: 回答フリップボード -->
+                <!-- カード1: 回答フリップボード -->
                 <a href="../answer_flip/index.html" class="card card--active" id="cardFlip">
                     <div class="card-icon">
                         <img src="../../assets/images/menu_icons/answer_flip.png" alt="回答フリップボード">
@@ -67,7 +73,20 @@
                     <div class="card-arrow">→</div>
                 </a>
 
-                <!-- カード4: りぷらいメモリアル -->
+                <!-- カード2: りぷらい！アルバム（NEW） -->
+                <a href="../album/index.html" class="card card--active" id="cardAlbum">
+                    <div class="card-icon">
+                        <img src="../../assets/images/menu_icons/album.png" alt="りぷらい！アルバム"
+                             onerror="this.style.display='none'; this.parentElement.innerHTML='<span style=&quot;font-size:2.8rem;&quot;>🎨</span>';">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">りぷらい！アルバム</h3>
+                        <p class="card-desc">メンバーの作品を集めたデジタルアルバム。お気に入りの一枚を眺めよう。</p>
+                    </div>
+                    <div class="card-arrow">→</div>
+                </a>
+
+                <!-- カード3: りぷらいメモリアル -->
                 <a href="https://oneway-vn.pages.dev/" target="_blank" class="card card--active" id="cardMemorial">
                     <div class="card-icon">
                         <img src="../../assets/images/menu_icons/replay_memorial.png" alt="りぷらいメモリアル">
